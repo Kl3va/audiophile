@@ -1,0 +1,517 @@
+[
+  {
+    "slug": "yx1-earphones",
+    "name": "YX1 Wireless Earphones",
+    "image": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Fmobile%2Fimage-product.jpg?alt=media&token=cbffbbc7-7d3f-4577-a829-d28918d70d38",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Ftablet%2Fimage-product.jpg?alt=media&token=38a9397b-f4f9-4cb9-b490-efbaff599349",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Fdesktop%2Fimage-product.jpg?alt=media&token=633f68f5-8069-4632-bffd-a50a83fd2a5b"
+    },
+    "category": "earphones",
+    "categoryImage": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Fmobile%2Fimage-category-page-preview.jpg?alt=media&token=74e1ca29-ca7e-4145-996a-643bbdad334c",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Ftablet%2Fimage-category-page-preview.jpg?alt=media&token=da478c2c-fb71-4ac9-aed1-6a9ff0392483",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Fdesktop%2Fimage-category-page-preview.jpg?alt=media&token=9e9eea31-5e5b-438e-919c-4ae1ece91def"
+    },
+    "new": true,
+    "price": 599,
+    "description": "Tailor your listening experience with bespoke dynamic drivers from the new YX1 Wireless Earphones. Enjoy incredible high-fidelity sound even in noisy environments with its active noise cancellation feature.",
+    "features": "Experience unrivalled stereo sound thanks to innovative acoustic technology. With improved ergonomics designed for full day wearing, these revolutionary earphones have been finely crafted to provide you with the perfect fit, delivering complete comfort all day long while enjoying exceptional noise isolation and truly immersive sound.\n\nThe YX1 Wireless Earphones features customizable controls for volume, music, calls, and voice assistants built into both earbuds. The new 7-hour battery life can be extended up to 28 hours with the charging case, giving you uninterrupted play time. Exquisite craftsmanship with a splash resistant design now available in an all new white and grey color scheme as well as the popular classic black.",
+    "includes": [
+      {
+        "quantity": 2,
+        "item": "Earphone unit"
+      },
+      {
+        "quantity": 6,
+        "item": "Multi-size earplugs"
+      },
+      {
+        "quantity": 1,
+        "item": "User manual"
+      },
+      {
+        "quantity": 1,
+        "item": "USB-C charging cable"
+      },
+      {
+        "quantity": 1,
+        "item": "Travel pouch"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Fmobile%2Fimage-gallery-1.jpg?alt=media&token=0bbef0d6-ba11-4a1c-891c-d5e018797728",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Ftablet%2Fimage-gallery-1.jpg?alt=media&token=341e42ab-f0a1-4057-897f-3e4efa834620",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Fdesktop%2Fimage-gallery-1.jpg?alt=media&token=da07a924-3520-413d-a55c-b3206c85bafe"
+      },
+      "second": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Fmobile%2Fimage-gallery-2.jpg?alt=media&token=d8611b51-3a41-4c4d-aec7-b33cbeb74035",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Ftablet%2Fimage-gallery-2.jpg?alt=media&token=bf05a3d0-8f5d-44c2-afed-6e194fb9087d",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Fdesktop%2Fimage-gallery-2.jpg?alt=media&token=399ff050-447c-4033-90bd-8ad4a7769ef5"
+      },
+      "third": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Fmobile%2Fimage-gallery-3.jpg?alt=media&token=9b57af5b-d19b-46fe-b7d1-34fce3ba2d96",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Ftablet%2Fimage-gallery-3.jpg?alt=media&token=95cda382-41ac-4645-9fa3-52ad25752d6b",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-yx1-earphones%2Fdesktop%2Fimage-gallery-3.jpg?alt=media&token=27a2f4e2-7635-4d99-bbd6-ef1f5b385aa9"
+      }
+    },
+    "others": [
+      {
+        "slug": "xx99-mark-one-headphones",
+        "name": "XX99 Mark I",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=2af88be2-167a-4f93-b3ec-3fe7a33f66e3",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=b8a4f12d-ab64-4bcc-8f3d-6eaf1e19d9b4",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=90b056bd-e785-4a96-bac5-920e512c9c93"
+        }
+      },
+      {
+        "slug": "xx59-headphones",
+        "name": "XX59",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx59-headphones.jpg?alt=media&token=219a5987-f4f1-4f79-ba14-8edb7839df28",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx59-headphones.jpg?alt=media&token=26f6c073-6311-4639-bf04-f6c9244a241e",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx59-headphones.jpg?alt=media&token=af9d89d1-3464-4f09-a01c-e23710df6180"
+        }
+      },
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-zx9-speaker.jpg?alt=media&token=55abf2dc-755b-4833-b363-8326def20ed0",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-zx9-speaker.jpg?alt=media&token=50cad1f0-70b9-4b47-bb3c-cb8dc95bdf81",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-zx9-speaker.jpg?alt=media&token=e3d17da7-6f67-4520-a1f2-2ecdc37fa0c3"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xx59-headphones",
+    "name": "XX59 Headphones",
+    "image": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Fmobile%2Fimage-product.jpg?alt=media&token=b346ca38-a38d-4e32-ab15-b1786b2bec6e",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Ftablet%2Fimage-product.jpg?alt=media&token=f8848932-bae3-4751-91d0-352dd25187fc",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Fdesktop%2Fimage-product.jpg?alt=media&token=6e643c01-d752-4106-9daa-ddff5016e873"
+    },
+    "category": "headphones",
+    "categoryImage": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Fmobile%2Fimage-category-page-preview.jpg?alt=media&token=bcef11b9-fffb-4d28-8dc9-42fc7eaa0c27",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Ftablet%2Fimage-category-page-preview.jpg?alt=media&token=c8bdcb8a-bb0f-4e80-b3a3-182f71f5f5e4",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Fdesktop%2Fimage-category-page-preview.jpg?alt=media&token=aa62530d-8836-457a-b821-c6bbdeb473cc"
+    },
+    "new": false,
+    "price": 899,
+    "description": "Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.",
+    "features": "These headphones have been created from durable, high-quality materials tough enough to take anywhere. Its compact folding design fuses comfort and minimalist style making it perfect for travel. Flawless transmission is assured by the latest wireless technology engineered for audio synchronization with videos.\n\nMore than a simple pair of headphones, this headset features a pair of built-in microphones for clear, hands-free calling when paired with a compatible smartphone. Controlling music and calls is also intuitive thanks to easy-access touch buttons on the earcups. Regardless of how you use the XX59 headphones, you can do so all day thanks to an impressive 30-hour battery life that can be rapidly recharged via USB-C.",
+    "includes": [
+      {
+        "quantity": 1,
+        "item": "Headphone unit"
+      },
+      {
+        "quantity": 2,
+        "item": "Replacement earcups"
+      },
+      {
+        "quantity": 1,
+        "item": "User manual"
+      },
+      {
+        "quantity": 1,
+        "item": "3.5mm 5m audio cable"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Fmobile%2Fimage-gallery-1.jpg?alt=media&token=bc4f9661-e971-4008-943f-7d1447534ea6",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Ftablet%2Fimage-gallery-1.jpg?alt=media&token=f803ea80-4808-4824-9eea-5f14c3b83d42",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Fdesktop%2Fimage-gallery-1.jpg?alt=media&token=47b261ab-0de9-4fed-bd1b-5147369e07f7"
+      },
+      "second": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Fmobile%2Fimage-gallery-2.jpg?alt=media&token=bb924f0c-f006-4d3f-89af-d2f67b5b6273",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Ftablet%2Fimage-gallery-2.jpg?alt=media&token=dfd52256-147b-4ee8-8c2b-31f2e70ae6ff",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Fdesktop%2Fimage-gallery-2.jpg?alt=media&token=ada3a871-609d-4416-b597-94c822ecffd4"
+      },
+      "third": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Fmobile%2Fimage-gallery-3.jpg?alt=media&token=afb300b5-7471-44d7-b9d1-8ced3f304611",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Ftablet%2Fimage-gallery-3.jpg?alt=media&token=7155ac80-e2f3-4fc7-9975-b65f6644c919",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx59-headphones%2Fdesktop%2Fimage-gallery-3.jpg?alt=media&token=74bb0e62-8d7d-43dc-b1a8-6a5d40e339c6"
+      }
+    },
+    "others": [
+      {
+        "slug": "xx99-mark-two-headphones",
+        "name": "XX99 Mark II",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx99-mark-two-headphones.jpg?alt=media&token=8f018b72-8254-4753-83fc-f2586f77291c",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx99-mark-two-headphones.jpg?alt=media&token=05450c46-3b27-4647-ac2b-3e1f6e965a3e",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx99-mark-two-headphones.jpg?alt=media&token=5292dc01-6ccc-4574-aca0-252d0d8d2679"
+        }
+      },
+      {
+        "slug": "xx99-mark-one-headphones",
+        "name": "XX99 Mark I",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=2af88be2-167a-4f93-b3ec-3fe7a33f66e3",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=b8a4f12d-ab64-4bcc-8f3d-6eaf1e19d9b4",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=90b056bd-e785-4a96-bac5-920e512c9c93"
+        }
+      },
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-zx9-speaker.jpg?alt=media&token=55abf2dc-755b-4833-b363-8326def20ed0",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-zx9-speaker.jpg?alt=media&token=50cad1f0-70b9-4b47-bb3c-cb8dc95bdf81",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-zx9-speaker.jpg?alt=media&token=e3d17da7-6f67-4520-a1f2-2ecdc37fa0c3"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xx99-mark-one-headphones",
+    "name": "XX99 Mark I Headphones",
+    "image": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Fmobile%2Fimage-product.jpg?alt=media&token=cf885534-501b-4c40-9822-2586ae66e0f6",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Ftablet%2Fimage-product.jpg?alt=media&token=1c51c938-2946-4ef3-8e81-7fc1ef5f1361",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Fdesktop%2Fimage-product.jpg?alt=media&token=acc7f0dd-0381-433e-8e3f-7b38063f5c11"
+    },
+    "category": "headphones",
+    "categoryImage": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Fmobile%2Fimage-category-page-preview.jpg?alt=media&token=cef9e82f-d952-4543-aeae-73e6f3d77151",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Ftablet%2Fimage-category-page-preview.jpg?alt=media&token=523f45c1-dd88-4872-83a2-173a1fcda0fb",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Fdesktop%2Fimage-category-page-preview.jpg?alt=media&token=40034bbd-c5a3-4b59-91ee-a48a35999746"
+    },
+    "new": false,
+    "price": 1750,
+    "description": "As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.",
+    "features": "As the headphones all others are measured against, the XX99 Mark I demonstrates over five decades of audio expertise, redefining the critical listening experience. This pair of closed-back headphones are made of industrial, aerospace-grade materials to emphasize durability at a relatively light weight of 11 oz.\n\nFrom the handcrafted microfiber ear cushions to the robust metal headband with inner damping element, the components work together to deliver comfort and uncompromising sound. Its closed-back design delivers up to 27 dB of passive noise cancellation, reducing resonance by reflecting sound to a dedicated absorber. For connectivity, a specially tuned cable is includes with a balanced gold connector.",
+    "includes": [
+      {
+        "quantity": 1,
+        "item": "Headphone unit"
+      },
+      {
+        "quantity": 2,
+        "item": "Replacement earcups"
+      },
+      {
+        "quantity": 1,
+        "item": "User manual"
+      },
+      {
+        "quantity": 1,
+        "item": "3.5mm 5m audio cable"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Fmobile%2Fimage-gallery-1.jpg?alt=media&token=ddc8e57d-9f25-44e8-8b2f-36aabaa786fa",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Ftablet%2Fimage-gallery-1.jpg?alt=media&token=7049cb25-14fe-41ed-8b59-9961b5c9ed18",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Fdesktop%2Fimage-gallery-1.jpg?alt=media&token=c6c4869b-0e30-4d09-a599-188e1aff297e"
+      },
+      "second": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Fmobile%2Fimage-gallery-2.jpg?alt=media&token=abc6ff07-526e-41a5-96bf-5a3d0c670ef3",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Ftablet%2Fimage-gallery-2.jpg?alt=media&token=b2bc583c-613a-450c-b3a4-70b4b9f0fcb1",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Fdesktop%2Fimage-gallery-2.jpg?alt=media&token=d821b655-b4b7-41f6-b225-ea0ebfa0b4e7"
+      },
+      "third": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Fmobile%2Fimage-gallery-3.jpg?alt=media&token=697fa5ad-87cf-4704-95bc-9dc956534296",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Ftablet%2Fimage-gallery-3.jpg?alt=media&token=3f06fe58-6845-42af-b40b-697f04896b2c",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-one-headphones%2Fdesktop%2Fimage-gallery-3.jpg?alt=media&token=965de71d-4879-4175-b90b-111e6d9117ca"
+      }
+    },
+    "others": [
+      {
+        "slug": "xx99-mark-two-headphones",
+        "name": "XX99 Mark II",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx99-mark-two-headphones.jpg?alt=media&token=8f018b72-8254-4753-83fc-f2586f77291c",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx99-mark-two-headphones.jpg?alt=media&token=05450c46-3b27-4647-ac2b-3e1f6e965a3e",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx99-mark-two-headphones.jpg?alt=media&token=5292dc01-6ccc-4574-aca0-252d0d8d2679"
+        }
+      },
+      {
+        "slug": "xx59-headphones",
+        "name": "XX59",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx59-headphones.jpg?alt=media&token=219a5987-f4f1-4f79-ba14-8edb7839df28",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx59-headphones.jpg?alt=media&token=26f6c073-6311-4639-bf04-f6c9244a241e",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx59-headphones.jpg?alt=media&token=af9d89d1-3464-4f09-a01c-e23710df6180"
+        }
+      },
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-zx9-speaker.jpg?alt=media&token=55abf2dc-755b-4833-b363-8326def20ed0",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-zx9-speaker.jpg?alt=media&token=50cad1f0-70b9-4b47-bb3c-cb8dc95bdf81",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-zx9-speaker.jpg?alt=media&token=e3d17da7-6f67-4520-a1f2-2ecdc37fa0c3"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "xx99-mark-two-headphones",
+    "name": "XX99 Mark II Headphones",
+    "image": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Fmobile%2Fimage-product.jpg?alt=media&token=63270ecd-ca30-4cf7-98c9-9102375730be",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Ftablet%2Fimage-product.jpg?alt=media&token=7911a5db-fce9-4e87-a51c-d28fdc63b666",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Fdesktop%2Fimage-product.jpg?alt=media&token=1f97b60f-99c9-44bb-bde2-0b5be02da2e1"
+    },
+    "category": "headphones",
+    "categoryImage": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Fmobile%2Fimage-category-page-preview.jpg?alt=media&token=e6f13050-c3b1-4cd3-b459-5e02b906cbee",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Ftablet%2Fimage-category-page-preview.jpg?alt=media&token=5d8cdf55-2ba1-457f-84a3-a66ac5b01463",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Fdesktop%2Fimage-category-page-preview.jpg?alt=media&token=34379469-4140-4353-bcbb-ebe0b49e1a77"
+    },
+    "new": true,
+    "price": 2999,
+    "description": "The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium headphone experience by reproducing the balanced depth and precision of studio-quality sound.",
+    "features": "Featuring a genuine leather head strap and premium earcups, these headphones deliver superior comfort for those who like to enjoy endless listening. It includes intuitive controls designed for any situation. Whether you’re taking a business call or just in your own personal space, the auto on/off and pause features ensure that you’ll never miss a beat.\n\nThe advanced Active Noise Cancellation with built-in equalizer allow you to experience your audio world on your terms. It lets you enjoy your audio in peace, but quickly interact with your surroundings when you need to. Combined with Bluetooth 5. 0 compliant connectivity and 17 hour battery life, the XX99 Mark II headphones gives you superior sound, cutting-edge technology, and a modern design aesthetic.",
+    "includes": [
+      {
+        "quantity": 1,
+        "item": "Headphone unit"
+      },
+      {
+        "quantity": 2,
+        "item": "Replacement earcups"
+      },
+      {
+        "quantity": 1,
+        "item": "User manual"
+      },
+      {
+        "quantity": 1,
+        "item": "3.5mm 5m audio cable"
+      },
+      {
+        "quantity": 1,
+        "item": "Travel bag"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Fmobile%2Fimage-gallery-1.jpg?alt=media&token=96d45644-e704-4190-9f6a-ed927029dc0b",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Ftablet%2Fimage-gallery-1.jpg?alt=media&token=21c95977-c0ff-40a9-89b7-d086bccec183",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Fdesktop%2Fimage-gallery-1.jpg?alt=media&token=9b26930f-d426-446d-9c21-25e8a47d040c"
+      },
+      "second": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Fmobile%2Fimage-gallery-2.jpg?alt=media&token=f00de46c-993f-443c-9968-bc8a03cf066c",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Ftablet%2Fimage-gallery-2.jpg?alt=media&token=f79c075f-5a18-4c27-abc6-55a2b046ec85",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Fdesktop%2Fimage-gallery-2.jpg?alt=media&token=6b87b185-5322-4e64-bc15-209a9d1eb355"
+      },
+      "third": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Fmobile%2Fimage-gallery-3.jpg?alt=media&token=4046b244-8f11-48e7-9de9-0a7b020c7b07",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Ftablet%2Fimage-gallery-3.jpg?alt=media&token=0bec59b4-8cba-47be-ac11-bffe8c0c1e0d",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-xx99-mark-two-headphones%2Fdesktop%2Fimage-gallery-3.jpg?alt=media&token=4d96281c-cafb-49be-ae3a-6b738331d768"
+      }
+    },
+    "others": [
+      {
+        "slug": "xx99-mark-one-headphones",
+        "name": "XX99 Mark I",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=2af88be2-167a-4f93-b3ec-3fe7a33f66e3",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=b8a4f12d-ab64-4bcc-8f3d-6eaf1e19d9b4",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=90b056bd-e785-4a96-bac5-920e512c9c93"
+        }
+      },
+      {
+        "slug": "xx59-headphones",
+        "name": "XX59",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx59-headphones.jpg?alt=media&token=219a5987-f4f1-4f79-ba14-8edb7839df28",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx59-headphones.jpg?alt=media&token=26f6c073-6311-4639-bf04-f6c9244a241e",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx59-headphones.jpg?alt=media&token=af9d89d1-3464-4f09-a01c-e23710df6180"
+        }
+      },
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-zx9-speaker.jpg?alt=media&token=55abf2dc-755b-4833-b363-8326def20ed0",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-zx9-speaker.jpg?alt=media&token=50cad1f0-70b9-4b47-bb3c-cb8dc95bdf81",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-zx9-speaker.jpg?alt=media&token=e3d17da7-6f67-4520-a1f2-2ecdc37fa0c3"
+        }
+      }
+    ]
+  },
+  {
+    "slug": "zx7-speaker",
+    "name": "ZX7 Speaker",
+    "image": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Fmobile%2Fimage-product.jpg?alt=media&token=5a828cf8-0868-42f2-a066-e82b1e24bfcb",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Ftablet%2Fimage-product.jpg?alt=media&token=96e6f982-577c-43ba-87f2-1ad44f72b750",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Fdesktop%2Fimage-product.jpg?alt=media&token=c1fcde80-f600-464e-84d3-2c21cb457aac"
+    },
+    "category": "speakers",
+    "categoryImage": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Fmobile%2Fimage-category-page-preview.jpg?alt=media&token=30679e23-905c-4fda-844c-3fb829079f4f",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Ftablet%2Fimage-category-page-preview.jpg?alt=media&token=a7a585c1-e4e8-49cc-ac4d-5aa9e96a1147",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Fdesktop%2Fimage-category-page-preview.jpg?alt=media&token=b6051973-09b2-451b-9114-3beee6570a7b"
+    },
+    "new": false,
+    "price": 3500,
+    "description": "Stream high quality sound wirelessly with minimal to no loss. The ZX7 speaker uses high-end audiophile components that represents the top of the line powered speakers for home or studio use.",
+    "features": "Reap the advantages of a flat diaphragm tweeter cone. This provides a fast response rate and excellent high frequencies that lower tiered bookshelf speakers cannot provide. The woofers are made from aluminum that produces a unique and clear sound. XLR inputs allow you to connect to a mixer for more advanced usage.\n\nThe ZX7 speaker is the perfect blend of stylish design and high performance. It houses an encased MDF wooden enclosure which minimises acoustic resonance. Dual connectivity allows pairing through bluetooth or traditional optical and RCA input. Switch input sources and control volume at your finger tips with the included wireless remote. This versatile speaker is equipped to deliver an authentic listening experience.",
+    "includes": [
+      {
+        "quantity": 2,
+        "item": "Speaker unit"
+      },
+      {
+        "quantity": 2,
+        "item": "Speaker cloth panel"
+      },
+      {
+        "quantity": 1,
+        "item": "User manual"
+      },
+      {
+        "quantity": 1,
+        "item": "3.5mm 7.5m audio cable"
+      },
+      {
+        "quantity": 1,
+        "item": "7.5m optical cable"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Fmobile%2Fimage-gallery-1.jpg?alt=media&token=1e0047fb-178a-46c4-93c9-5230d8e6062b",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Ftablet%2Fimage-gallery-1.jpg?alt=media&token=79f6ef7a-ab72-46f8-9a59-62911bc2095a",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Fdesktop%2Fimage-gallery-1.jpg?alt=media&token=223b0a5f-5afc-4b5b-9adf-741f7b5d9dee"
+      },
+      "second": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Fmobile%2Fimage-gallery-2.jpg?alt=media&token=563e5c65-6326-45ef-aefe-97b8a76450d5",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Ftablet%2Fimage-gallery-2.jpg?alt=media&token=e44bae7a-0e9f-4042-b539-e5a74191b7a4",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Fdesktop%2Fimage-gallery-2.jpg?alt=media&token=9d8f771a-bf12-49aa-b394-e1c6306a0960"
+      },
+      "third": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Fmobile%2Fimage-gallery-3.jpg?alt=media&token=f821aadf-9a39-433a-a702-5d25054c1719",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Ftablet%2Fimage-gallery-3.jpg?alt=media&token=44aefa8c-fa50-49a1-b3fb-f2fb4d5cd7e2",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx7-speaker%2Fdesktop%2Fimage-gallery-3.jpg?alt=media&token=526c5c4c-259c-4d23-a7a9-e2173597e069"
+      }
+    },
+    "others": [
+      {
+        "slug": "zx9-speaker",
+        "name": "ZX9 Speaker",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-zx9-speaker.jpg?alt=media&token=55abf2dc-755b-4833-b363-8326def20ed0",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-zx9-speaker.jpg?alt=media&token=50cad1f0-70b9-4b47-bb3c-cb8dc95bdf81",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-zx9-speaker.jpg?alt=media&token=e3d17da7-6f67-4520-a1f2-2ecdc37fa0c3"
+        }
+      },
+      {
+        "slug": "xx99-mark-one-headphones",
+        "name": "XX99 Mark I",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=2af88be2-167a-4f93-b3ec-3fe7a33f66e3",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=b8a4f12d-ab64-4bcc-8f3d-6eaf1e19d9b4",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=90b056bd-e785-4a96-bac5-920e512c9c93"
+        }
+      },
+      {
+        "slug": "xx59-headphones",
+        "name": "XX59",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx59-headphones.jpg?alt=media&token=219a5987-f4f1-4f79-ba14-8edb7839df28",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx59-headphones.jpg?alt=media&token=26f6c073-6311-4639-bf04-f6c9244a241e",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx59-headphones.jpg?alt=media&token=af9d89d1-3464-4f09-a01c-e23710df6180"
+        }
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "zx9-speaker",
+    "name": "ZX9 Speaker",
+    "image": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Fmobile%2Fimage-product.jpg?alt=media&token=4d446bbf-310b-4930-935f-4180f7b9921f",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Ftablet%2Fimage-product.jpg?alt=media&token=75920ea3-cb61-4ef6-a1b1-35898f15323a",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Fdesktop%2Fimage-product.jpg?alt=media&token=ef50943a-9797-4e69-b064-f8951135aab5"
+    },
+    "category": "speakers",
+    "categoryImage": {
+      "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Fmobile%2Fimage-category-page-preview.jpg?alt=media&token=55c97cc9-4295-44cd-b09e-618afff94043",
+      "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Ftablet%2Fimage-category-page-preview.jpg?alt=media&token=28521270-a31d-4238-9051-2f783035af02",
+      "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Fdesktop%2Fimage-category-page-preview.jpg?alt=media&token=f29ed0f2-a0f5-4ae3-b9de-901437cdf914"
+    },
+    "new": true,
+    "price": 4500,
+    "description": "Upgrade your sound system with the all new ZX9 active speaker. It’s a bookshelf speaker system that offers truly wireless connectivity -- creating new possibilities for more pleasing and practical audio setups.",
+    "features": "Connect via Bluetooth or nearly any wired source. This speaker features optical, digital coaxial, USB Type-B, stereo RCA, and stereo XLR inputs, allowing you to have up to five wired source devices connected for easy switching. Improved bluetooth technology offers near lossless audio quality at up to 328ft (100m).\n\nDiscover clear, more natural sounding highs than the competition with ZX9’s signature planar diaphragm tweeter. Equally important is its powerful room-shaking bass courtesy of a 6.5” aluminum alloy bass unit. You’ll be able to enjoy equal sound quality whether in a large room or small den. Furthermore, you will experience new sensations from old songs since it can respond to even the subtle waveforms.",
+    "includes": [
+      {
+        "quantity": 2,
+        "item": "Speaker unit"
+      },
+      {
+        "quantity": 2,
+        "item": "Speaker cloth panel"
+      },
+      {
+        "quantity": 1,
+        "item": "User manual"
+      },
+      {
+        "quantity": 1,
+        "item": "3.5mm 10m audio cable"
+      },
+      {
+        "quantity": 1,
+        "item": "10m optical cable"
+      }
+    ],
+    "gallery": {
+      "first": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Fmobile%2Fimage-gallery-1.jpg?alt=media&token=b2176a14-bac4-4267-a512-9f52ddc29064",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Ftablet%2Fimage-gallery-1.jpg?alt=media&token=6a639e41-670a-4c15-8487-e120851a4db1",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Fdesktop%2Fimage-gallery-1.jpg?alt=media&token=c178b9ac-2d4a-4556-9f30-c808fd55ffce"
+      },
+      "second": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Fmobile%2Fimage-gallery-2.jpg?alt=media&token=9ee22e98-203d-4d93-a697-2cdec90472e9",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Ftablet%2Fimage-gallery-2.jpg?alt=media&token=38b93cf9-6834-4ae7-94ab-7cfd7925c24f",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Fdesktop%2Fimage-gallery-2.jpg?alt=media&token=16addd03-efac-4dbf-8b35-aea7cb1c8fe7"
+      },
+      "third": {
+        "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Fmobile%2Fimage-gallery-3.jpg?alt=media&token=b3ec21e6-04e1-4a4b-a113-99373b5de5a5",
+        "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Ftablet%2Fimage-gallery-3.jpg?alt=media&token=7da9303c-9efb-4083-9a78-883cf4146b45",
+        "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/product-zx9-speaker%2Fdesktop%2Fimage-gallery-3.jpg?alt=media&token=d901b2aa-ead3-4b2f-b6a9-eab7d5fbacd8"
+      }
+    },
+    "others": [
+      {
+        "slug": "zx7-speaker",
+        "name": "ZX7 Speaker",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-zx7-speaker.jpg?alt=media&token=22bd2881-f10a-40ae-93ea-ea7bc2bacb2a",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-zx7-speaker.jpg?alt=media&token=060ed5b7-a1c4-4960-a901-dba7ba5b4dad",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-zx7-speaker.jpg?alt=media&token=fd735bbd-48eb-41aa-9a7a-0e7456f28eb3"
+        }
+      },
+      {
+        "slug": "xx99-mark-one-headphones",
+        "name": "XX99 Mark I",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=2af88be2-167a-4f93-b3ec-3fe7a33f66e3",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=b8a4f12d-ab64-4bcc-8f3d-6eaf1e19d9b4",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx99-mark-one-headphones.jpg?alt=media&token=90b056bd-e785-4a96-bac5-920e512c9c93"
+        }
+      },
+      {
+        "slug": "xx59-headphones",
+        "name": "XX59",
+        "image": {
+          "mobile": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fmobile%2Fimage-xx59-headphones.jpg?alt=media&token=219a5987-f4f1-4f79-ba14-8edb7839df28",
+          "tablet": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Ftablet%2Fimage-xx59-headphones.jpg?alt=media&token=26f6c073-6311-4639-bf04-f6c9244a241e",
+          "desktop": "https://firebasestorage.googleapis.com/v0/b/audiophile-ecommerce-2252c.appspot.com/o/shared%2Fdesktop%2Fimage-xx59-headphones.jpg?alt=media&token=af9d89d1-3464-4f09-a01c-e23710df6180"
+        }
+      }
+    ]
+  }
+]

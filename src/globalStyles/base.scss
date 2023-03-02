@@ -1,0 +1,64 @@
+@use '../globalStyles/variable.scss' as *;
+
+//Typography
+
+.h1-primary {
+  font-size: 2.3rem;
+  font-weight: inherit;
+}
+
+.h1-secondary {
+  font-size: 1.8rem;
+  font-weight: inherit;
+}
+
+p {
+  font-size: 0.9rem;
+  font-weight: inherit;
+  opacity: 0.5;
+  font-weight: $font-weight-medium;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/*.packed {
+  display: grid;
+
+  & > * {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}*/
+
+body {
+  background-color: $color-primary;
+  font-family: $font-secondary;
+  line-height: 1.5;
+  font-weight: $font-weight-large;
+  color: $color-black;
+}
