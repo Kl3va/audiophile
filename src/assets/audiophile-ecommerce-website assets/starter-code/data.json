@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "slug": "yx1-earphones",
     "name": "YX1 Wireless Earphones",
     "image": {
@@ -87,6 +88,7 @@
     ]
   },
   {
+    "id": 2,
     "slug": "xx59-headphones",
     "name": "XX59 Headphones",
     "image": {
@@ -170,6 +172,7 @@
     ]
   },
   {
+    "id": 3,
     "slug": "xx99-mark-one-headphones",
     "name": "XX99 Mark I Headphones",
     "image": {
@@ -253,6 +256,7 @@
     ]
   },
   {
+    "id": 4,
     "slug": "xx99-mark-two-headphones",
     "name": "XX99 Mark II Headphones",
     "image": {
@@ -340,6 +344,7 @@
     ]
   },
   {
+    "id": 5,
     "slug": "zx7-speaker",
     "name": "ZX7 Speaker",
     "image": {
