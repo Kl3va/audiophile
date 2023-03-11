@@ -1,8 +1,8 @@
 import React from 'react'
 
-type Props = {}
+type navProps = {}
 
-const Header = (props: Props) => {
+const Header = (props: navProps) => {
   return <div>Header</div>
 }
 
