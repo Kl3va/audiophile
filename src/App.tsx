@@ -12,6 +12,9 @@ import Product from 'pages/product/Product'
 import Header from 'components/header/Header'
 import Footer from 'components/footer/Footer'
 
+//DATA
+import { headerData } from 'components/header/headerData'
+
 //POP-UP CONTAINER
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -20,7 +23,7 @@ function App() {
   return (
     <Router>
       <ToastContainer position='top-center' autoClose={3000} />
-      <Header />
+      <Header {...headerData} />
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/headpones' element={<Headphones />}></Route>
