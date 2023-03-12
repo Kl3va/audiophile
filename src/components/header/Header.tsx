@@ -7,7 +7,10 @@ interface navProp {
 }
 
 interface headerProp {
-  logo: string
+  logo: {
+    img: string
+    link: string
+  }
   cartIcon: string
   menu: string
   navLinks: navProp[]
@@ -18,12 +21,15 @@ const Header = ({ logo, cartIcon, menu, navLinks }: headerProp) => {
     <header className={styles.header}>
       <div>
         <nav>
-          <button>
+          <div>
+            <a href=''></a>
             <img src={menu} alt='open navigation' />
-          </button>
+          </div>
         </nav>
         <div>
-          <img src={logo} alt='logo' />
+          <a href={logo.link}>
+            <img src={logo.img} alt='logo' />
+          </a>
         </div>
         <nav>
           <ul>
@@ -37,14 +43,14 @@ const Header = ({ logo, cartIcon, menu, navLinks }: headerProp) => {
           </ul>
         </nav>
         <div>
-          <button>
+          <div>
             <div>
               <img src={cartIcon} alt='add to cart' />
             </div>
             <span>
               <p>1</p>
             </span>
-          </button>
+          </div>
         </div>
       </div>
     </header>

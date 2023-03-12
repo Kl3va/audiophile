@@ -14,6 +14,7 @@ import Footer from 'components/footer/Footer'
 
 //DATA
 import { headerData } from 'components/header/headerData'
+import { homeData } from 'pages/home/homeData'
 
 //POP-UP CONTAINER
 import { ToastContainer } from 'react-toastify'
@@ -25,7 +26,7 @@ function App() {
       <ToastContainer position='top-center' autoClose={3000} />
       <Header {...headerData} />
       <Routes>
-        <Route path='/' element={<Home />}></Route>
+        <Route path='/' element={<Home {...homeData} />}></Route>
         <Route path='/headpones' element={<Headphones />}></Route>
         <Route path='/speakers' element={<Speakers />}></Route>
         <Route path='/earphones' element={<Earphones />}></Route>

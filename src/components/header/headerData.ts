@@ -3,7 +3,10 @@ import menuIcon from 'assets/starter-code/assets/shared/tablet/icon-hamburger.sv
 import cartIcon from 'assets/starter-code/assets/shared/desktop/icon-cart.svg'
 
 export const headerData = {
-  logo: logoIcon,
+  logo: {
+    img: logoIcon,
+    link: '/',
+  },
   menu: menuIcon,
   cartIcon,
   navLinks: [
