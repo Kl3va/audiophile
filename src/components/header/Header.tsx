@@ -1,10 +1,9 @@
 import React from 'react'
 import styles from 'components/header/header.module.scss'
 
-interface navProp {
-  text: string
-  navLink: string
-}
+//Navbar links component and props
+import NavLinks from 'components/nav-links/NavLinks'
+import { navbarLinksData } from 'components/nav-links/navbarLinksData'
 
 interface headerProp {
   logo: {
@@ -13,10 +12,9 @@ interface headerProp {
   }
   cartIcon: string
   menu: string
-  navLinks: navProp[]
 }
 
-const Header = ({ logo, cartIcon, menu, navLinks }: headerProp) => {
+const Header = ({ logo, cartIcon, menu }: headerProp) => {
   return (
     <header className={styles.header}>
       <div>
@@ -32,7 +30,7 @@ const Header = ({ logo, cartIcon, menu, navLinks }: headerProp) => {
           </a>
         </div>
         <nav>
-          <ul>
+          {/* <ul>
             {navLinks.map(({ text, navLink }, index) => {
               return (
                 <li key={index}>
@@ -40,7 +38,8 @@ const Header = ({ logo, cartIcon, menu, navLinks }: headerProp) => {
                 </li>
               )
             })}
-          </ul>
+          </ul>*/}
+          <NavLinks navbarLinksData={navbarLinksData} />
         </nav>
         <div>
           <div>
