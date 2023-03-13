@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from 'pages/home/home.module.scss'
+import NavSecondary from 'components/nav-secondary/NavSecondary'
+import { navSecondaryData } from 'components/nav-secondary/navSecondaryData'
 
 interface homeProps {
   spanText: string
@@ -49,9 +51,12 @@ const Home = ({
     <main className={styles.main}>
       <section className={styles.sectionHero}>
         <div className='hero'>
-          <div className='heroPrimary'></div>
+          <div className='heroPrimary'>jh</div>
           <div className='heroSecondary'></div>
         </div>
+      </section>
+      <section>
+        <NavSecondary navSecondaryData={navSecondaryData} />
       </section>
     </main>
   )
