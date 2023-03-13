@@ -1,7 +1,11 @@
 import React from 'react'
 import styles from 'pages/home/home.module.scss'
 import NavSecondary from 'components/nav-secondary/NavSecondary'
+import AudioGear from 'components/audio-gear/AudioGear'
+
+//Data
 import { navSecondaryData } from 'components/nav-secondary/navSecondaryData'
+import { audioGearData } from 'components/audio-gear/audioGearData'
 
 interface homeProps {
   spanText: string
@@ -57,6 +61,7 @@ const Home = ({
       </section>
       <section>
         <NavSecondary navSecondaryData={navSecondaryData} />
+        <AudioGear {...audioGearData} />
       </section>
     </main>
   )
