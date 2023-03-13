@@ -27,7 +27,7 @@ function App() {
       <Header {...headerData} />
       <Routes>
         <Route path='/' element={<Home {...homeData} />}></Route>
-        <Route path='/headpones' element={<Headphones />}></Route>
+        <Route path='/headphones' element={<Headphones />}></Route>
         <Route path='/speakers' element={<Speakers />}></Route>
         <Route path='/earphones' element={<Earphones />}></Route>
         <Route path='/checkout' element={<Checkout />}></Route>

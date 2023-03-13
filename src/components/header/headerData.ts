@@ -16,7 +16,7 @@ export const headerData = {
     },
     {
       text: 'HEADPHONES',
-      navLink: '/headpones',
+      navLink: '/headphones',
     },
     {
       text: 'SPEAKERS',
