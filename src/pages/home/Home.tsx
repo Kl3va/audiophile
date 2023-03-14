@@ -6,6 +6,7 @@ import AudioGear from 'components/audio-gear/AudioGear'
 //Data
 import { navSecondaryData } from 'components/nav-secondary/navSecondaryData'
 import { audioGearData } from 'components/audio-gear/audioGearData'
+import Button from 'components/button/Button'
 
 interface homeProps {
   spanText: string
@@ -54,15 +55,25 @@ const Home = ({
   return (
     <main className={styles.main}>
       <section className={styles.sectionHero}>
-        <div className='hero'>
-          <div className='heroPrimary'>jh</div>
-          <div className='heroSecondary'></div>
+        <div className={styles.hero}>
+          <div className={styles.heroPrimary}>
+            <span>{spanText}</span>
+            <h1>{productName}</h1>
+            <p>{description}</p>
+            <Button
+              className={styles.test}
+              btnText={btnHero.btnHeroText}
+              link={btnHero.btnHeroPath}
+            />
+          </div>
+          <div className={styles.heroSecondary}></div>
         </div>
       </section>
       <section>
         <NavSecondary navSecondaryData={navSecondaryData} />
-        <AudioGear {...audioGearData} />
       </section>
+
+      <AudioGear {...audioGearData} />
     </main>
   )
 }
