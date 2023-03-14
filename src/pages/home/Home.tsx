@@ -73,6 +73,53 @@ const Home = ({
         <NavSecondary navSecondaryData={navSecondaryData} />
       </section>
 
+      <section>
+        <div className={styles.features}>
+          <div>
+            <div>
+              <picture>
+                <source
+                  media='(min-width: 573px)'
+                  srcSet={zx9Details.desktop}
+                />
+                <source media='(min-width: 375px)' srcSet={zx9Details.tablet} />
+                <img src={zx9Details.mobile} alt='zx9-speaker' />
+              </picture>
+            </div>
+            <div>
+              <h2>{zx9Details.name}</h2>
+              <p>{zx9Details.text}</p>
+              <Button
+                className={styles.test}
+                link={zx9Details.zx9Btn.zx9BtnPath}
+                btnText={zx9Details.zx9Btn.zx9BtnText}
+              />
+            </div>
+          </div>
+          <div>
+            <div>
+              <h2>{zx7Details.name}</h2>
+              <Button
+                className={styles.test}
+                link={zx7Details.zx7Btn.zx7BtnPath}
+                btnText={zx7Details.zx7Btn.zx7BtnText}
+              />
+            </div>
+          </div>
+          <div>YX1 image </div>
+          <div>
+            <div>
+              <h2>{yx1Details.name}</h2>
+              <Button
+                className={styles.test}
+                link={yx1Details.yx1Btn.yx1BtnPath}
+                btnText={yx1Details.yx1Btn.yx1BtnText}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <AudioGear {...audioGearData} />
     </main>
   )
