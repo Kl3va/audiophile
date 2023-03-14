@@ -15,6 +15,7 @@ import Footer from 'components/footer/Footer'
 //DATA
 import { headerData } from 'components/header/headerData'
 import { homeData } from 'pages/home/homeData'
+import { footerData } from 'components/footer/footerData'
 
 //POP-UP CONTAINER
 import { ToastContainer } from 'react-toastify'
@@ -33,7 +34,7 @@ function App() {
         <Route path='/checkout' element={<Checkout />}></Route>
         <Route path='/product/:id' element={<Product />}></Route>
       </Routes>
-      <Footer />
+      <Footer {...footerData} />
     </Router>
   )
 }

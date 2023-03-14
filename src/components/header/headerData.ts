@@ -8,23 +8,5 @@ export const headerData = {
     link: '/',
   },
   menu: menuIcon,
-  cartIcon,
-  navLinks: [
-    {
-      text: 'HOME',
-      navLink: '/',
-    },
-    {
-      text: 'HEADPHONES',
-      navLink: '/headphones',
-    },
-    {
-      text: 'SPEAKERS',
-      navLink: '/speakers',
-    },
-    {
-      text: 'EARPHONES',
-      navLink: '/earphones',
-    },
-  ],
+  cartIcon  
 }

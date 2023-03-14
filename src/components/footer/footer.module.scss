@@ -1,1 +1,6 @@
-@use '../../globalStyles/variable.scss' as *
+@use '../../globalStyles/variable.scss' as *;
+
+.footerMain {
+  background-color: $color-black;
+  color: $color-primary;
+}

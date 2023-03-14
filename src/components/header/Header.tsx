@@ -20,7 +20,6 @@ const Header = ({ logo, cartIcon, menu }: headerProp) => {
       <div>
         <nav>
           <div>
-            <a href=''></a>
             <img src={menu} alt='open navigation' />
           </div>
         </nav>
