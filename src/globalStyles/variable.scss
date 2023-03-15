@@ -19,3 +19,9 @@ $font-weight-small: 400;
 //Breakpoints
 $breakpoint-mid: 43.75em; //700px
 $breakpoint-large: 62.5em; //1000px
+
+//Mixins
+@mixin containerWidth {
+  width: min(87.2%, 70rem);
+  margin: 0 auto;
+}

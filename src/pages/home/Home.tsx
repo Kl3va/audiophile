@@ -69,7 +69,7 @@ const Home = ({
           <div className={styles.heroSecondary}></div>
         </div>
       </section>
-      <section>
+      <section className={styles.secondarynav}>
         <NavSecondary navSecondaryData={navSecondaryData} />
       </section>
 
