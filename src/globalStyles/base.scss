@@ -5,6 +5,7 @@
 .h1-primary {
   font-size: 2.3rem;
   font-weight: inherit;
+  text-align: center;
 }
 
 .h1-secondary {
@@ -14,9 +15,9 @@
 
 p {
   font-size: 0.9rem;
-  font-weight: inherit;
-  opacity: 0.5;
+  opacity: 0.75;
   font-weight: $font-weight-medium;
+  line-height: 1.5rem;
 }
 
 *,

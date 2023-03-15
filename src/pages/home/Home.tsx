@@ -57,11 +57,11 @@ const Home = ({
       <section className={styles.sectionHero}>
         <div className={styles.hero}>
           <div className={styles.heroPrimary}>
-            <span>{spanText}</span>
-            <h1>{productName}</h1>
-            <p>{description}</p>
+            <span className={styles.spantext}>{spanText}</span>
+            <h1 className={styles.heading}>{productName}</h1>
+            <p className={styles.herotext}>{description}</p>
             <Button
-              className={styles.test}
+              className={styles.heroBtn}
               btnText={btnHero.btnHeroText}
               link={btnHero.btnHeroPath}
             />
