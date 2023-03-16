@@ -12,18 +12,22 @@ const AudioGear = ({ desktop, tablet, mobile, text }: Props) => {
   return (
     <section className={styles.section_audioGear}>
       <div className={styles.audioGear}>
-        <div>
+        <div className={styles.img_wrapper}>
           <picture>
             <source media='(min-width: 573px)' srcSet={desktop} />
             <source media='(min-width: 375px)' srcSet={tablet} />
-            <img src={mobile} alt='best audio gear' />
+            <img
+              src={mobile}
+              alt='best audio gear'
+              className={styles.audio_img}
+            />
           </picture>
         </div>
-        <div>
-          <h2>
+        <div className={styles.audio_description}>
+          <h2 className={styles.heading}>
             Bringing you the <span>best</span> audio gear
           </h2>
-          <p>{text}</p>
+          <p className={styles.text}>{text}</p>
         </div>
       </div>
     </section>

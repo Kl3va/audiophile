@@ -2,15 +2,10 @@
 
 //Typography
 
-.h1-primary {
-  font-size: 2.3rem;
-  font-weight: inherit;
-  text-align: center;
-}
-
-.h1-secondary {
-  font-size: 1.8rem;
-  font-weight: inherit;
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
 }
 
 p {

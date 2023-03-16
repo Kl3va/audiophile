@@ -7,3 +7,30 @@
 .audioGear {
   @include containerWidth();
 }
+
+.img_wrapper {
+  min-height: 18.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.audio_img {
+  height: 18.75rem;
+  border-radius: 0.5rem;
+}
+
+.heading {
+  font-size: 1.75rem;
+  line-height: 2.375rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+  margin-inline: auto;
+
+  span {
+    color: $color-dark-orange;
+  }
+}
+
+.text {
+  text-align: center;
+}
