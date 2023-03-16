@@ -62,6 +62,7 @@
   line-height: 2.5rem;
   text-align: center;
   letter-spacing: 1.3px;
+  text-transform: uppercase;
 }
 
 .herotext {
@@ -70,20 +71,126 @@
 }
 
 .heroBtn {
-  width: 10rem;
-  height: 3rem;
-  background-color: $color-dark-orange;
-  // border-radius: 0.2rem;
+  @include btnStyle($color-dark-orange, $color-primary);
 
-  display: grid;
-  place-items: center;
-
-  a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: $color-primary;
-    font-size: 0.81rem;
+  &:hover {
+    opacity: 0.8;
   }
 }
 
-//SECONDARY NAVIGATION
+//FEATURES SECTION
+.section_features {
+  margin-block: 5rem;
+}
+
+.features {
+  @include containerWidth();
+
+  & > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.speakerzx9 {
+  background-image: url('../../assets/starter-code/assets/home/desktop/pattern-circles.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center -7rem;
+  background-color: $color-dark-orange;
+  color: $color-primary;
+  min-height: 37.5rem;
+  border-radius: 0.5rem;
+  padding-block: 3.437rem;
+
+  display: grid;
+  justify-items: center;
+}
+
+.speakerzx9_wrapper {
+  margin-bottom: 2rem;
+  display: grid;
+  justify-items: center;
+
+  &__img {
+    width: 10.75rem;
+  }
+}
+
+.speakerzx9_details {
+  width: 85.889%;
+  display: grid;
+  justify-items: center;
+}
+
+.speakerzx9_heading {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  letter-spacing: 1.285px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  width: 7ch;
+}
+
+.speakerzx9_text {
+  opacity: 0.75;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.speakerzx9_btn {
+  @include btnStyle($color-black, $color-primary);
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.speakerzx7 {
+  min-height: 20rem;
+  padding-left: 1.437rem;
+  border-radius: 0.5rem;
+  background-image: url('../../assets/starter-code/assets/home/mobile/image-speaker-zx7.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  align-items: center;
+
+  &__heading {
+    color: $color-black;
+    letter-spacing: 2px;
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    @include btnStyle(transperent, $color-black);
+    border: 2px solid $color-black;
+
+    &:hover {
+      background-color: $color-black;
+
+      a {
+        color: $color-primary;
+      }
+    }
+  }
+}
+
+.bgyx1 {
+  min-height: 12.5rem;
+  background-image: url('../../assets/starter-code/assets/home/mobile/image-earphones-yx1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0.5rem;
+}
+
+.speakeryx1 {
+  min-height: 12.5rem;
+  border-radius: 0.5rem;
+  background-color: $color-light-grey;
+  display: grid;
+  align-items: center;
+  padding-left: 1.437rem;
+}

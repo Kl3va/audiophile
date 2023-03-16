@@ -25,3 +25,22 @@ $breakpoint-large: 62.5em; //1000px
   width: min(87.2%, 70rem);
   margin: 0 auto;
 }
+
+@mixin btnStyle($bgColor, $textColor) {
+  width: 10rem;
+  height: 3rem;
+  background-color: $bgColor;
+  // border-radius: 0.2rem;
+
+  display: grid;
+  place-items: center;
+  transition: all ease-in 0.2s;
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $textColor;
+    font-size: 0.81rem;
+    transition: all ease-in 0.2s;
+  }
+}

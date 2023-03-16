@@ -69,49 +69,54 @@ const Home = ({
           <div className={styles.heroSecondary}></div>
         </div>
       </section>
-      <section className={styles.secondarynav}>
+      <section className={styles.secondary_nav}>
         <NavSecondary navSecondaryData={navSecondaryData} />
       </section>
 
-      <section>
+      <section className={styles.section_features}>
         <div className={styles.features}>
-          <div>
-            <div>
+          <div className={styles.speakerzx9}>
+            <div className={styles.speakerzx9_wrapper}>
               <picture>
                 <source
-                  media='(min-width: 573px)'
+                  media='(min-width: 1200px)'
                   srcSet={zx9Details.desktop}
                 />
-                <source media='(min-width: 375px)' srcSet={zx9Details.tablet} />
-                <img src={zx9Details.mobile} alt='zx9-speaker' />
+                <source media='(min-width: 700px)' srcSet={zx9Details.tablet} />
+                <img
+                  src={zx9Details.mobile}
+                  alt='zx9-speaker'
+                  className={styles.speakerzx9_wrapper__img}
+                />
               </picture>
             </div>
-            <div>
-              <h2>{zx9Details.name}</h2>
-              <p>{zx9Details.text}</p>
+            <div className={styles.speakerzx9_details}>
+              <h2 className={styles.speakerzx9_heading}>{zx9Details.name}</h2>
+              <p className={styles.speakerzx9_text}>{zx9Details.text}</p>
               <Button
-                className={styles.test}
+                className={styles.speakerzx9_btn}
                 link={zx9Details.zx9Btn.zx9BtnPath}
                 btnText={zx9Details.zx9Btn.zx9BtnText}
               />
             </div>
           </div>
-          <div>
-            <div>
-              <h2>{zx7Details.name}</h2>
+
+          <div className={styles.speakerzx7}>
+            <div className={styles.speakerzx7__wrapper}>
+              <h2 className={styles.speakerzx7__heading}>{zx7Details.name}</h2>
               <Button
-                className={styles.test}
+                className={styles.speakerzx7__btn}
                 link={zx7Details.zx7Btn.zx7BtnPath}
                 btnText={zx7Details.zx7Btn.zx7BtnText}
               />
             </div>
           </div>
-          <div>YX1 image </div>
-          <div>
-            <div>
-              <h2>{yx1Details.name}</h2>
+          <div className={styles.bgyx1}></div>
+          <div className={styles.speakeryx1}>
+            <div className={styles.speakerzx7__wrapper}>
+              <h2 className={styles.speakerzx7__heading}>{yx1Details.name}</h2>
               <Button
-                className={styles.test}
+                className={styles.speakerzx7__btn}
                 link={yx1Details.yx1Btn.yx1BtnPath}
                 btnText={yx1Details.yx1Btn.yx1BtnText}
               />

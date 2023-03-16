@@ -1,0 +1,9 @@
+@use '../../globalStyles/variable.scss' as *;
+
+.section_audioGear {
+  margin-block: 5rem;
+}
+
+.audioGear {
+  @include containerWidth();
+}

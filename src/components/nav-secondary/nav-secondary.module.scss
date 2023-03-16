@@ -55,5 +55,10 @@
     align-items: center;
     color: $color-black;
     opacity: 0.5;
+    transition: color ease-out 0.2s;
+
+    &:hover {
+      color: $color-dark-orange;
+    }
   }
 }
