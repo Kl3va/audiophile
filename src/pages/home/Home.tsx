@@ -66,7 +66,6 @@ const Home = ({
               link={btnHero.btnHeroPath}
             />
           </div>
-          <div className={styles.heroSecondary}></div>
         </div>
       </section>
       <section className={styles.secondary_nav}>

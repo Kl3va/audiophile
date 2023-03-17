@@ -14,6 +14,15 @@
 //HERO SECTION
 .sectionHero {
   background-color: $color-black;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    background-image: url('../../assets/starter-code/assets/home/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center -4rem;
+    height: 39.5rem;
+    background-color: none;
+  }
 }
 
 .hero {
@@ -29,6 +38,23 @@
 
   display: grid;
   place-items: center;
+
+  @media only screen and (min-width: $breakpoint-small) {
+    background-image: url('../../assets/starter-code/assets/home/tablet/image-tab.png');
+  }
+
+  @media only screen and (min-width: $breakpoint-medium) {
+    background-position: 50% -7rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    @include containerWidth();
+    min-height: 39.5rem;
+    //grid-template-columns: 1fr;
+    justify-items: start;
+    padding: 0;
+    background-image: none;
+  }
 }
 
 .heroPrimary {
@@ -45,6 +71,13 @@
 
 .heroSecondary {
   display: none;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    display: block;
+    // background-image: url('../../assets/starter-code/assets/home/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 .spantext {
@@ -62,6 +95,12 @@
   line-height: 2.5rem;
   text-align: center;
   letter-spacing: 1.3px;
+
+  @media only screen and (min-width: $breakpoint-large) {
+    font-size: 3.5rem;
+    line-height: 3.625rem;
+    letter-spacing: 2px;
+  }
 }
 
 .herotext {

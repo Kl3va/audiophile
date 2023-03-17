@@ -44,7 +44,7 @@ const Footer = ({ logo, text, copyright, socialIcons }: footerProps) => {
 
           <div className={styles.social_icons}>
             {socialIcons.map((icon, index) => {
-              return <img src={icon} alt='social icon' />
+              return <img src={icon} key={index} alt='social icon' />
             })}
           </div>
         </div>
