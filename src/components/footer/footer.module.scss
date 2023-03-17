@@ -4,3 +4,61 @@
   background-color: $color-black;
   color: $color-primary;
 }
+
+.footer {
+  @include containerWidth();
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 2.37rem;
+}
+
+.footer_aside {
+  &__bg {
+    height: 0.25rem;
+    width: 6.312rem;
+    background-color: $color-dark-orange;
+    margin: 0 auto;
+  }
+}
+
+.footer__navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.nav {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+.footer__description {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.text {
+  text-align: center;
+}
+
+.copyright {
+  margin-inline: auto;
+}
+
+.social_icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+
+  img {
+    width: 1.5rem;
+  }
+}

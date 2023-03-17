@@ -1,1 +1,11 @@
 @use '../../globalStyles/variable.scss' as *;
+
+.link {
+  list-style: none;
+  a {
+    text-decoration: none;
+    color: $color-primary;
+    font-size: 0.81rem;
+    letter-spacing: 2px;
+  }
+}

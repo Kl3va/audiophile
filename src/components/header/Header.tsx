@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styles from 'components/header/header.module.scss'
 
 //Navbar links component and props
@@ -24,9 +25,9 @@ const Header = ({ logo, cartIcon, menu }: headerProp) => {
           </div>
         </nav>
         <div>
-          <a href={logo.link}>
+          <Link to={logo.link}>
             <img src={logo.img} alt='logo' />
-          </a>
+          </Link>
         </div>
         <nav>
           {/* <ul>
@@ -38,7 +39,7 @@ const Header = ({ logo, cartIcon, menu }: headerProp) => {
               )
             })}
           </ul>*/}
-          <NavLinks navbarLinksData={navbarLinksData} />
+          <NavLinks navbarLinksData={navbarLinksData} flex={styles.header_links}/>
         </nav>
         <div>
           <div>

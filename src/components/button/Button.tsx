@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 interface buttonProps {
   className: CSSModuleClasses[string]
@@ -9,7 +10,7 @@ interface buttonProps {
 const Button = ({ className, link, btnText }: buttonProps) => {
   return (
     <div className={className}>
-      <a href={link}>{btnText}</a>
+      <Link to={link}>{btnText}</Link>
     </div>
   )
 }

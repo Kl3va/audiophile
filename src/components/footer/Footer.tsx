@@ -1,5 +1,6 @@
-import { navbarLinksData } from 'components/nav-links/navbarLinksData'
 import React from 'react'
+import { navbarLinksData } from 'components/nav-links/navbarLinksData'
+import { Link } from 'react-router-dom'
 import NavLinks from 'components/nav-links/NavLinks'
 import styles from 'components/footer/footer.module.scss'
 
@@ -17,29 +18,31 @@ const Footer = ({ logo, text, copyright, socialIcons }: footerProps) => {
   return (
     <footer className={styles.footerMain}>
       <div className={styles.footer}>
-        <div>
-          <div>h</div>
+        <div className={styles.footer_aside}>
+          <div className={styles.footer_aside__bg}></div>
         </div>
-        <div>
+        <div className={styles.footer__navigation}>
           <div>
-            <a href='/'>
+            <Link to='/'>
               <img src={logo.img} alt='logo' />
-            </a>
+            </Link>
           </div>
-          <div>
-            <nav>
-              <NavLinks navbarLinksData={navbarLinksData} />
-            </nav>
-          </div>
+
+          <nav className={styles.nav}>
+            <NavLinks
+              navbarLinksData={navbarLinksData}
+              flex={styles.footer_links}
+            />
+          </nav>
         </div>
-        <div>
+        <div className={styles.footer__description}>
           <div>
-            <p>{text}</p>
+            <p className={styles.text}>{text}</p>
           </div>
-          <div>
-            <p>{copyright}</p>
-          </div>
-          <div>
+
+          <p className={styles.copyright}>{copyright}</p>
+
+          <div className={styles.social_icons}>
             {socialIcons.map((icon, index) => {
               return <img src={icon} alt='social icon' />
             })}
