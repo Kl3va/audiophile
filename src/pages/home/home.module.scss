@@ -15,14 +15,12 @@
 .sectionHero {
   background-color: $color-black;
 
-  @media only screen and (min-width: $breakpoint-largest) {
+  /* @media only screen and (min-width: $breakpoint-largest) {
     background-image: url('../../assets/starter-code/assets/home/desktop/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center -4rem;
-    height: 39.5rem;
-    background-color: none;
-  }
+  }*/
 }
 
 .hero {
@@ -36,8 +34,10 @@
   background-size: cover;
   background-position: 50% -4rem;
 
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //place-items: center;
 
   @media only screen and (min-width: $breakpoint-small) {
     background-image: url('../../assets/starter-code/assets/home/tablet/image-tab.png');
@@ -49,9 +49,11 @@
 
   @media only screen and (min-width: $breakpoint-largest) {
     @include containerWidth();
-    min-height: 39.5rem;
-    //grid-template-columns: 1fr;
-    justify-items: start;
+    //min-height: 39.5rem;
+    // grid-template-columns: 1fr 1fr;
+    //justify-items: start;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0;
     background-image: none;
   }
@@ -67,16 +69,24 @@
   & > * {
     margin-bottom: 1.5rem;
   }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    //text-align: left;
+    align-items: flex-start;
+  }
 }
 
 .heroSecondary {
   display: none;
 
   @media only screen and (min-width: $breakpoint-largest) {
-    display: block;
-    // background-image: url('../../assets/starter-code/assets/home/desktop/image-hero.jpg');
+    display: flex;
+    min-height: 39.5rem;
+    background-image: url('../../assets/starter-code/assets/home/desktop/headphone-hero-image.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    background-position: center center;
+    width: 50%;
   }
 }
 
@@ -101,11 +111,21 @@
     line-height: 3.625rem;
     letter-spacing: 2px;
   }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    text-align: left;
+  }
 }
 
 .herotext {
   opacity: 0.75;
   text-align: center;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    text-align: left;
+    margin-bottom: 2.5rem;
+    max-width: 38ch;
+  }
 }
 
 .heroBtn {
