@@ -1,4 +1,4 @@
-import zx9SpeakerDesktopImg from 'assets/starter-code/assets/home/desktop/image-speaker-zx9.png'
+import zx9SpeakerDesktopImg from 'assets/starter-code/assets/home/desktop/image-speaker-zx9i.webp'
 import zx9SpeakerTabletImg from 'assets/starter-code/assets/home/tablet/image-speaker-zx9.png'
 import zx9SpeakerMobileImg from 'assets/starter-code/assets/home/mobile/image-speaker-zx9.png'
 

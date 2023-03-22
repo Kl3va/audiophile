@@ -79,10 +79,10 @@ const Home = ({
             <div className={styles.speakerzx9_wrapper}>
               <picture>
                 <source
-                  media='(min-width: 1200px)'
+                  media='(min-width: 1000px)'
                   srcSet={zx9Details.desktop}
                 />
-                <source media='(min-width: 700px)' srcSet={zx9Details.tablet} />
+                <source media='(min-width: 750px)' srcSet={zx9Details.tablet} />
                 <img
                   src={zx9Details.mobile}
                   alt='zx9-speaker'
@@ -111,15 +111,20 @@ const Home = ({
               />
             </div>
           </div>
-          <div className={styles.bgyx1}></div>
-          <div className={styles.speakeryx1}>
-            <div className={styles.speakerzx7__wrapper}>
-              <h2 className={styles.speakerzx7__heading}>{yx1Details.name}</h2>
-              <Button
-                className={styles.speakerzx7__btn}
-                link={yx1Details.yx1Btn.yx1BtnPath}
-                btnText={yx1Details.yx1Btn.yx1BtnText}
-              />
+
+          <div className={styles.yx1_wrapper}>
+            <div className={styles.bgyx1}></div>
+            <div className={styles.speakeryx1}>
+              <div className={styles.speakerzx7__wrapper}>
+                <h2 className={styles.speakerzx7__heading}>
+                  {yx1Details.name}
+                </h2>
+                <Button
+                  className={styles.speakerzx7__btn}
+                  link={yx1Details.yx1Btn.yx1BtnPath}
+                  btnText={yx1Details.yx1Btn.yx1BtnText}
+                />
+              </div>
             </div>
           </div>
         </div>

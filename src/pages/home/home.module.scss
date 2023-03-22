@@ -139,6 +139,10 @@
 //FEATURES SECTION
 .section_features {
   margin-block: 5rem;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    margin-block: 10.5rem;
+  }
 }
 
 .features {
@@ -146,6 +150,10 @@
 
   & > *:not(:last-child) {
     margin-bottom: 1.5rem;
+
+    @media only screen and (min-width: $breakpoint-largest) {
+      margin-bottom: 2.5rem;
+    }
   }
 }
 
@@ -162,6 +170,13 @@
 
   display: grid;
   justify-items: center;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    display: flex;
+    min-height: 35rem;
+    justify-content: space-around;
+    padding-block: 0;
+  }
 }
 
 .speakerzx9_wrapper {
@@ -171,6 +186,15 @@
 
   &__img {
     width: 10.75rem;
+
+    @media only screen and (min-width: $breakpoint-largest) {
+      width: 25.625rem;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    margin-bottom: 0;
+    align-self: flex-end;
   }
 }
 
@@ -178,6 +202,13 @@
   width: 85.889%;
   display: grid;
   justify-items: center;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    width: 21.81rem;
+    height: 18.93rem;
+    justify-items: start;
+    align-self: center;
+  }
 }
 
 .speakerzx9_heading {
@@ -187,12 +218,30 @@
   text-align: center;
   margin-bottom: 1.5rem;
   width: 7ch;
+
+  @media only screen and (min-width: $breakpoint-larger) {
+    font-size: 3.5rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    text-align: left;
+    line-height: 3.5rem;
+  }
 }
 
 .speakerzx9_text {
   opacity: 0.75;
   text-align: center;
   margin-bottom: 1.5rem;
+
+  @media only screen and (min-width: $breakpoint-larger) {
+    width: 35ch;
+    margin-bottom: 2.5rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    text-align: left;
+  }
 }
 
 .speakerzx9_btn {
@@ -213,6 +262,16 @@
 
   display: grid;
   align-items: center;
+
+  @media only screen and (min-width: $breakpoint-larger) {
+    background-image: url('../../assets/starter-code/assets/home/tablet/image-speaker-zx7.jpg');
+    padding-left: 3.875rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    background-image: url('../../assets/starter-code/assets/home/desktop/image-speaker-zx7.jpg');
+    padding-left: 5.93rem;
+  }
 
   &__heading {
     color: $color-black;
@@ -236,12 +295,39 @@
   }
 }
 
+.yx1_wrapper {
+  @media only screen and (min-width: $breakpoint-larger) {
+    display: flex;
+    gap: 0.6875rem;
+
+    & > * {
+      flex: 1;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    gap: 1.875rem;
+  }
+}
+
 .bgyx1 {
   min-height: 12.5rem;
   background-image: url('../../assets/starter-code/assets/home/mobile/image-earphones-yx1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  @media only screen and (min-width: $breakpoint-larger) {
+    margin-bottom: 0;
+
+    min-height: 20rem;
+    background-image: url('../../assets/starter-code/assets/home/tablet/image-earphones-yx1.jpg');
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    background-image: url('../../assets/starter-code/assets/home/desktop/image-earphones-yx1.jpg');
+  }
 }
 
 .speakeryx1 {
@@ -251,4 +337,13 @@
   display: grid;
   align-items: center;
   padding-left: 1.437rem;
+
+  @media only screen and (min-width: $breakpoint-larger) {
+    min-height: 20rem;
+    padding-left: 2.56rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-larger) {
+    padding-left: 5.93rem;
+  }
 }
