@@ -7,6 +7,24 @@
   & > *:not(:last-child) {
     margin-bottom: 4.25rem;
   }
+
+  @media only screen and (min-width: $breakpoint-larger) {
+    display: flex;
+    gap: 0.625rem;
+    margin-block-start: 7rem;
+
+    & > * {
+      flex: 1;
+    }
+
+    & > *:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    gap: 1.875rem;
+  }
 }
 
 .wrapper {
