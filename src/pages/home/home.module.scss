@@ -254,7 +254,6 @@
 
 .speakerzx7 {
   min-height: 20rem;
-  padding-left: 1.437rem;
   border-radius: 0.5rem;
   background-image: url('../../assets/starter-code/assets/home/mobile/image-speaker-zx7.jpg');
   background-repeat: no-repeat;
@@ -265,12 +264,10 @@
 
   @media only screen and (min-width: $breakpoint-larger) {
     background-image: url('../../assets/starter-code/assets/home/tablet/image-speaker-zx7.jpg');
-    padding-left: 3.875rem;
   }
 
   @media only screen and (min-width: $breakpoint-largest) {
     background-image: url('../../assets/starter-code/assets/home/desktop/image-speaker-zx7.jpg');
-    padding-left: 5.93rem;
   }
 
   &__heading {
@@ -336,14 +333,21 @@
   background-color: $color-light-grey;
   display: grid;
   align-items: center;
-  padding-left: 1.437rem;
 
   @media only screen and (min-width: $breakpoint-larger) {
     min-height: 20rem;
-    padding-left: 2.56rem;
   }
+}
+
+.speakerzx7__wrapper {
+  max-width: 15.4375rem;
+  margin-left: 1.437rem;
 
   @media only screen and (min-width: $breakpoint-larger) {
-    padding-left: 5.93rem;
+    margin-left: 2.56rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    margin-left: 5.93rem;
   }
 }

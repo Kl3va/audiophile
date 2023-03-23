@@ -15,7 +15,7 @@ const AudioGear = ({ desktop, tablet, mobile, text }: Props) => {
         <div className={styles.img_wrapper}>
           <picture>
             <source media='(min-width: 1000px)' srcSet={desktop} />
-            <source media='(min-width: 400px)' srcSet={tablet} />
+            <source media='(min-width: 750px)' srcSet={tablet} />
             <img
               src={mobile}
               alt='best audio gear'
