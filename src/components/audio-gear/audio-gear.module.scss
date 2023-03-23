@@ -11,17 +11,41 @@
 
 .audioGear {
   @include containerWidth();
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 }
 
 .img_wrapper {
   min-height: 18.75rem;
   margin-bottom: 2.5rem;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    margin-bottom: 0;
+    min-height: 36.75rem;
+    flex-basis: 33.75rem;
+  }
 }
 
 .audio_img {
   height: 18.75rem;
   width: 100vw;
   border-radius: 0.5rem;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    height: 36.75rem;
+  }
+}
+
+.audio_description {
+  @media only screen and (min-width: $breakpoint-largest) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .heading {
@@ -40,6 +64,12 @@
     width: 20ch;
     margin-inline: auto;
   }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    max-width: 18ch;
+    text-align: left;
+    font-size: 2.5rem;
+  }
 }
 
 .text {
@@ -48,5 +78,11 @@
   @media only screen and (min-width: $breakpoint-larger) {
     width: 60ch;
     margin: 0 auto;
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    text-align: left;
+    width: 47ch;
+    margin-inline: 0;
   }
 }
