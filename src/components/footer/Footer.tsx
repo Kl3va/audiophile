@@ -36,7 +36,7 @@ const Footer = ({ logo, text, copyright, socialIcons }: footerProps) => {
           </nav>
         </div>
         <div className={styles.footer__description}>
-          <div>
+          <div className={styles.footer__text_wrapper}>
             <p className={styles.text}>{text}</p>
           </div>
 
