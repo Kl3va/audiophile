@@ -23,7 +23,33 @@ const Headphones = ({ headphonesData }: HeadphonesProps) => {
     <main>
       <SecondaryHero heading='Headphones' />
       <section className={styles.section_category}>
-        <div className={styles.category}></div>
+        <div className={styles.category_wrapper}>
+          {headphonesData.map((headphone, index) => {
+            const { productImg, title, heading, description, btn } = headphone
+            return (
+              <div className={styles.category}>
+                <div className={styles.img_wrapper}>
+                  <picture>
+                    <source
+                      media='(min-width: 1000px)'
+                      srcSet={productImg.desktop}
+                    />
+                    <source
+                      media='(min-width: 750px)'
+                      srcSet={productImg.tablet}
+                    />
+                    <img
+                      src={productImg.mobile}
+                      alt='zx9-speaker'
+                      className={styles.product_category__img}
+                    />
+                  </picture>
+                </div>
+                <div className={styles.product_content}></div>
+              </div>
+            )
+          })}
+        </div>
       </section>
       <section>
         <NavSecondary navSecondaryData={navSecondaryData} />
