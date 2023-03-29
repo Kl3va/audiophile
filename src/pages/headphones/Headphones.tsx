@@ -4,6 +4,9 @@ import SecondaryHero from 'components/secondary-hero/SecondaryHero'
 import NavSecondary from 'components/nav-secondary/NavSecondary'
 import AudioGear from 'components/audio-gear/AudioGear'
 
+//STYLES
+import styles from 'pages/headphones/headphones.module.scss'
+
 //DATA
 import { navSecondaryData } from 'components/nav-secondary/navSecondaryData'
 import { audioGearData } from 'components/audio-gear/audioGearData'
@@ -19,7 +22,9 @@ const Headphones = ({ headphonesData }: HeadphonesProps) => {
   return (
     <main>
       <SecondaryHero heading='Headphones' />
-      <section></section>
+      <section className={styles.section_category}>
+        <div className={styles.category}></div>
+      </section>
       <section>
         <NavSecondary navSecondaryData={navSecondaryData} />
       </section>

@@ -1,0 +1,9 @@
+@use '../../globalStyles/variable.scss' as *;
+
+.section_category {
+  width: 100%;
+}
+
+.category {
+  @include containerWidth();
+}
