@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from 'components/nav-secondary/nav-secondary.module.scss'
+import { Link } from 'react-router-dom'
 
 export interface Props {
   navSecondaryData: navProps[]
@@ -25,12 +26,12 @@ const NavSecondary = ({ navSecondaryData }: Props) => {
             </div>
             <h2 className={styles.heading}>{category}</h2>
             <div className={styles.linkwrapper}>
-              <a href={link}>
+              <Link to={link}>
                 {text}
                 <span className={styles.iconwrapper}>
                   <img src={iconRight} alt='icon-arrow-right' />
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         )

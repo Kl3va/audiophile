@@ -1,14 +1,25 @@
 import React from 'react'
+//COMPONENTS
 import SecondaryHero from 'components/secondary-hero/SecondaryHero'
+import NavSecondary from 'components/nav-secondary/NavSecondary'
+import AudioGear from 'components/audio-gear/AudioGear'
 
-type Props = {}
+//DATA
+import { navSecondaryData } from 'components/nav-secondary/navSecondaryData'
+import { audioGearData } from 'components/audio-gear/audioGearData'
+
+interface Props {}
 
 const Headphones = (props: Props) => {
   return (
-    <div>
+    <main>
       Headphones
       <SecondaryHero />
-    </div>
+      <section>
+        <NavSecondary navSecondaryData={navSecondaryData} />
+      </section>
+      <AudioGear {...audioGearData} />
+    </main>
   )
 }
 

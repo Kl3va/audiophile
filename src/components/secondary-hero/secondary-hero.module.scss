@@ -1,0 +1,14 @@
+@use '../../globalStyles/variable.scss' as *;
+
+.section_hero {
+  background-color: $color-black;
+  color: $color-primary;
+
+  display: grid;
+  place-items: center;
+  min-height: 6.375rem;
+}
+
+.secondary_heading {
+  font-size: 1.75rem;
+}
