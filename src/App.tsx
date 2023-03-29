@@ -20,6 +20,7 @@ import { footerData } from 'components/footer/footerData'
 //POP-UP CONTAINER
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { headphonesData } from 'pages/headphones/headphonesData'
 
 function App() {
   return (
@@ -28,7 +29,10 @@ function App() {
       <Header {...headerData} />
       <Routes>
         <Route path='/' element={<Home {...homeData} />}></Route>
-        <Route path='/headphones' element={<Headphones />}></Route>
+        <Route
+          path='/headphones'
+          element={<Headphones headphonesData={headphonesData} />}
+        ></Route>
         <Route path='/speakers' element={<Speakers />}></Route>
         <Route path='/earphones' element={<Earphones />}></Route>
         <Route path='/checkout' element={<Checkout />}></Route>

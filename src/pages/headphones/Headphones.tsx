@@ -8,13 +8,18 @@ import AudioGear from 'components/audio-gear/AudioGear'
 import { navSecondaryData } from 'components/nav-secondary/navSecondaryData'
 import { audioGearData } from 'components/audio-gear/audioGearData'
 
-interface Props {}
+//TYPES
+import { productCategory } from 'types/productCategory'
 
-const Headphones = (props: Props) => {
+interface HeadphonesProps {
+  headphonesData: productCategory[]
+}
+
+const Headphones = ({ headphonesData }: HeadphonesProps) => {
   return (
     <main>
-      Headphones
-      <SecondaryHero />
+      <SecondaryHero heading='Headphones' />
+      <section></section>
       <section>
         <NavSecondary navSecondaryData={navSecondaryData} />
       </section>

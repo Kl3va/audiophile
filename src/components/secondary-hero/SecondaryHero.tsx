@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from 'components/secondary-hero/secondary-hero.module.scss'
 
-interface Props {}
+interface Props {
+  heading: string
+}
 
-const SecondaryHero = (props: Props) => {
+const SecondaryHero = ({ heading }: Props) => {
   return (
     <section className={styles.section_hero}>
-      <h1 className={styles.secondary_heading}>Section HEro</h1>
+      <h1 className={styles.secondary_heading}>{heading}</h1>
     </section>
   )
 }

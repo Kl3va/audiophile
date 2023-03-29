@@ -4,7 +4,7 @@ export interface productCategory {
     tablet: string
     desktop: string
   }
-  title: 'New product' | null
+  title?: string | null
   heading: string
   description: string
   btn: {
