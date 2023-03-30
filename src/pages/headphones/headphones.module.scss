@@ -2,20 +2,47 @@
 
 .section_category {
   margin-block: 4rem 8rem;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    margin-block: 10rem 14rem;
+  }
 }
 
 .category_wrapper {
   & > *:not(:last-child) {
     margin-bottom: 7.5rem;
+
+    @media only screen and (min-width: $breakpoint-largest) {
+      margin-bottom: 10rem;
+    }
   }
 }
 
 .category {
   @include containerWidth();
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    display: flex;
+    //justify-content: space-between;
+    gap: 7.8rem;
+  }
+
+  &:nth-child(even) {
+    @media only screen and (min-width: $breakpoint-largest) {
+      display: flex;
+      flex-direction: row-reverse;
+      //justify-content: space-between;
+      gap: 7.8rem;
+    }
+  }
 }
 
 .img_wrapper {
   margin-bottom: 2rem;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    margin-bottom: 0;
+  }
 }
 
 .product_category__img {
@@ -28,6 +55,12 @@
 
   & > *:not(:last-child) {
     margin-bottom: 1.5rem;
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    max-width: 27.8125rem;
+    align-self: center;
+    justify-items: flex-start;
   }
 }
 
@@ -44,6 +77,12 @@
   font-size: 1.75rem;
   line-height: 2.375rem;
   text-align: center;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    font-size: 2.5rem;
+    text-align: left;
+    width: 10ch;
+  }
 }
 
 .description {
@@ -51,6 +90,11 @@
 
   @media only screen and (min-width: $breakpoint-larger) {
     width: 90%;
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    width: 100%;
+    text-align: left;
   }
 }
 
