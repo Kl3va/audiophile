@@ -3,6 +3,7 @@ export interface productCategory {
     mobile: string
     tablet: string
     desktop: string
+    alt: string
   }
   title?: string | null
   heading: string

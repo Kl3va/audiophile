@@ -3,6 +3,7 @@ import React from 'react'
 import SecondaryHero from 'components/secondary-hero/SecondaryHero'
 import NavSecondary from 'components/nav-secondary/NavSecondary'
 import AudioGear from 'components/audio-gear/AudioGear'
+import Button from 'components/button/Button'
 
 //STYLES
 import styles from 'pages/headphones/headphones.module.scss'
@@ -27,7 +28,7 @@ const Headphones = ({ headphonesData }: HeadphonesProps) => {
           {headphonesData.map((headphone, index) => {
             const { productImg, title, heading, description, btn } = headphone
             return (
-              <div className={styles.category}>
+              <div className={styles.category} key={index}>
                 <div className={styles.img_wrapper}>
                   <picture>
                     <source
@@ -40,12 +41,21 @@ const Headphones = ({ headphonesData }: HeadphonesProps) => {
                     />
                     <img
                       src={productImg.mobile}
-                      alt='zx9-speaker'
+                      alt={productImg.alt}
                       className={styles.product_category__img}
                     />
                   </picture>
                 </div>
-                <div className={styles.product_content}></div>
+                <div className={styles.product_content}>
+                  <span className={styles.title}>{title}</span>
+                  <h2 className={styles.heading}>{heading}</h2>
+                  <p className={styles.description}>{description}</p>
+                  <Button
+                    className={styles.btn}
+                    link={btn.btnPath}
+                    btnText={btn.btnText}
+                  />
+                </div>
               </div>
             )
           })}

@@ -1,9 +1,59 @@
 @use '../../globalStyles/variable.scss' as *;
 
 .section_category {
-  width: 100%;
+  margin-block: 4rem 8rem;
+}
+
+.category_wrapper {
+  & > *:not(:last-child) {
+    margin-bottom: 7.5rem;
+  }
 }
 
 .category {
   @include containerWidth();
+}
+
+.img_wrapper {
+  margin-bottom: 2rem;
+}
+
+.product_category__img {
+  border-radius: 0.5rem;
+}
+
+.product_content {
+  display: grid;
+  justify-items: center;
+
+  & > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.title {
+  text-align: center;
+  color: $color-dark-orange;
+  font-weight: $font-weight-small;
+  letter-spacing: 0.625rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.heading {
+  font-size: 1.75rem;
+  line-height: 2.375rem;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+}
+
+.btn {
+  @include btnStyle($color-dark-orange, $color-primary);
+
+  &:hover {
+    opacity: 0.8;
+  }
 }

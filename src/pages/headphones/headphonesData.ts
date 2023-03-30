@@ -20,6 +20,7 @@ export const headphonesData = [
       mobile: xx99mark2Mobile,
       tablet: xx99mark2Tablet,
       desktop: xx99mark2Desktop,
+      alt: 'image of xx99-mark-2',
     },
     title: 'New product',
     heading: 'XX99 Mark II Headphones',
@@ -35,8 +36,9 @@ export const headphonesData = [
       mobile: xx99mark1Mobile,
       tablet: xx99mark1Tablet,
       desktop: xx99mark1Desktop,
+      alt: 'image of xx99-mark-1',
     },
-    
+
     heading: 'XX99 Mark I Headphones',
     description:
       'As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.',
@@ -50,8 +52,9 @@ export const headphonesData = [
       mobile: xx59Mobile,
       tablet: xx59Tablet,
       desktop: xx59Desktop,
+      alt: 'image of xx59',
     },
-    
+
     heading: 'XX59 Headphones',
     description:
       'Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.',
