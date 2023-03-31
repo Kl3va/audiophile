@@ -24,6 +24,7 @@ import 'react-toastify/dist/ReactToastify.css'
 //DATA
 import { headphonesData } from 'pages/headphones/headphonesData'
 import { speakersData } from 'pages/speakers/speakersData'
+import { earphonesData } from 'pages/earphones/earphonesData'
 
 function App() {
   return (
@@ -36,8 +37,14 @@ function App() {
           path='/headphones'
           element={<Headphones headphonesData={headphonesData} />}
         ></Route>
-        <Route path='/speakers' element={<Speakers speakersData={speakersData}/>}></Route>
-        <Route path='/earphones' element={<Earphones />}></Route>
+        <Route
+          path='/speakers'
+          element={<Speakers speakersData={speakersData} />}
+        ></Route>
+        <Route
+          path='/earphones'
+          element={<Earphones earphonesData={earphonesData} />}
+        ></Route>
         <Route path='/checkout' element={<Checkout />}></Route>
         <Route path='/product/:id' element={<Product />}></Route>
       </Routes>
