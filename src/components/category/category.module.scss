@@ -1,24 +1,6 @@
 @use '../../globalStyles/variable.scss' as *;
 
-.section_category {
-  margin-block: 4rem 8rem;
-
-  @media only screen and (min-width: $breakpoint-largest) {
-    margin-block: 10rem 14rem;
-  }
-}
-
-.category_wrapper {
-  & > *:not(:last-child) {
-    margin-bottom: 7.5rem;
-
-    @media only screen and (min-width: $breakpoint-largest) {
-      margin-bottom: 10rem;
-    }
-  }
-}
-
-/*.category {
+.category {
   @include containerWidth();
 
   @media only screen and (min-width: $breakpoint-largest) {
@@ -85,7 +67,7 @@
   @media only screen and (min-width: $breakpoint-largest) {
     font-size: 2.5rem;
     text-align: left;
-    width: 10ch;
+    width: 9.8ch;
   }
 }
 
@@ -108,4 +90,4 @@
   &:hover {
     opacity: 0.8;
   }
-}*/
+}
