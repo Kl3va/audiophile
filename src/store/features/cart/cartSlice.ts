@@ -1,15 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
+import { SingleProduct } from 'types/singleProduct'
 
-type cartArrayType = {
-  name: string
-  image: string
-  amount: number
-  id: number
-  price: number
-}
-
-type cartType = {
-  cartItems: cartArrayType[]
+interface cartType {
+  cartItems: SingleProduct[]
   totalAmount: number
   totalPrice: number
 }
