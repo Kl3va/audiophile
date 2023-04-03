@@ -1,9 +1,12 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 type Props = {}
 
 const Product = (props: Props) => {
-  return <div>Product</div>
+  const { id } = useParams()
+
+  return <div>Product-{id}</div>
 }
 
 export default Product
