@@ -1,17 +1,32 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useAppDispatch, useAppSelector } from 'store/hooks'
 
-type Props = {}
+//SINGLE PRODUCT COMPONENT
+import UniqueProduct from 'pages/product/UniqueProduct'
 
-const Product = (props: Props) => {
+//Get single product func
+import { getSingleProduct } from 'utils/getProduct'
+import { SingleProduct } from 'types/singleProduct'
+
+const Product = () => {
   const { id } = useParams()
+  const navigate = useNavigate()
   const { products } = useAppSelector((state) => state.products)
 
+  const product = getSingleProduct(products, id)
+
+  console.log(product)
+
   return (
-    <div>
-      Product-{id} // <span>{products[2].slug}</span>
-    </div>
+    <main>
+      <section>
+        <div>
+          <button onClick={() => navigate(-1)}>Go back</button>
+        </div>
+      </section>
+      <UniqueProduct {...product} />
+    </main>
   )
 }
 
