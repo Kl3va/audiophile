@@ -10,7 +10,7 @@ const Product = (props: Props) => {
 
   return (
     <div>
-      Product-{id} // <span>{products[5].slug}</span>
+      Product-{id} // <span>{products[2].slug}</span>
     </div>
   )
 }
