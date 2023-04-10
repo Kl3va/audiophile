@@ -9,6 +9,7 @@ export interface SingleProduct {
   new: boolean
   price: number
   description: string
+  features: string
   includes: ProductItems[]
   gallery: ProductGallery
   others: Others[]
