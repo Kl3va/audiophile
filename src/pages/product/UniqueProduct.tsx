@@ -1,3 +1,4 @@
+import HandleActions from 'components/button/HandleActions'
 import React from 'react'
 import { SingleProduct } from 'types/singleProduct'
 
@@ -13,7 +14,7 @@ const UniqueProduct = ({
   categoryImage,
   price,
   description,
-  new: boolean,
+  new: isNew,
   includes,
   gallery,
   others,
@@ -29,7 +30,20 @@ const UniqueProduct = ({
               <img src={image.mobile} alt={`image of ${slug}`} />
             </picture>
           </div>
-          <div></div>
+          <div>
+            {isNew ? <span>New product</span> : ''}
+            <h1>{name}</h1>
+            <p>{description}</p>
+            <p>${price}</p>
+            <div>
+              <div>
+                <HandleActions className={''} btnText='-' />
+                <p>{productQuantity}</p>
+                <HandleActions className={''} btnText='+' />
+              </div>
+              <HandleActions className={''} btnText='Add to cart' />
+            </div>
+          </div>
         </div>
         <div></div>
         <div></div>
