@@ -42,10 +42,10 @@ const UniqueProduct = ({
             <p>{description}</p>
             <p className={styles.price}>${price}</p>
             <div className={styles.btns}>
-              <div>
-                <HandleActions className={''} btnText='-' />
+              <div className={styles.btns__crease}>
+                <HandleActions className={styles.btn_decrease} btnText='-' />
                 <p>{productQuantity}</p>
-                <HandleActions className={''} btnText='+' />
+                <HandleActions className={styles.btn_increase} btnText='+' />
               </div>
               <HandleActions
                 className={styles.btn_addToCart}

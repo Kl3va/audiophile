@@ -59,10 +59,44 @@
 
 .price {
   font-size: 1.125rem;
+  color: $color-black;
+  opacity: 1;
 }
 
 .btns {
   display: flex;
+  gap: 1rem;
+}
+
+.btns__crease {
+  display: flex;
+  background-color: $color-light-grey;
+
+  width: 7.5rem;
+  aspect-ratio: 1 / 0.4;
+
+  & > * {
+    flex: 1;
+  }
+
+  p {
+    opacity: 1;
+    display: grid;
+    place-items: center;
+    font-weight: $font-weight-large;
+  }
+}
+
+.btn_increase,
+.btn_decrease {
+  border: none;
+  background-color: transparent;
+  transition: all ease-in 0.2s;
+
+  &:hover {
+    background-color: rgba($color: $color-black, $alpha: 0.1);
+    color: $color-light-orange;
+  }
 }
 
 .btn_addToCart {
@@ -75,9 +109,7 @@
   display: grid;
   place-items: center;
   transition: all ease-in 0.2s;
-
   text-transform: uppercase;
-
   font-size: 0.81rem;
   cursor: pointer;
 
