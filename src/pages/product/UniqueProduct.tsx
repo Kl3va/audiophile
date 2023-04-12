@@ -7,6 +7,7 @@ import { SingleProduct } from 'types/singleProduct'
 import Button from 'components/button/Button'
 
 //Styles
+import styles from 'pages/product/unique-product.module.scss'
 
 const UniqueProduct = ({
   id,
@@ -25,28 +26,31 @@ const UniqueProduct = ({
   others,
 }: SingleProduct) => {
   return (
-    <section>
-      <div>
-        <div>
-          <div>
+    <section className={styles.section_product}>
+      <div className={styles.product_wrapper}>
+        <div className={styles.head}>
+          <div className={styles.product_img}>
             <picture>
               <source media='(min-width: 1000px)' srcSet={image.desktop} />
               <source media='(min-width: 750px)' srcSet={image.tablet} />
               <img src={image.mobile} alt={`image of ${slug}`} />
             </picture>
           </div>
-          <div>
-            {isNew ? <span>New product</span> : ''}
-            <h1>{name}</h1>
+          <div className={styles.product_contents}>
+            {isNew ? <span className={styles.title}>New product</span> : ''}
+            <h1 className={styles.heading}>{name}</h1>
             <p>{description}</p>
-            <p>${price}</p>
-            <div>
+            <p className={styles.price}>${price}</p>
+            <div className={styles.btns}>
               <div>
                 <HandleActions className={''} btnText='-' />
                 <p>{productQuantity}</p>
                 <HandleActions className={''} btnText='+' />
               </div>
-              <HandleActions className={''} btnText='Add to cart' />
+              <HandleActions
+                className={styles.btn_addToCart}
+                btnText='Add to cart'
+              />
             </div>
           </div>
         </div>
@@ -124,7 +128,7 @@ const UniqueProduct = ({
           <div>
             {others.map((other, index) => {
               return (
-                <div>
+                <div key={index}>
                   <div>
                     <picture>
                       <source

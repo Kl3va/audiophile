@@ -1,0 +1,87 @@
+@use '../../globalStyles/variable.scss' as *;
+
+//Go Back
+.section_back {
+  margin-top: 1rem;
+
+  & > * {
+    @include containerWidth();
+  }
+}
+
+.go_back {
+  border: none;
+  color: $color-black;
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: transparent;
+  transition: color ease-in 0.2s;
+
+  &:hover {
+    color: $color-dark-orange;
+  }
+}
+
+.section_product {
+  margin-block: 1.5rem;
+}
+
+.product_wrapper {
+  @include containerWidth();
+}
+
+// .head {
+
+// }
+
+.product_img {
+  margin-bottom: 2rem;
+}
+
+.product_contents {
+  & > *:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.title {
+  color: $color-dark-orange;
+  font-weight: $font-weight-small;
+  letter-spacing: 0.625rem;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.heading {
+  font-size: 1.75rem;
+  line-height: 2.375rem;
+}
+
+.price {
+  font-size: 1.125rem;
+}
+
+.btns {
+  display: flex;
+}
+
+.btn_addToCart {
+  width: 10rem;
+  height: 3rem;
+  background-color: $color-dark-orange;
+  color: $color-primary;
+  border: none;
+
+  display: grid;
+  place-items: center;
+  transition: all ease-in 0.2s;
+
+  text-transform: uppercase;
+
+  font-size: 0.81rem;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

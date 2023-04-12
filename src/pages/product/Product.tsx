@@ -17,6 +17,9 @@ import { audioGearData } from 'components/audio-gear/audioGearData'
 import { getSingleProduct } from 'utils/getProduct'
 //import { SingleProduct } from 'types/singleProduct'
 
+//STYLES
+import styles from 'pages/product/unique-product.module.scss'
+
 const Product = () => {
   const { id } = useParams()
   const navigate = useNavigate()
@@ -28,9 +31,11 @@ const Product = () => {
 
   return (
     <main>
-      <section>
+      <section className={styles.section_back}>
         <div>
-          <button onClick={() => navigate(-1)}>Go back</button>
+          <button className={styles.go_back} onClick={() => navigate(-1)}>
+            Go Back
+          </button>
         </div>
       </section>
       <UniqueProduct {...product} />
