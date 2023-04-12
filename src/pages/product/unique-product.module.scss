@@ -30,9 +30,9 @@
   @include containerWidth();
 }
 
-// .head {
-
-// }
+.head {
+  margin-bottom: 5.5rem;
+}
 
 .product_img {
   margin-bottom: 2rem;
@@ -116,4 +116,26 @@
   &:hover {
     opacity: 0.8;
   }
+}
+
+//Features
+.features {
+  margin-bottom: 5.5rem;
+}
+
+.features__heading_wrapper {
+  margin-bottom: 7.0625rem;
+}
+
+.features__heading {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.features__text {
+  white-space: pre-line;
+}
+
+.features__box {
+  //margin-bottom: 7.0625rem;
 }

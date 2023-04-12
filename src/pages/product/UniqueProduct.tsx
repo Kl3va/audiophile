@@ -54,12 +54,12 @@ const UniqueProduct = ({
             </div>
           </div>
         </div>
-        <div>
-          <div>
-            <h2>Features</h2>
-            <p>{features}</p>
+        <div className={styles.features}>
+          <div className={styles.features__heading_wrapper}>
+            <h2 className={styles.features__heading}>Features</h2>
+            <p className={styles.features__text}>{features}</p>
           </div>
-          <div>
+          <div className={styles.features__box}>
             <h2>In the box</h2>
             <ul>
               {includes.map((include, index) => {
