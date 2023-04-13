@@ -60,21 +60,21 @@ const UniqueProduct = ({
             <p className={styles.features__text}>{features}</p>
           </div>
           <div className={styles.features__box}>
-            <h2>In the box</h2>
-            <ul>
+            <h2 className={styles.box_heading}>In the box</h2>
+            <ul className={styles.lists}>
               {includes.map((include, index) => {
                 return (
-                  <li key={index}>
-                    <span>{include.quantity}x</span>
-                    {include.item}
+                  <li key={index} className={styles.list}>
+                    <span className={styles.quantity}>{include.quantity}x</span>
+                    <p>{include.item}</p>
                   </li>
                 )
               })}
             </ul>
           </div>
         </div>
-        <div>
-          <div>
+        <div className={styles.gallery}>
+          <div className={styles.gallery__img_wrapper}>
             <picture>
               <source
                 media='(min-width: 1000px)'
@@ -87,6 +87,7 @@ const UniqueProduct = ({
               <img
                 src={gallery.first.mobile}
                 alt={`another image of ${slug}`}
+                className={styles.gallery__img}
               />
             </picture>
           </div>
@@ -103,6 +104,7 @@ const UniqueProduct = ({
               <img
                 src={gallery.second.mobile}
                 alt={`another image of ${slug}`}
+                className={styles.gallery__img}
               />
             </picture>
           </div>
@@ -119,16 +121,17 @@ const UniqueProduct = ({
               <img
                 src={gallery.third.mobile}
                 alt={`another image of ${slug}`}
+                className={styles.gallery__img}
               />
             </picture>
           </div>
         </div>
-        <div>
-          <h2>You may also like</h2>
-          <div>
+        <div className={styles.other_products}>
+          <h2 className={styles.other_products__heading}>You may also like</h2>
+          <div className={styles.other_products__wrapper}>
             {others.map((other, index) => {
               return (
-                <div key={index}>
+                <div key={index} className={styles.other_products__content}>
                   <div>
                     <picture>
                       <source
@@ -139,12 +142,18 @@ const UniqueProduct = ({
                         media='(min-width: 750px)'
                         srcSet={other.image.tablet}
                       />
-                      <img src={other.image.mobile} alt={`image of ${slug}`} />
+                      <img
+                        src={other.image.mobile}
+                        alt={`image of ${slug}`}
+                        className={styles.other_img}
+                      />
                     </picture>
                   </div>
-                  <h3>{other.name}</h3>
+                  <h3 className={styles.other_products__subheading}>
+                    {other.name}
+                  </h3>
                   <Button
-                    className=''
+                    className={styles.btn}
                     link={`/product/${other.slug}`}
                     btnText='See Product'
                   />
