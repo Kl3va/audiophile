@@ -15,8 +15,7 @@ const UniqueProduct = ({
   name,
   productQuantity,
   image,
-  category,
-  categoryImage,
+
   price,
   description,
   features,
@@ -79,7 +78,7 @@ const UniqueProduct = ({
         </div>
         <div className={styles.gallery}>
           <div className={styles.gallery__img_wrapper1}>
-            <picture>
+            <picture className={styles.picture}>
               <source
                 media='(min-width: 1000px)'
                 srcSet={gallery.first.desktop}
@@ -91,12 +90,30 @@ const UniqueProduct = ({
               <img
                 src={gallery.first.mobile}
                 alt={`another image of ${slug}`}
-                className={styles.gallery__img}
+                className={`${styles.gallery__img} ${styles.gallery__sep}`}
               />
             </picture>
           </div>
 
           <div className={styles.gallery__img_wrapper2}>
+            <picture className={styles.picture}>
+              <source
+                media='(min-width: 1000px)'
+                srcSet={gallery.second.desktop}
+              />
+              <source
+                media='(min-width: 750px)'
+                srcSet={gallery.second.tablet}
+              />
+              <img
+                src={gallery.second.mobile}
+                alt={`another image of ${slug}`}
+                className={`${styles.gallery__img} ${styles.gallery__sep}`}
+              />
+            </picture>
+          </div>
+
+          <div className={styles.gallery__img_wrapper3}>
             <picture>
               <source
                 media='(min-width: 1000px)'
@@ -108,23 +125,6 @@ const UniqueProduct = ({
               />
               <img
                 src={gallery.third.mobile}
-                alt={`another image of ${slug}`}
-                className={styles.gallery__img}
-              />
-            </picture>
-          </div>
-          <div className={styles.gallery__img_wrapper3}>
-            <picture>
-              <source
-                media='(min-width: 1000px)'
-                srcSet={gallery.second.desktop}
-              />
-              <source
-                media='(min-width: 750px)'
-                srcSet={gallery.second.tablet}
-              />
-              <img
-                src={gallery.second.mobile}
                 alt={`another image of ${slug}`}
                 className={styles.gallery__img}
               />
