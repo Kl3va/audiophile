@@ -100,8 +100,10 @@
 
 .price {
   font-size: 1.125rem;
+  font-weight: $font-weight-large;
   color: $color-black;
   opacity: 1;
+  letter-spacing: 0.08125rem;
 }
 
 .btns {
@@ -182,6 +184,10 @@
 .features__heading {
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    font-size: 2rem;
+  }
 }
 
 .features__text {
@@ -198,9 +204,13 @@
   }
 
   @media only screen and (min-width: $breakpoint-largest) {
-    flex-direction: column;
+    //flex-direction: column;
     margin-bottom: 0;
-    height: 14rem;
+    //height: 14rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content 1fr;
   }
 }
 
@@ -209,6 +219,10 @@
 
   @media only screen and (min-width: $breakpoint-larger) {
     margin-bottom: 0;
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    font-size: 2rem;
   }
 }
 
@@ -323,6 +337,10 @@
 
   @media only screen and (min-width: $breakpoint-larger) {
     text-align: center;
+  }
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    font-size: 2rem;
   }
 }
 

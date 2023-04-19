@@ -43,7 +43,7 @@ const UniqueProduct = ({
             {isNew ? <span className={styles.title}>New product</span> : ''}
             <h1 className={styles.heading}>{name}</h1>
             <p>{description}</p>
-            <p className={styles.price}>${price}</p>
+            <p className={styles.price}>$ {price}</p>
             <div className={styles.btns}>
               <div className={styles.btns__crease}>
                 <HandleActions className={styles.btn_decrease} btnText='-' />
@@ -149,7 +149,7 @@ const UniqueProduct = ({
                       />
                       <img
                         src={other.image.mobile}
-                        alt={`image of ${slug}`}
+                        alt={`image of ${other.slug}`}
                         className={styles.other_img}
                       />
                     </picture>
