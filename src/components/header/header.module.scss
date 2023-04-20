@@ -2,4 +2,50 @@
 
 .header {
   background-color: $color-black;
+  position: sticky;
+  z-index: 2000;
+  inset: 0;
+}
+
+.nav_wrapper {
+  @include containerWidth();
+  min-height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.1rem solid rgba($color-primary, 0.2);
+}
+
+.open_nav {
+  display: none;
+}
+
+.logo_wrapper {
+  flex: 1 1 0%;
+}
+
+.links_wrapper {
+  flex: 2 1 0%;
+}
+
+.header_links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.cartIcon_wrapper {
+  flex: 1 1 0%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.cart {
+  display: grid;
+  grid-template-columns: auto;
+  & > * {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+  }
 }
