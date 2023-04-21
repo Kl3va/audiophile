@@ -88,6 +88,10 @@
     background-position: center center;
     width: 50%;
   }
+
+  @media only screen and (min-width: $breakpoint-massive) {
+    background-size: auto;
+  }
 }
 
 .spantext {
