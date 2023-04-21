@@ -10,3 +10,9 @@
     display: block;
   }
 }
+
+.active {
+  a {
+    color: $color-dark-orange;
+  }
+}

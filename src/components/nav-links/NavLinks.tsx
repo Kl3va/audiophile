@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import styles from 'components/nav-links/navbarLinks.module.scss'
 
 interface navLinksProps {
@@ -13,11 +13,17 @@ interface navLink {
 }
 
 const NavLinks = ({ navbarLinksData, flex }: navLinksProps) => {
+  const { pathname } = useLocation()
+
   return (
     <ul className={flex}>
       {navbarLinksData.map(({ text, navLink }, index) => {
+        const isActive = pathname === navLink
         return (
-          <li key={index} className={styles.link}>
+          <li
+            key={index}
+            className={`${styles.link} ${isActive ? styles.active : ''}`}
+          >
             <Link to={navLink}>{text}</Link>
           </li>
         )

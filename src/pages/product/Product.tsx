@@ -27,8 +27,6 @@ const Product = () => {
 
   const product = getSingleProduct(products, id)
 
-  console.log(product)
-
   return (
     <main>
       <section className={styles.section_back}>
