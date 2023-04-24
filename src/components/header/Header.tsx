@@ -6,22 +6,29 @@ import styles from 'components/header/header.module.scss'
 import NavLinks from 'components/nav-links/NavLinks'
 import { navbarLinksData } from 'components/nav-links/navbarLinksData'
 
+import NavSecondary from 'components/nav-secondary/NavSecondary'
+import { navSecondaryData } from 'components/nav-secondary/navSecondaryData'
+
 interface headerProp {
   logo: {
     img: string
     link: string
   }
   cartIcon: string
+  close: string
   menu: string
 }
 
-const Header = ({ logo, cartIcon, menu }: headerProp) => {
+const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
   return (
     <header className={styles.header}>
       <div className={styles.nav_wrapper}>
         <nav className={styles.open_nav}>
           <div>
-            <img src={menu} alt='open navigation' />
+            <img src={menu} alt='open navigation' className={styles.close} />
+          </div>
+          <div className={styles.sidenav_wrapper}>
+            <NavSecondary navSecondaryData={navSecondaryData} />
           </div>
         </nav>
         <div className={styles.logo_wrapper}>

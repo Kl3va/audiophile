@@ -9,7 +9,7 @@
 
 .nav_wrapper {
   @include containerWidth();
-  min-height: 6rem;
+  height: 6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,6 +37,10 @@
     display: flex;
     justify-content: center;
   }
+}
+
+.close {
+  width: 1.4rem;
 }
 
 .links_wrapper {
@@ -67,5 +71,29 @@
   & > * {
     grid-row: 1 / -1;
     grid-column: 1 / -1;
+  }
+}
+
+//Side Navigation
+.sidenav_wrapper {
+  position: fixed;
+  width: 100%;
+  background-color: $color-primary;
+  border-radius: 0 0 0.5rem 0.5rem;
+  //margin-top: 6rem;
+  right: 0;
+  top: 6rem;
+  z-index: 1000;
+  transition: all ease-in 0.2s;
+  transform: translate(0);
+
+  @media only screen and (min-width: $breakpoint-larger) {
+    height: 10rem;
+    padding: 0.5rem 0;
+    height: 21.25rem;
+
+    & > * {
+      margin-block: 6rem 0;
+    }
   }
 }
