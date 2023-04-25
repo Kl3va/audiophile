@@ -40,6 +40,10 @@
 }
 
 .close {
+  width: 1.8rem;
+}
+
+.open {
   width: 1.4rem;
 }
 
@@ -85,7 +89,7 @@
   top: 6rem;
   z-index: 1000;
   transition: all ease-in 0.2s;
-  transform: translate(0);
+  transform: translate(100%);
 
   @media only screen and (min-width: $breakpoint-larger) {
     height: 10rem;

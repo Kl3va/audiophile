@@ -1,6 +1,9 @@
 import React from 'react'
-const isSidebarOpen = true
+import { useAppSelector } from 'store/hooks'
+
 const Background = () => {
+  const { isSidebarOpen } = useAppSelector((state) => state.modal)
+
   return (
     <aside
       className={`${
