@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import styles from 'components/header/header.module.scss'
 
 //MODAL SLICE ACTIONS
-import { openModal, closeModal } from 'store/features/modal/modalSlice'
+import { controlModal } from 'store/features/modal/modalSlice'
 
 //Navbar links component and props
 import NavLinks from 'components/nav-links/NavLinks'
@@ -37,14 +37,14 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
                 src={close}
                 alt='open navigation'
                 className={styles.close}
-                onClick={() => dispatch(closeModal())}
+                onClick={() => dispatch(controlModal(false))}
               />
             ) : (
               <img
                 src={menu}
                 alt='open navigation'
                 className={styles.open}
-                onClick={() => dispatch(openModal())}
+                onClick={() => dispatch(controlModal(true))}
               />
             )}
           </div>
@@ -55,7 +55,7 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
                 ? `${styles.sidenav_wrapper} ${styles.show_sidebar}`
                 : styles.sidenav_wrapper
             }`}
-            onClick={() => dispatch(closeModal())}
+            onClick={() => dispatch(controlModal(false))}
           >
             <NavSecondary navSecondaryData={navSecondaryData} />
           </div>

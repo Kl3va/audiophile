@@ -12,15 +12,12 @@ const modalSlice = createSlice({
   name: 'modal',
   initialState,
   reducers: {
-    openModal: (state) => {
-      state.isSidebarOpen = true
-    },
-    closeModal: (state) => {
-      state.isSidebarOpen = false
+    controlModal: (state, action: PayloadAction<boolean>) => {
+      state.isSidebarOpen = action.payload
     },
   },
 })
 
-export const { openModal, closeModal } = modalSlice.actions
+export const { controlModal } = modalSlice.actions
 
 export default modalSlice.reducer
