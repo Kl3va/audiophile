@@ -1,9 +1,12 @@
 import React from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
-import { useAppDispatch, useAppSelector } from 'store/hooks'
+import { useParams } from 'react-router-dom'
+import { useAppSelector } from 'store/hooks'
 
 //SINGLE PRODUCT COMPONENT
 import UniqueProduct from 'pages/product/UniqueProduct'
+
+//Go back button component
+import GoBack from 'components/go-back/GoBack'
 
 //Autogear component and Nav-Secondary component
 import NavSecondary from 'components/nav-secondary/NavSecondary'
@@ -17,25 +20,23 @@ import { audioGearData } from 'components/audio-gear/audioGearData'
 import { getSingleProduct } from 'utils/getProduct'
 //import { SingleProduct } from 'types/singleProduct'
 
-//STYLES
-import styles from 'pages/product/unique-product.module.scss'
-
 const Product = () => {
   const { id } = useParams()
-  const navigate = useNavigate()
+
   const { products } = useAppSelector((state) => state.products)
 
   const product = getSingleProduct(products, id)
 
   return (
     <main>
-      <section className={styles.section_back}>
+      {/**  <section className={styles.section_back}>
         <div>
           <button className={styles.go_back} onClick={() => navigate(-1)}>
             Go Back
           </button>
         </div>
-      </section>
+      </section>**/}
+      <GoBack />
       <UniqueProduct {...product} />
       <section>
         <NavSecondary navSecondaryData={navSecondaryData} />

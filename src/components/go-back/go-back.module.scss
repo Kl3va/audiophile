@@ -1,0 +1,27 @@
+@use '../../globalStyles/variable.scss' as *;
+
+//Go Back
+.section_back {
+  margin-top: 1rem;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    margin-top: 4.93rem;
+  }
+
+  & > * {
+    @include containerWidth();
+  }
+}
+
+.go_back {
+  border: none;
+  color: $color-black;
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: transparent;
+  transition: color ease-in 0.2s;
+
+  &:hover {
+    color: $color-dark-orange;
+  }
+}

@@ -3,7 +3,7 @@ import React from 'react'
 type Props = {}
 
 const Checkout = (props: Props) => {
-  return <div>Checkout</div>
+  return <main>Checkout</main>
 }
 
 export default Checkout
