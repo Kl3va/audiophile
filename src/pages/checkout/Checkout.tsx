@@ -15,8 +15,10 @@ const Checkout = (props: Props) => {
   return (
     <main>
       <GoBack />
-      <FormSubmit />
-      <Summary />
+      <section>
+        <FormSubmit />
+        <Summary />
+      </section>
     </main>
   )
 }

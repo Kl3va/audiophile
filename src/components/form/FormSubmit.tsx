@@ -3,7 +3,7 @@ import React from 'react'
 type Props = {}
 
 const FormSubmit = (props: Props) => {
-  return <section>FormSubmit</section>
+  return <div>FormSubmit</div>
 }
 
 export default FormSubmit
