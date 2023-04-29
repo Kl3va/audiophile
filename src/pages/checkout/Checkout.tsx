@@ -3,10 +3,11 @@ import React from 'react'
 //Go back button component
 import GoBack from 'components/go-back/GoBack'
 
-//FormSubmit component
+//FormSubmit component and data
 import FormSubmit from 'components/form/FormSubmit'
+import { formData } from 'components/form/formData'
 
-//Summary component
+//Summary component and data
 import Summary from 'components/summary/Summary'
 
 type Props = {}
@@ -16,7 +17,7 @@ const Checkout = (props: Props) => {
     <main>
       <GoBack />
       <section>
-        <FormSubmit />
+        <FormSubmit {...formData} />
         <Summary />
       </section>
     </main>
