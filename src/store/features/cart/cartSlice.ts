@@ -1,6 +1,8 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { SingleProduct } from 'types/singleProduct'
 
+import data from 'assets/starter-code/data.json'
+
 interface cartType {
   cartItems: SingleProduct[]
   totalAmount: number
@@ -8,7 +10,7 @@ interface cartType {
 }
 
 const initialState: cartType = {
-  cartItems: [],
+  cartItems: data,
   totalAmount: 0,
   totalPrice: 0,
 }
