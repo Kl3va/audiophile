@@ -14,11 +14,11 @@ const FormSubmit = ({
   paymentInfo,
 }: formDataProps) => {
   return (
-    <div>
+    <div className={styles.form_wrapper}>
       <form>
-        <h1>{heading}</h1>
+        <h1 className={styles.heading}>{heading}</h1>
         <div>
-          <h2>{billingInfo.heading}</h2>
+          <h2 className={styles.secondary_heading}>{billingInfo.heading}</h2>
           <div>
             <div>
               <div>
@@ -65,7 +65,7 @@ const FormSubmit = ({
           </div>
         </div>
         <div>
-          <h2>{shippingInfo.heading}</h2>
+          <h2 className={styles.secondary_heading}>{shippingInfo.heading}</h2>
           <div>
             <div>
               <div>
@@ -126,7 +126,7 @@ const FormSubmit = ({
           </div>
         </div>
         <div>
-          <h2>{paymentInfo.heading}</h2>
+          <h2 className={styles.secondary_heading}>{paymentInfo.heading}</h2>
           <div>
             <div>
               <h3>{paymentInfo.paymentRadioBtns.label}</h3>

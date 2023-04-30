@@ -11,13 +11,16 @@ import { formData } from 'components/form/formData'
 import Summary from 'components/summary/Summary'
 import { summaryData } from 'components/summary/summaryData'
 
+//Styles
+import styles from 'pages/checkout/checkout.module.scss'
+
 type Props = {}
 
 const Checkout = (props: Props) => {
   return (
     <main>
       <GoBack />
-      <section>
+      <section className={styles.checkout}>
         <FormSubmit {...formData} />
         <Summary {...summaryData} />
       </section>
