@@ -9,6 +9,7 @@ import { formData } from 'components/form/formData'
 
 //Summary component and data
 import Summary from 'components/summary/Summary'
+import { summaryData } from 'components/summary/summaryData'
 
 type Props = {}
 
@@ -18,7 +19,7 @@ const Checkout = (props: Props) => {
       <GoBack />
       <section>
         <FormSubmit {...formData} />
-        <Summary />
+        <Summary {...summaryData} />
       </section>
     </main>
   )
