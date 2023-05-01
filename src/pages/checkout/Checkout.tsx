@@ -18,7 +18,7 @@ type Props = {}
 
 const Checkout = (props: Props) => {
   return (
-    <main>
+    <main className={styles.main}>
       <GoBack />
       <section className={styles.checkout}>
         <FormSubmit {...formData} />

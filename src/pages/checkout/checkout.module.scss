@@ -1,5 +1,9 @@
 @use '../../globalStyles/variable.scss' as *;
 
+.main {
+  background-color: $color-dark-grey;
+}
+
 .checkout {
   margin-block: 1.5rem 6.0625rem;
 }

@@ -36,6 +36,12 @@ select {
   font: inherit;
 }
 
+label {
+  display: block;
+  color: $color-black;
+  font-size: 0.75rem;
+}
+
 img,
 picture {
   max-width: 100%;

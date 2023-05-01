@@ -5,7 +5,7 @@ import { formDataProps } from 'types/formDataTypes'
 import styles from 'components/form/form-submit.module.scss'
 
 //for test
-let showInput = false
+let showInput = true
 
 const FormSubmit = ({
   heading,
@@ -17,25 +17,26 @@ const FormSubmit = ({
     <div className={styles.form_wrapper}>
       <form>
         <h1 className={styles.heading}>{heading}</h1>
-        <div>
+        <div className={styles.input_main}>
           <h2 className={styles.secondary_heading}>{billingInfo.heading}</h2>
-          <div>
+          <div className={styles.form_container}>
             <div>
-              <div>
+              <div className={styles.label_wrapper}>
                 <label htmlFor={billingInfo.nameInfo.inputName}>
                   {billingInfo.nameInfo.label}
                 </label>
-                <p></p>
+                <p>hello</p>
               </div>
               <input
                 type='text'
                 id={billingInfo.nameInfo.inputName}
                 name={billingInfo.nameInfo.inputName}
                 placeholder={billingInfo.nameInfo.placeholder}
+                className={styles.input_text}
               />
             </div>
             <div>
-              <div>
+              <div className={styles.label_wrapper}>
                 <label htmlFor={billingInfo.emailInfo.inputName}>
                   {billingInfo.emailInfo.label}
                 </label>
@@ -46,10 +47,11 @@ const FormSubmit = ({
                 id={billingInfo.emailInfo.inputName}
                 name={billingInfo.emailInfo.inputName}
                 placeholder={billingInfo.emailInfo.placeholder}
+                className={styles.input_email}
               />
             </div>
             <div>
-              <div>
+              <div className={styles.label_wrapper}>
                 <label htmlFor={billingInfo.numberInfo.inputName}>
                   {billingInfo.numberInfo.label}
                 </label>
@@ -60,15 +62,16 @@ const FormSubmit = ({
                 id={billingInfo.numberInfo.inputName}
                 name={billingInfo.numberInfo.inputName}
                 placeholder={billingInfo.numberInfo.placeholder}
+                className={styles.input_tel}
               />
             </div>
           </div>
         </div>
-        <div>
+        <div className={styles.input_main}>
           <h2 className={styles.secondary_heading}>{shippingInfo.heading}</h2>
-          <div>
+          <div className={styles.form_container}>
             <div>
-              <div>
+              <div className={styles.label_wrapper}>
                 <label htmlFor={shippingInfo.addressInfo.inputName}>
                   {shippingInfo.addressInfo.label}
                 </label>
@@ -79,10 +82,11 @@ const FormSubmit = ({
                 id={shippingInfo.addressInfo.inputName}
                 name={shippingInfo.addressInfo.inputName}
                 placeholder={shippingInfo.addressInfo.placeholder}
+                className={styles.input_text}
               />
             </div>
             <div>
-              <div>
+              <div className={styles.label_wrapper}>
                 <label htmlFor={shippingInfo.zipInfo.inputName}>
                   {shippingInfo.zipInfo.label}
                 </label>
@@ -93,10 +97,11 @@ const FormSubmit = ({
                 id={shippingInfo.zipInfo.inputName}
                 name={shippingInfo.zipInfo.inputName}
                 placeholder={shippingInfo.zipInfo.placeholder}
+                className={styles.input_number}
               />
             </div>
             <div>
-              <div>
+              <div className={styles.label_wrapper}>
                 <label htmlFor={shippingInfo.cityInfo.inputName}>
                   {shippingInfo.cityInfo.label}
                 </label>
@@ -107,10 +112,11 @@ const FormSubmit = ({
                 id={shippingInfo.cityInfo.inputName}
                 name={shippingInfo.cityInfo.inputName}
                 placeholder={shippingInfo.cityInfo.placeholder}
+                className={styles.input_text}
               />
             </div>
             <div>
-              <div>
+              <div className={styles.label_wrapper}>
                 <label htmlFor={shippingInfo.countryInfo.inputName}>
                   {shippingInfo.countryInfo.label}
                 </label>
@@ -121,11 +127,12 @@ const FormSubmit = ({
                 id={shippingInfo.countryInfo.inputName}
                 name={shippingInfo.countryInfo.inputName}
                 placeholder={shippingInfo.countryInfo.placeholder}
+                className={styles.input_text}
               />
             </div>
           </div>
         </div>
-        <div>
+        <div className={styles.input_main}>
           <h2 className={styles.secondary_heading}>{paymentInfo.heading}</h2>
           <div>
             <div>
@@ -144,9 +151,9 @@ const FormSubmit = ({
             </div>
             <div>
               {showInput ? (
-                <form>
+                <form className={styles.form_container}>
                   <div>
-                    <div>
+                    <div className={styles.label_wrapper}>
                       <label htmlFor={paymentInfo.eNumberInfo.inputName}>
                         {paymentInfo.eNumberInfo.label}
                       </label>
@@ -157,10 +164,11 @@ const FormSubmit = ({
                       id={paymentInfo.eNumberInfo.inputName}
                       name={paymentInfo.eNumberInfo.inputName}
                       placeholder={paymentInfo.eNumberInfo.placeholder}
+                      className={styles.input_number}
                     />
                   </div>
                   <div>
-                    <div>
+                    <div className={styles.label_wrapper}>
                       <label htmlFor={paymentInfo.ePinInfo.inputName}>
                         {paymentInfo.ePinInfo.label}
                       </label>
@@ -171,6 +179,7 @@ const FormSubmit = ({
                       id={paymentInfo.ePinInfo.inputName}
                       name={paymentInfo.ePinInfo.inputName}
                       placeholder={paymentInfo.ePinInfo.placeholder}
+                      className={styles.input_number}
                     />
                   </div>
                 </form>

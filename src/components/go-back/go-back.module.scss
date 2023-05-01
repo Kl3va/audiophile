@@ -2,10 +2,10 @@
 
 //Go Back
 .section_back {
-  margin-top: 1rem;
+  padding-top: 1rem;
 
   @media only screen and (min-width: $breakpoint-largest) {
-    margin-top: 4.93rem;
+    padding-top: 4.93rem;
   }
 
   & > * {
