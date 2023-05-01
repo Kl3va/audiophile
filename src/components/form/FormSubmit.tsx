@@ -136,14 +136,16 @@ const FormSubmit = ({
           <h2 className={styles.secondary_heading}>{paymentInfo.heading}</h2>
           <div>
             <div>
-              <h3>{paymentInfo.paymentRadioBtns.label}</h3>
-              <div>
-                <label>
+              <h3 className={styles.tertiary_heading}>
+                {paymentInfo.paymentRadioBtns.label}
+              </h3>
+              <div className={styles.radio_wrapper}>
+                <label className={styles.label_radio}>
                   <input type='radio' name='view' value='true' />
                   {paymentInfo.paymentRadioBtns.eMoneyInfo.label}
                 </label>
 
-                <label>
+                <label className={styles.label_radio}>
                   <input type='radio' name='view' value='false' />
                   {paymentInfo.paymentRadioBtns.cashInfo.label}
                 </label>

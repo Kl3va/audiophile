@@ -74,3 +74,17 @@ input[type='number'] {
     // align-self: flex-start;
   }
 }
+
+.tertiary_heading {
+  margin-bottom: 1rem;
+  color: $color-black;
+  font-size: 0.75rem;
+}
+
+.radio_wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+// .label_radio {
+// }
