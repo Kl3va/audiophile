@@ -84,6 +84,7 @@ input[type='number'] {
   margin-bottom: 1rem;
   color: $color-black;
   font-size: 0.75rem;
+  text-transform: capitalize;
 }
 
 .radio_wrapper {
@@ -92,11 +93,14 @@ input[type='number'] {
 }
 
 .label_radio {
-  // font-size: 1rem;
-  //border: 1px solid red;
   display: flex;
   gap: 1rem;
   align-items: center;
+  transition: all ease-in 0.2s;
+
+  &:hover {
+    border: 0.1rem solid $color-dark-orange;
+  }
 }
 
 input[type='radio'] {
@@ -106,9 +110,9 @@ input[type='radio'] {
   margin: 0;
   font: inherit;
   color: $color-dark-orange;
-  width: 1.25em;
-  height: 1.25em;
-  border: 0.15em solid $color-dark-orange;
+  width: 1.35em;
+  height: 1.35em;
+  border: 0.15em solid $color-border;
   border-radius: 50%;
 
   display: grid;
@@ -116,8 +120,8 @@ input[type='radio'] {
 
   &::before {
     content: '';
-    width: 0.55em;
-    height: 0.55em;
+    width: 0.7em; //0.55em
+    height: 0.7em;
     border-radius: 50%;
     transform: scale(0);
     transition: 120ms transform ease-in-out;
@@ -127,10 +131,15 @@ input[type='radio'] {
   &:checked::before {
     transform: scale(1);
   }
+}
 
-  &:checked + .label_radio {
-    //border: none;
-    // outline: 0.1rem solid $color-dark-orange;
-    border: red;
-  }
+.cash_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cash_text {
+  text-align: center;
 }

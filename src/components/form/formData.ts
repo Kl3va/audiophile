@@ -49,7 +49,7 @@ export const formData = {
     cashText: `The 'Cash on Delivery' option enables you to pay in cash when our delivery courier arrives 
   at your residence. Just make sure your address is correct so that your order will not be cancelled.`,
     paymentRadioBtns: {
-      label: 'Payment Details',
+      label: 'Payment Method',
       eMoneyInfo: {
         label: 'e-Money',
         inputName: 'view',

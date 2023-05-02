@@ -5,7 +5,7 @@ import { formDataProps } from 'types/formDataTypes'
 import styles from 'components/form/form-submit.module.scss'
 
 //for test
-let showInput = true
+let showInput = false
 
 const FormSubmit = ({
   heading,
@@ -186,9 +186,9 @@ const FormSubmit = ({
                   </div>
                 </form>
               ) : (
-                <div>
+                <div className={styles.cash_wrapper}>
                   <img src={paymentInfo.icon} alt='cash-on-delivery' />
-                  <p>{paymentInfo.cashText}</p>
+                  <p className={styles.cash_text}>{paymentInfo.cashText}</p>
                 </div>
               )}
             </div>
