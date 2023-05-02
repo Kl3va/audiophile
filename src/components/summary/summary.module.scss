@@ -1,0 +1,75 @@
+@use '../../globalStyles/variable.scss' as *;
+
+.summary {
+  @include containerWidth();
+  padding: 1.5rem 1.5rem 1.9rem 1.5rem;
+  background-color: $color-primary;
+  border-radius: 0.5rem;
+}
+
+.heading {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+}
+
+.cart_wrapper {
+  height: 15rem;
+  //max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: thin !important;
+  scrollbar-color: $color-dark-grey $color-primary;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.cart_product {
+  height: 4rem;
+  display: flex;
+  //justify-content: space-between;
+  gap: 1rem;
+}
+
+.cart_img {
+  border-radius: 0.5rem;
+}
+
+.cart_items {
+  flex: 1 1 0;
+
+  & > *:not(:last-of-type) {
+    font-weight: $font-weight-large;
+    opacity: 1;
+  }
+}
+
+.sum_container {
+  margin-bottom: 2rem;
+
+  & > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  & > * {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.sum_text {
+  text-transform: uppercase;
+}
+
+.sum_value {
+  opacity: 1;
+}
+
+.grandtotal_container {
+  margin-top: 1rem;
+}
+
+.sum_totalvalue {
+  color: $color-dark-orange;
+  opacity: 1;
+}

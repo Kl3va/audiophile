@@ -35,7 +35,7 @@ const cartImgArray = [
 ]
 
 export const getCartImg = (id: number) => {
-  const imgObj = cartImgArray.find((cartImg, index) => cartImg.id === id)
+  const imgObj = cartImgArray.find((cartImg) => cartImg.id === id)
 
   return imgObj?.img
 }
