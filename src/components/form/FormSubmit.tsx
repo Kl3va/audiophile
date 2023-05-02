@@ -135,7 +135,7 @@ const FormSubmit = ({
         <div className={styles.input_main}>
           <h2 className={styles.secondary_heading}>{paymentInfo.heading}</h2>
           <div>
-            <div>
+            <div className={styles.radio_container}>
               <h3 className={styles.tertiary_heading}>
                 {paymentInfo.paymentRadioBtns.label}
               </h3>
