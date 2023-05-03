@@ -10,7 +10,7 @@ export const formData = {
       inputName: 'name',
     },
     emailInfo: {
-      label: 'Email',
+      label: 'Email Address',
       placeholder: 'alexei@mail.com',
       inputName: 'email',
     },

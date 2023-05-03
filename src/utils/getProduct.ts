@@ -13,6 +13,6 @@ export const getSingleProduct = (
   return items
 }
 
-export const geSingleProduct = (arr: SingleProduct[], product: string) => {
-  return arr.find((item: SingleProduct) => item.slug === product)
-}
+// export const geSingleProduct = (arr: SingleProduct[], product: string) => {
+//   return arr.find((item: SingleProduct) => item.slug === product)
+// }

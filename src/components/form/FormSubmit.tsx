@@ -5,7 +5,7 @@ import { formDataProps } from 'types/formDataTypes'
 import styles from 'components/form/form-submit.module.scss'
 
 //for test
-let showInput = false
+let showInput = true
 
 const FormSubmit = ({
   heading,
@@ -70,7 +70,7 @@ const FormSubmit = ({
         <div className={styles.input_main}>
           <h2 className={styles.secondary_heading}>{shippingInfo.heading}</h2>
           <div className={styles.form_container}>
-            <div>
+            <div className={styles.shipping_wrapper}>
               <div className={styles.label_wrapper}>
                 <label htmlFor={shippingInfo.addressInfo.inputName}>
                   {shippingInfo.addressInfo.label}

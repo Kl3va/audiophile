@@ -1,15 +1,23 @@
 @use '../../globalStyles/variable.scss' as *;
 
 .summary {
-  @include containerWidth();
+  //width: 87.2%;
+  //margin: 0 auto;
   padding: 1.5rem 1.5rem 1.9rem 1.5rem;
   background-color: $color-primary;
   border-radius: 0.5rem;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    max-height: 38.25rem;
+    position: sticky;
+    top: 7rem;
+  }
 }
 
 .heading {
   font-size: 1.125rem;
   margin-bottom: 2rem;
+  letter-spacing: 1.29px;
 }
 
 .cart_wrapper {
@@ -22,6 +30,10 @@
   scrollbar-color: $color-dark-grey $color-primary;
   gap: 1.5rem;
   margin-bottom: 2rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .cart_product {
@@ -33,15 +45,22 @@
 
 .cart_img {
   border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
 }
 
 .cart_items {
   flex: 1 1 0;
+  align-self: center;
 
   & > *:not(:last-of-type) {
     font-weight: $font-weight-large;
     opacity: 1;
   }
+}
+
+.quantity {
+  padding-top: 0.5rem;
 }
 
 .sum_container {
@@ -63,6 +82,8 @@
 
 .sum_value {
   opacity: 1;
+  font-weight: $font-weight-large;
+  font-size: 1.125rem;
 }
 
 .grandtotal_container {
@@ -72,4 +93,30 @@
 .sum_totalvalue {
   color: $color-dark-orange;
   opacity: 1;
+  font-weight: $font-weight-large;
+  font-size: 1.125rem;
+}
+
+.payment_btn {
+  cursor: pointer;
+  background-color: $color-dark-orange;
+  color: $color-primary;
+  min-height: 3rem;
+  width: 100%;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  font-size: 0.8125rem;
+  transition: opacity ease-in 0.2s;
+  border: medium none;
+  text-transform: uppercase;
+  font-weight: $font-weight-large;
+  font-family: inherit;
+  letter-spacing: 0.0625rem;
+
+  &:hover {
+    opacity: 0.5;
+  }
 }

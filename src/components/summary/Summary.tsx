@@ -5,6 +5,9 @@ import { useAppSelector } from 'store/hooks'
 import { getCartImg } from 'utils/getCartImg'
 import { getShortName } from 'utils/getShortName'
 
+//Components
+import { PaymentButton } from 'components/button/HandleClicks'
+
 import styles from 'components/summary/summary.module.scss'
 
 interface SummaryProps {
@@ -65,7 +68,8 @@ const Summary = ({
           <p className={styles.sum_totalvalue}>0</p>
         </div>
       </div>
-      <button>{btnPaymentText}</button>
+
+      <PaymentButton btnText={btnPaymentText} className={styles.payment_btn} />
     </div>
   )
 }
