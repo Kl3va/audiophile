@@ -1,5 +1,9 @@
 import React from 'react'
 import { formDataProps } from 'types/formDataTypes'
+import { Field } from 'formik'
+
+//Form hooks
+import { useForm } from 'hooks/useForm'
 
 //Styles
 import styles from 'components/form/form-submit.module.scss'
@@ -13,9 +17,19 @@ const FormSubmit = ({
   shippingInfo,
   paymentInfo,
 }: formDataProps) => {
+  //Form handlers
+  const {
+    values,
+    handleChange,
+    handleBlur,
+    handleSubmit,
+    errors,
+    touched,
+    setFieldValue,
+  } = useForm()
   return (
     <div className={styles.form_wrapper}>
-      <form>
+      <form onSubmit={handleSubmit}>
         <h1 className={styles.heading}>{heading}</h1>
         <div className={styles.input_main}>
           <h2 className={styles.secondary_heading}>{billingInfo.heading}</h2>
@@ -25,14 +39,23 @@ const FormSubmit = ({
                 <label htmlFor={billingInfo.nameInfo.inputName}>
                   {billingInfo.nameInfo.label}
                 </label>
-                <p>hello</p>
+                {touched.name && errors.name ? (
+                  <p className={styles.error_message}>{errors.name}</p>
+                ) : null}
               </div>
               <input
                 type='text'
                 id={billingInfo.nameInfo.inputName}
                 name={billingInfo.nameInfo.inputName}
                 placeholder={billingInfo.nameInfo.placeholder}
-                className={styles.input_text}
+                className={`${
+                  touched.name && errors.name
+                    ? `${styles.input_text} ${styles.error}`
+                    : styles.input_text
+                }`}
+                value={values.name}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div>
@@ -40,14 +63,23 @@ const FormSubmit = ({
                 <label htmlFor={billingInfo.emailInfo.inputName}>
                   {billingInfo.emailInfo.label}
                 </label>
-                <p></p>
+                {touched.email && errors.email && (
+                  <p className={styles.error_message}>{errors.email}</p>
+                )}
               </div>
               <input
                 type='email'
                 id={billingInfo.emailInfo.inputName}
                 name={billingInfo.emailInfo.inputName}
                 placeholder={billingInfo.emailInfo.placeholder}
-                className={styles.input_email}
+                className={`${
+                  touched.email && errors.email
+                    ? `${styles.input_email} ${styles.error}`
+                    : styles.input_email
+                }`}
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div>
@@ -55,14 +87,23 @@ const FormSubmit = ({
                 <label htmlFor={billingInfo.numberInfo.inputName}>
                   {billingInfo.numberInfo.label}
                 </label>
-                <p></p>
+                {touched.phone && errors.phone && (
+                  <p className={styles.error_message}>{errors.phone}</p>
+                )}
               </div>
               <input
                 type='tel'
                 id={billingInfo.numberInfo.inputName}
                 name={billingInfo.numberInfo.inputName}
                 placeholder={billingInfo.numberInfo.placeholder}
-                className={styles.input_tel}
+                className={`${
+                  touched.phone && errors.phone
+                    ? `${styles.input_tel} ${styles.error}`
+                    : styles.input_tel
+                }`}
+                value={values.phone}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
           </div>
@@ -75,14 +116,23 @@ const FormSubmit = ({
                 <label htmlFor={shippingInfo.addressInfo.inputName}>
                   {shippingInfo.addressInfo.label}
                 </label>
-                <p></p>
+                {touched.address && errors.address && (
+                  <p className={styles.error_message}>{errors.address}</p>
+                )}
               </div>
               <input
                 type='text'
                 id={shippingInfo.addressInfo.inputName}
                 name={shippingInfo.addressInfo.inputName}
                 placeholder={shippingInfo.addressInfo.placeholder}
-                className={styles.input_text}
+                className={`${
+                  touched.address && errors.address
+                    ? `${styles.input_text} ${styles.error}`
+                    : styles.input_text
+                }`}
+                value={values.address}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div>
@@ -90,14 +140,23 @@ const FormSubmit = ({
                 <label htmlFor={shippingInfo.zipInfo.inputName}>
                   {shippingInfo.zipInfo.label}
                 </label>
-                <p></p>
+                {touched.zip && errors.zip && (
+                  <p className={styles.error_message}>{errors.zip}</p>
+                )}
               </div>
               <input
                 type='number'
                 id={shippingInfo.zipInfo.inputName}
                 name={shippingInfo.zipInfo.inputName}
                 placeholder={shippingInfo.zipInfo.placeholder}
-                className={styles.input_number}
+                className={`${
+                  touched.zip && errors.zip
+                    ? `${styles.input_number} ${styles.error}`
+                    : styles.input_number
+                }`}
+                value={values.zip}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div>
@@ -105,14 +164,23 @@ const FormSubmit = ({
                 <label htmlFor={shippingInfo.cityInfo.inputName}>
                   {shippingInfo.cityInfo.label}
                 </label>
-                <p></p>
+                {touched.city && errors.city && (
+                  <p className={styles.error_message}>{errors.city}</p>
+                )}
               </div>
               <input
                 type='text'
                 id={shippingInfo.cityInfo.inputName}
                 name={shippingInfo.cityInfo.inputName}
                 placeholder={shippingInfo.cityInfo.placeholder}
-                className={styles.input_text}
+                className={`${
+                  touched.city && errors.city
+                    ? `${styles.input_text} ${styles.error}`
+                    : styles.input_text
+                }`}
+                value={values.city}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
             <div>
@@ -120,14 +188,23 @@ const FormSubmit = ({
                 <label htmlFor={shippingInfo.countryInfo.inputName}>
                   {shippingInfo.countryInfo.label}
                 </label>
-                <p></p>
+                {touched.country && errors.country && (
+                  <p className={styles.error_message}>{errors.country}</p>
+                )}
               </div>
               <input
                 type='text'
                 id={shippingInfo.countryInfo.inputName}
                 name={shippingInfo.countryInfo.inputName}
                 placeholder={shippingInfo.countryInfo.placeholder}
-                className={styles.input_text}
+                className={`${
+                  touched.country && errors.country
+                    ? `${styles.input_text} ${styles.error}`
+                    : styles.input_text
+                }`}
+                value={values.country}
+                onChange={handleChange}
+                onBlur={handleBlur}
               />
             </div>
           </div>
@@ -141,32 +218,57 @@ const FormSubmit = ({
               </h3>
               <div className={styles.radio_wrapper}>
                 <label className={styles.label_radio}>
-                  <input type='radio' name='view' value='true' />
+                  <input
+                    type='radio'
+                    name='view'
+                    value='true'
+                    checked={values.showForm === true}
+                    onChange={() => {
+                      setFieldValue('showForm', true)
+                    }}
+                  />
                   {paymentInfo.paymentRadioBtns.eMoneyInfo.label}
                 </label>
 
                 <label className={styles.label_radio}>
-                  <input type='radio' name='view' value='false' />
+                  <input
+                    type='radio'
+                    name='view'
+                    value='false'
+                    checked={values.showForm === false}
+                    onChange={() => {
+                      setFieldValue('showForm', false)
+                    }}
+                  />
                   {paymentInfo.paymentRadioBtns.cashInfo.label}
                 </label>
               </div>
             </div>
             <div>
-              {showInput ? (
-                <form className={styles.form_container}>
+              {values.showForm ? (
+                <div className={styles.form_container}>
                   <div>
                     <div className={styles.label_wrapper}>
                       <label htmlFor={paymentInfo.eNumberInfo.inputName}>
                         {paymentInfo.eNumberInfo.label}
                       </label>
-                      <p></p>
+                      {touched.eNumber && errors.eNumber && (
+                        <p className={styles.error_message}>{errors.eNumber}</p>
+                      )}
                     </div>
                     <input
                       type='number'
                       id={paymentInfo.eNumberInfo.inputName}
                       name={paymentInfo.eNumberInfo.inputName}
                       placeholder={paymentInfo.eNumberInfo.placeholder}
-                      className={styles.input_number}
+                      className={`${
+                        touched.eNumber && errors.eNumber
+                          ? `${styles.input_number} ${styles.error}`
+                          : styles.input_number
+                      }`}
+                      value={values.eNumber}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
                     />
                   </div>
                   <div>
@@ -174,17 +276,26 @@ const FormSubmit = ({
                       <label htmlFor={paymentInfo.ePinInfo.inputName}>
                         {paymentInfo.ePinInfo.label}
                       </label>
-                      <p></p>
+                      {touched.ePin && errors.ePin && (
+                        <p className={styles.error_message}>{errors.ePin}</p>
+                      )}
                     </div>
                     <input
                       type='number'
                       id={paymentInfo.ePinInfo.inputName}
                       name={paymentInfo.ePinInfo.inputName}
                       placeholder={paymentInfo.ePinInfo.placeholder}
-                      className={styles.input_number}
+                      className={`${
+                        touched.ePin && errors.ePin
+                          ? `${styles.input_number} ${styles.error}`
+                          : styles.input_number
+                      }`}
+                      value={values.ePin}
+                      onChange={handleChange}
+                      onBlur={handleBlur}
                     />
                   </div>
-                </form>
+                </div>
               ) : (
                 <div className={styles.cash_wrapper}>
                   <img src={paymentInfo.icon} alt='cash-on-delivery' />

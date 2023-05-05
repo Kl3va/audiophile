@@ -103,10 +103,13 @@ input[type='number'] {
   justify-content: space-between;
   align-items: center;
 
-  & > p {
-    font-size: 0.75rem;
-    // align-self: flex-start;
-  }
+  // & > p {
+  //   font-size: 0.75rem;
+  //   color: $color-error;
+  //   opacity: 1;
+
+  //   // align-self: flex-start;
+  // }
 }
 
 .radio_container {
@@ -149,8 +152,8 @@ input[type='radio'] {
   margin: 0;
   font: inherit;
   color: $color-dark-orange;
-  width: 1.35em;
-  height: 1.35em;
+  width: 1.37em;
+  height: 1.37em;
   border: 0.15em solid $color-border;
   border-radius: 50%;
 
@@ -191,4 +194,14 @@ input[type='radio'] {
     text-align: left;
     max-width: 61ch;
   }
+}
+
+.error {
+  border: 0.1rem solid $color-error;
+}
+
+.error_message {
+  font-size: 0.75rem;
+  color: $color-error;
+  opacity: 1;
 }
