@@ -27,6 +27,11 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
   const dispatch = useAppDispatch()
   const { isSidebarOpen, isCartOpen } = useAppSelector((state) => state.modal)
 
+  const handleCartPopUp = () => {
+    dispatch(controlModal(false))
+    dispatch(controlCartPopUp(!isCartOpen))
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.nav_wrapper}>
@@ -81,10 +86,7 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
           />
         </nav>
         <div className={styles.cartIcon_wrapper}>
-          <div
-            className={styles.cart}
-            onClick={() => dispatch(controlCartPopUp(!isCartOpen))}
-          >
+          <div className={styles.cart} onClick={handleCartPopUp}>
             <div>
               <img src={cartIcon} alt='add to cart' />
             </div>
