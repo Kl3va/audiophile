@@ -28,11 +28,17 @@ const Summary = ({
   btnPaymentText,
 }: SummaryProps) => {
   const { cartItems } = useAppSelector((state) => state.cart)
+  console.log(cartItems.length)
 
   return (
     <div className={styles.summary}>
       <h2 className={styles.heading}>{heading}</h2>
       <div className={styles.cart_wrapper}>
+        {cartItems.length === 0 && (
+          <div className={styles.no_product}>
+            There are no products in your cart!
+          </div>
+        )}
         {cartItems.map((item, index) => {
           return (
             <div key={index} className={styles.cart_product}>

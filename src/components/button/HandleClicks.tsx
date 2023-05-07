@@ -6,10 +6,30 @@ interface PaymentButtonProps {
   onClick?: () => void
 }
 
+interface CheckoutButtonProps extends PaymentButtonProps {
+  disabled: boolean
+}
+
 const PaymentButton = ({ btnText, onClick, className }: PaymentButtonProps) => (
   <button className={className} onClick={onClick}>
     {btnText}
   </button>
 )
 
-export { PaymentButton }
+const CheckoutButton = ({
+  btnText,
+  onClick,
+  className,
+  disabled,
+}: CheckoutButtonProps) => (
+  <button
+    type='submit'
+    className={className}
+    onClick={onClick}
+    disabled={disabled}
+  >
+    {btnText}
+  </button>
+)
+
+export { PaymentButton, CheckoutButton }

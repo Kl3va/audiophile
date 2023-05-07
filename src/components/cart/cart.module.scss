@@ -1,0 +1,133 @@
+@use '../../globalStyles/variable.scss' as *;
+
+.cart {
+  width: min(87.2%, 23.5rem);
+
+  border: 1px solid red;
+  padding: 2rem 1.75rem;
+  position: fixed;
+  top: 7.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $color-primary;
+  border-radius: 0.5rem;
+  z-index: 1000;
+
+  @media only screen and (min-width: $breakpoint-larger) {
+    //left: 0;
+
+    //right: 0;
+    transform: translateX(50%);
+
+    //left: 0;
+  }
+}
+
+.cart_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.875rem;
+}
+
+.heading {
+  letter-spacing: 1.29px;
+  font-size: 1.125rem;
+}
+
+.remove_btn {
+  background-color: transparent;
+  border: none;
+  font-size: 0.93rem;
+  color: $color-black;
+  opacity: 0.5;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    color: $color-dark-orange;
+  }
+}
+
+.cart_product__wrapper {
+  height: 15rem;
+  //max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: thin !important;
+  scrollbar-color: $color-dark-grey $color-primary;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.no_product {
+  display: grid;
+  width: 100%;
+  height: 15rem;
+  place-items: center;
+}
+
+.cart_product {
+  height: 4rem;
+  display: flex;
+  //justify-content: space-between;
+  gap: 1rem;
+}
+
+.cart_img {
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.cart_items {
+  flex: 1 1 0;
+  align-self: center;
+
+  & > *:not(:last-of-type) {
+    font-weight: $font-weight-large;
+    opacity: 1;
+  }
+}
+
+.cart_btns {
+  display: flex;
+  background-color: $color-light-grey;
+  align-self: center;
+
+  width: 6rem;
+  height: 2rem;
+  aspect-ratio: 1 / 0.4;
+
+  & > * {
+    flex: 1;
+  }
+
+  p {
+    opacity: 1;
+    display: grid;
+    place-items: center;
+    font-size: 0.812rem;
+    font-weight: $font-weight-large;
+  }
+}
+
+.increment {
+  border: none;
+  background-color: transparent;
+  transition: all ease-in 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgba($color-black, 0.1);
+    color: $color-light-orange;
+  }
+}
+
+.checkout_btn {
+  background-color: brown;
+}

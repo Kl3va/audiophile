@@ -12,6 +12,7 @@ import Product from 'pages/product/Product'
 import Header from 'components/header/Header'
 import Footer from 'components/footer/Footer'
 import Background from 'components/Background'
+import Cart from 'components/cart/Cart'
 
 //Hooks
 import ScrollToTop from 'hooks/scrollToTop'
@@ -37,6 +38,7 @@ function App() {
       <ToastContainer position='top-center' autoClose={3000} />
       <Header {...headerData} />
       <Background />
+      <Cart />
       <Routes>
         <Route path='/' element={<Home {...homeData} />}></Route>
         <Route
