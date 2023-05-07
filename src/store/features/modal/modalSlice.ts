@@ -3,11 +3,13 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 interface ModalProp {
   isSidebarOpen: boolean
   isCartOpen: boolean
+  isCheckoutModalOpen: boolean
 }
 
 const initialState: ModalProp = {
   isSidebarOpen: false,
-  isCartOpen: true,
+  isCartOpen: false,
+  isCheckoutModalOpen: false,
 }
 
 const modalSlice = createSlice({
@@ -20,9 +22,13 @@ const modalSlice = createSlice({
     controlCartPopUp: (state, action: PayloadAction<boolean>) => {
       state.isCartOpen = action.payload
     },
+    controlCheckoutPopUp: (state, action: PayloadAction<boolean>) => {
+      state.isCheckoutModalOpen = action.payload
+    },
   },
 })
 
-export const { controlModal, controlCartPopUp } = modalSlice.actions
+export const { controlModal, controlCartPopUp, controlCheckoutPopUp } =
+  modalSlice.actions
 
 export default modalSlice.reducer
