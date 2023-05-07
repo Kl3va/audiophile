@@ -1,5 +1,6 @@
 //React-Router for Navigating across pages
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useAppSelector } from 'store/hooks'
 
 //PAGES AND COMPONENTS
 import Home from 'pages/home/Home'
@@ -32,13 +33,15 @@ import { speakersData } from 'pages/speakers/speakersData'
 import { earphonesData } from 'pages/earphones/earphonesData'
 
 function App() {
+  const { isCartOpen } = useAppSelector((state) => state.modal)
+
   return (
     <Router>
       <ScrollToTop />
       <ToastContainer position='top-center' autoClose={3000} />
       <Header {...headerData} />
       <Background />
-      <Cart />
+      {isCartOpen && <Cart />}
       <Routes>
         <Route path='/' element={<Home {...homeData} />}></Route>
         <Route
