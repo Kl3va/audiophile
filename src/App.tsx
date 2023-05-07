@@ -14,6 +14,7 @@ import Header from 'components/header/Header'
 import Footer from 'components/footer/Footer'
 import Background from 'components/Background'
 import Cart from 'components/cart/Cart'
+import CheckoutModal from 'components/checkout-modal/CheckoutModal'
 
 //Hooks
 import ScrollToTop from 'hooks/scrollToTop'
@@ -42,6 +43,7 @@ function App() {
       <Header {...headerData} />
       <Background />
       {isCartOpen && <Cart />}
+      <CheckoutModal />
       <Routes>
         <Route path='/' element={<Home {...homeData} />}></Route>
         <Route
