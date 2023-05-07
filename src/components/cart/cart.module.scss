@@ -3,7 +3,6 @@
 .cart {
   width: min(87.2%, 23.5rem);
 
-  border: 1px solid red;
   padding: 2rem 1.75rem;
   position: fixed;
   top: 7.5rem;
@@ -14,10 +13,8 @@
   z-index: 1000;
 
   @media only screen and (min-width: $breakpoint-larger) {
-    //left: 0;
-
-    //right: 0;
-    transform: translateX(50%);
+    left: 82%;
+    transform: translateX(-82%);
 
     //left: 0;
   }
@@ -129,5 +126,38 @@
 }
 
 .checkout_btn {
-  background-color: brown;
+  cursor: pointer;
+  background-color: $color-dark-orange;
+  color: $color-primary;
+  min-height: 3rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 0.8125rem;
+  transition: opacity ease-in 0.2s;
+  border: medium none;
+  text-transform: uppercase;
+  font-weight: $font-weight-large;
+  font-family: inherit;
+  letter-spacing: 0.0625rem;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.total_price {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+
+  & > *:first-child {
+    font-size: 0.9375rem;
+    text-transform: uppercase;
+  }
+
+  & > *:last-child {
+    font-size: 1.125rem;
+    opacity: 1;
+  }
 }

@@ -62,9 +62,9 @@ const Cart = () => {
           )
         })}
       </div>
-      <div>
+      <div className={styles.total_price}>
         <p>Total</p>
-        <p>{totalPrice}</p>
+        <p>{`$ ${totalPrice.toLocaleString()}`}</p>
       </div>
       <CheckoutButton
         disabled={true}
