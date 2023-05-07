@@ -142,6 +142,10 @@
   letter-spacing: 0.0625rem;
 
   &:hover {
+    opacity: 0.9;
+  }
+
+  &:disabled {
     opacity: 0.5;
   }
 }

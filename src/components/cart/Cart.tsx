@@ -1,9 +1,13 @@
 import React from 'react'
-import { useAppSelector } from 'store/hooks'
+import { useNavigate } from 'react-router-dom'
+import { useAppSelector, useAppDispatch } from 'store/hooks'
 
 //Button components
 import { CheckoutButton } from 'components/button/HandleClicks'
 import RemoveAllBtn from 'components/button/RemoveAllBtn'
+
+//Dispatch Actions
+import { controlCartPopUp } from 'store/features/modal/modalSlice'
 
 //Utility functions
 import { getShortName } from 'utils/getShortName'
@@ -15,9 +19,19 @@ import { QuantityBtn } from 'components/button/QuantityBtn'
 //type Props = {}
 
 const Cart = () => {
+  const navigate = useNavigate()
+  const dispatch = useAppDispatch()
+
   const { totalAmount, totalPrice, cartItems } = useAppSelector(
     (state) => state.cart
   )
+
+  const isCartEmpty = cartItems.length === 0
+
+  const navigateToCheckout = () => {
+    navigate('/checkout')
+    dispatch(controlCartPopUp(false))
+  }
 
   return (
     <aside className={styles.cart}>
@@ -67,9 +81,10 @@ const Cart = () => {
         <p>{`$ ${totalPrice.toLocaleString()}`}</p>
       </div>
       <CheckoutButton
-        disabled={true}
+        disabled={isCartEmpty}
         className={styles.checkout_btn}
         btnText='Checkout'
+        onClick={navigateToCheckout}
       />
     </aside>
   )
