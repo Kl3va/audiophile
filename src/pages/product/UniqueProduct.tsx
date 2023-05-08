@@ -1,10 +1,11 @@
 import React from 'react'
-import HandleActions from 'components/button/HandleActions'
 import { features } from 'process'
 import { SingleProduct } from 'types/singleProduct'
 
 //COMPONENTS
 import Button from 'components/button/Button'
+//import HandleActions from 'components/button/HandleActions'
+import { AddToCartBtn, QuantityBtn } from 'components/button/QuantityBtn'
 
 //Styles
 import styles from 'pages/product/unique-product.module.scss'
@@ -46,13 +47,24 @@ const UniqueProduct = ({
             <p className={styles.price}>$ {price}</p>
             <div className={styles.btns}>
               <div className={styles.btns__crease}>
-                <HandleActions className={styles.btn_decrease} btnText='-' />
+                <QuantityBtn
+                  productId={id}
+                  increment={false}
+                  className={styles.btn_decrease}
+                  btnText='-'
+                />
                 <p>{productQuantity}</p>
-                <HandleActions className={styles.btn_increase} btnText='+' />
+                <QuantityBtn
+                  productId={id}
+                  className={styles.btn_increase}
+                  btnText='+'
+                  increment={true}
+                />
               </div>
-              <HandleActions
+              <AddToCartBtn
                 className={styles.btn_addToCart}
                 btnText='Add to cart'
+                productId={id}
               />
             </div>
           </div>

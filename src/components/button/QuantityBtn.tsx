@@ -24,4 +24,8 @@ const CustomReduceBtn = ({
   return <button className={className}>{btnText}</button>
 }
 
-export { QuantityBtn, CustomReduceBtn }
+const AddToCartBtn = ({ btnText, productId, className }: QuantityBtnProps) => {
+  return <button className={className}>{btnText}</button>
+}
+
+export { QuantityBtn, CustomReduceBtn, AddToCartBtn }
