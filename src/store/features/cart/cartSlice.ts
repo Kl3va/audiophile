@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { SingleProduct } from 'types/singleProduct'
 
 import data from 'assets/starter-code/data.json'
@@ -18,7 +18,9 @@ const initialState: cartType = {
 const cartSlice = createSlice({
   name: 'cart',
   initialState,
-  reducers: {},
+  reducers: {
+    addToCart: (state, action: PayloadAction<number>) => {},
+  },
 })
 
 export default cartSlice.reducer

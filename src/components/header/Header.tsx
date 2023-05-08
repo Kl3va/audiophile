@@ -4,7 +4,11 @@ import { Link } from 'react-router-dom'
 import styles from 'components/header/header.module.scss'
 
 //MODAL SLICE ACTIONS
-import { controlModal, controlCartPopUp } from 'store/features/modal/modalSlice'
+import {
+  controlModal,
+  controlCartPopUp,
+  controlCheckoutPopUp,
+} from 'store/features/modal/modalSlice'
 
 //Navbar links component and props
 import NavLinks from 'components/nav-links/NavLinks'
@@ -26,10 +30,12 @@ interface headerProp {
 const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
   const dispatch = useAppDispatch()
   const { isSidebarOpen, isCartOpen } = useAppSelector((state) => state.modal)
+  const { totalAmount } = useAppSelector((state) => state.cart)
 
   const handleCartPopUp = () => {
     dispatch(controlModal(false))
     dispatch(controlCartPopUp(!isCartOpen))
+    dispatch(controlCheckoutPopUp(false))
   }
 
   return (
@@ -90,9 +96,7 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
             <div>
               <img src={cartIcon} alt='add to cart' />
             </div>
-            <span>
-              <p>1</p>
-            </span>
+            {totalAmount >= 1 && <span>{totalAmount}</span>}
           </div>
         </div>
       </div>

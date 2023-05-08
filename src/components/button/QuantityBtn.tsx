@@ -1,4 +1,5 @@
 import React from 'react'
+import { useAppSelector } from 'store/hooks'
 
 interface QuantityBtnProps {
   btnText: string

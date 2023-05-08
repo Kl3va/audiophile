@@ -2,6 +2,8 @@ import React from 'react'
 import { features } from 'process'
 import { SingleProduct } from 'types/singleProduct'
 
+import { useAppSelector } from 'store/hooks'
+
 //COMPONENTS
 import Button from 'components/button/Button'
 //import HandleActions from 'components/button/HandleActions'
@@ -25,6 +27,11 @@ const UniqueProduct = ({
   gallery,
   others,
 }: SingleProduct) => {
+  const { cartItems } = useAppSelector((state) => state.cart)
+
+  //Get The single Item if it exists in the cart.
+  const SingleItem = (cartItems || []).find((item) => {item.id === id})
+
   return (
     <section className={styles.section_product}>
       <div className={styles.product_wrapper}>
@@ -53,7 +60,7 @@ const UniqueProduct = ({
                   className={styles.btn_decrease}
                   btnText='-'
                 />
-                <p>{productQuantity}</p>
+                <p>{SingleItem ? SingleItem.productQuantity : productQuantity}</p>
                 <QuantityBtn
                   productId={id}
                   className={styles.btn_increase}
