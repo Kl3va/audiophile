@@ -1,22 +1,29 @@
 import React from 'react'
 import { useAppSelector, useAppDispatch } from 'store/hooks'
-import { controlCartPopUp, controlModal } from 'store/features/modal/modalSlice'
+import {
+  controlCartPopUp,
+  controlCheckoutPopUp,
+  controlModal,
+} from 'store/features/modal/modalSlice'
 
 const Background = () => {
-  const { isSidebarOpen, isCartOpen } = useAppSelector((state) => state.modal)
+  const { isSidebarOpen, isCartOpen, isCheckoutModalOpen } = useAppSelector(
+    (state) => state.modal
+  )
 
   const dispatch = useAppDispatch()
 
   const handlePopUps = () => {
     dispatch(controlModal(false))
     dispatch(controlCartPopUp(false))
+    dispatch(controlCheckoutPopUp(false))
   }
 
   return (
     <aside
       onClick={handlePopUps}
       className={`${
-        isSidebarOpen || isCartOpen
+        isSidebarOpen || isCartOpen || isCheckoutModalOpen
           ? 'navigation-background show-background'
           : 'navigation-background'
       }`}

@@ -4,6 +4,9 @@ import { useAppSelector } from 'store/hooks'
 //Styling
 import styles from 'components/checkout-modal/checkout-modal.module.scss'
 
+//Button component to go back to home page
+import { BackToHomeButton } from 'components/button/HandleClicks'
+
 //Utilities
 import { getCartImg } from 'utils/getCartImg'
 import { getShortName } from 'utils/getShortName'
@@ -17,17 +20,19 @@ const CheckoutModal = () => {
 
   return (
     <aside className={styles.checkout_modal}>
-      <div>
+      <div className={styles.img_wrapper}>
         <img src={iconOrderConfirmed} alt='icon to confirm order' />
       </div>
-      <h1>
+      <h1 className={styles.checkout_heading}>
         Thank you
         <br />
         for your order
       </h1>
-      <p>You will receive an email confirmation shortly.</p>
-      <div>
-        <div>
+      <p className={styles.checkout_text}>
+        You will receive an email confirmation shortly.
+      </p>
+      <div className={styles.cart_details}>
+        <div className={styles.cart_contents}>
           <div className={styles.cart_product}>
             <img
               src={getCartImg(item.id)}
@@ -40,16 +45,16 @@ const CheckoutModal = () => {
             </div>
             <p className={styles.quantity}>{`x${item.productQuantity}`}</p>
           </div>
-          <div>
+          <div className={styles.other_items}>
             <p>{`and ${cartItems.length - 1} other item(s)`}</p>
           </div>
         </div>
-        <div>
-          <p>Grand Total</p>
-          <p>{totalPrice}</p>
+        <div className={styles.prices_wrapper}>
+          <p className={styles.grand_total}>Grand Total</p>
+          <p className={styles.total_price}>{totalPrice}</p>
         </div>
       </div>
-      <button>jshhj</button>
+      <BackToHomeButton btnText='Back to Home' className={styles.btn} />
     </aside>
   )
 }

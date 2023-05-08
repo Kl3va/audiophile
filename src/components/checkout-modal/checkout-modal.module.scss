@@ -1,1 +1,118 @@
 @use '../../globalStyles/variable.scss' as *;
+
+.checkout_modal {
+  width: min(87.2%, 33.75rem);
+  padding: 2rem;
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  background-color: $color-primary;
+  border-radius: 0.5rem;
+  z-index: 1001;
+}
+
+.img_wrapper {
+  margin-bottom: 1.43rem;
+}
+
+.checkout_heading {
+  font-size: 1.43rem;
+  line-height: 1.75rem;
+  letter-spacing: 0.86px;
+  margin-bottom: 1rem;
+}
+
+.checkout_text {
+  margin-bottom: 1.5rem;
+}
+
+.cart_details {
+  margin-bottom: 1.43rem;
+  border-radius: 0.5rem;
+}
+
+.cart_contents {
+  background-color: $color-light-grey;
+  padding: 1.5rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.cart_product {
+  height: 3rem;
+  display: flex;
+  //justify-content: space-between;
+  gap: 1.68rem;
+  align-items: center;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid rgba($color-black, 0.08);
+}
+
+.cart_img {
+  border-radius: 0.5rem;
+  width: 1.75rem;
+  height: 2.5rem;
+}
+
+.cart_items {
+  flex: 1 1 0;
+  align-self: center;
+
+  & > *:not(:last-of-type) {
+    font-weight: $font-weight-large;
+    opacity: 1;
+  }
+
+  & > p:last-child {
+    font-size: 0.875rem;
+  }
+}
+
+.other_items {
+  padding-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+
+  p {
+    font-size: 0.75rem;
+    font-weight: $font-weight-large;
+  }
+}
+
+.prices_wrapper {
+  background-color: $color-black;
+  color: $color-primary;
+  padding: 0.9375rem 0 1.062rem 1.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+}
+
+.grand_total {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.total_price {
+  font-size: 1.125rem;
+  opacity: 1;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: $color-dark-orange;
+  color: $color-primary;
+  min-height: 3rem;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 0.8125rem;
+  transition: opacity ease-in 0.2s;
+  border: medium none;
+  text-transform: uppercase;
+  font-weight: $font-weight-large;
+  font-family: inherit;
+  letter-spacing: 0.0625rem;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

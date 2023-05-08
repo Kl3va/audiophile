@@ -32,4 +32,14 @@ const CheckoutButton = ({
   </button>
 )
 
-export { PaymentButton, CheckoutButton }
+const BackToHomeButton = ({
+  btnText,
+  onClick,
+  className,
+}: PaymentButtonProps) => (
+  <button className={className} onClick={onClick}>
+    {btnText}
+  </button>
+)
+
+export { PaymentButton, CheckoutButton, BackToHomeButton }
