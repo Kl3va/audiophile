@@ -51,7 +51,9 @@ const CheckoutModal = () => {
         </div>
         <div className={styles.prices_wrapper}>
           <p className={styles.grand_total}>Grand Total</p>
-          <p className={styles.total_price}>{totalPrice}</p>
+          <p
+            className={styles.total_price}
+          >{`$ ${totalPrice.toLocaleString()}`}</p>
         </div>
       </div>
       <BackToHomeButton btnText='Back to Home' className={styles.btn} />

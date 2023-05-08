@@ -34,7 +34,9 @@ import { speakersData } from 'pages/speakers/speakersData'
 import { earphonesData } from 'pages/earphones/earphonesData'
 
 function App() {
-  const { isCartOpen } = useAppSelector((state) => state.modal)
+  const { isCartOpen, isCheckoutModalOpen } = useAppSelector(
+    (state) => state.modal
+  )
 
   return (
     <Router>
@@ -43,7 +45,7 @@ function App() {
       <Header {...headerData} />
       <Background />
       {isCartOpen && <Cart />}
-      <CheckoutModal />
+      {isCheckoutModalOpen && <CheckoutModal />}
       <Routes>
         <Route path='/' element={<Home {...homeData} />}></Route>
         <Route
