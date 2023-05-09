@@ -22,7 +22,7 @@ const Cart = () => {
   const navigate = useNavigate()
   const dispatch = useAppDispatch()
 
-  const { totalAmount, totalPrice, cartItems } = useAppSelector(
+  const { totalAmount, totalProducts, cartItems } = useAppSelector(
     (state) => state.cart
   )
 
@@ -36,7 +36,7 @@ const Cart = () => {
   return (
     <aside className={styles.cart}>
       <div className={styles.cart_header}>
-        <h1 className={styles.heading}>{`Cart (${totalAmount})`}</h1>
+        <h1 className={styles.heading}>{`Cart (${totalProducts})`}</h1>
         <RemoveAllBtn className={styles.remove_btn} />
       </div>
       <div className={styles.cart_product__wrapper}>
@@ -77,7 +77,7 @@ const Cart = () => {
       </div>
       <div className={styles.total_price}>
         <p>Total</p>
-        <p>{`$ ${totalPrice.toLocaleString()}`}</p>
+        <p>{`$ ${totalAmount.toLocaleString()}`}</p>
       </div>
       <CheckoutButton
         disabled={isCartEmpty}

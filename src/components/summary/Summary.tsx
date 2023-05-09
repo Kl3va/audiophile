@@ -1,5 +1,5 @@
-import React from 'react'
-import { useAppSelector } from 'store/hooks'
+import React, { useEffect } from 'react'
+import { useAppSelector, useAppDispatch } from 'store/hooks'
 
 //Utility functions
 import { getCartImg } from 'utils/getCartImg'
@@ -27,8 +27,8 @@ const Summary = ({
   grandTotalText,
   btnPaymentText,
 }: SummaryProps) => {
-  const { cartItems } = useAppSelector((state) => state.cart)
-  console.log(cartItems.length)
+  const { cartItems, shippingFee, vat, grandTotal, totalAmount } =
+    useAppSelector((state) => state.cart)
 
   return (
     <div className={styles.summary}>
@@ -59,19 +59,23 @@ const Summary = ({
       <div className={styles.sum_container}>
         <div>
           <p className={styles.sum_text}>{totalText}</p>
-          <p className={styles.sum_value}>0</p>
+          <p
+            className={styles.sum_value}
+          >{`$ ${totalAmount.toLocaleString()}`}</p>
         </div>
         <div>
           <p className={styles.sum_text}>{shippingText}</p>
-          <p className={styles.sum_value}>0</p>
+          <p className={styles.sum_value}>{`$ ${shippingFee}`}</p>
         </div>
         <div>
           <p className={styles.sum_text}>{vatText}</p>
-          <p className={styles.sum_value}>0</p>
+          <p className={styles.sum_value}>{`$ ${vat.toLocaleString()}`}</p>
         </div>
         <div className={styles.grandtotal_container}>
           <p className={styles.sum_text}>{grandTotalText}</p>
-          <p className={styles.sum_totalvalue}>0</p>
+          <p
+            className={styles.sum_totalvalue}
+          >{`$ ${grandTotal.toLocaleString()}`}</p>
         </div>
       </div>
 

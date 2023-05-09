@@ -15,7 +15,7 @@ import { getShortName } from 'utils/getShortName'
 import iconOrderConfirmed from 'assets/starter-code/assets/checkout/icon-order-confirmation.svg'
 
 const CheckoutModal = () => {
-  const { cartItems, totalPrice } = useAppSelector((state) => state.cart)
+  const { cartItems, grandTotal } = useAppSelector((state) => state.cart)
   const item = cartItems[0]
 
   return (
@@ -53,7 +53,7 @@ const CheckoutModal = () => {
           <p className={styles.grand_total}>Grand Total</p>
           <p
             className={styles.total_price}
-          >{`$ ${totalPrice.toLocaleString()}`}</p>
+          >{`$ ${grandTotal.toLocaleString()}`}</p>
         </div>
       </div>
       <BackToHomeButton btnText='Back to Home' className={styles.btn} />

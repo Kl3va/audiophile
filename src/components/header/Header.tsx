@@ -30,7 +30,7 @@ interface headerProp {
 const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
   const dispatch = useAppDispatch()
   const { isSidebarOpen, isCartOpen } = useAppSelector((state) => state.modal)
-  const { totalAmount } = useAppSelector((state) => state.cart)
+  const { totalProducts } = useAppSelector((state) => state.cart)
 
   const handleCartPopUp = () => {
     dispatch(controlModal(false))
@@ -96,7 +96,7 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
             <div>
               <img src={cartIcon} alt='add to cart' />
             </div>
-            {totalAmount >= 1 && <span>{totalAmount}</span>}
+            {totalProducts >= 1 && <span>{totalProducts}</span>}
           </div>
         </div>
       </div>

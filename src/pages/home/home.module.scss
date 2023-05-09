@@ -1,8 +1,6 @@
 @use '../../globalStyles/variable.scss' as *;
 
 .main {
-  //background-color: red;
-  //width: min(100%, 60rem);
   width: 100%;
 }
 
@@ -14,13 +12,6 @@
 //HERO SECTION
 .sectionHero {
   background-color: $color-black;
-
-  /* @media only screen and (min-width: $breakpoint-largest) {
-    background-image: url('../../assets/starter-code/assets/home/desktop/image-hero.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center -4rem;
-  }*/
 }
 
 .hero {
@@ -37,7 +28,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  //place-items: center;
 
   @media only screen and (min-width: $breakpoint-small) {
     background-image: url('../../assets/starter-code/assets/home/tablet/image-tab.png');
@@ -49,9 +39,6 @@
 
   @media only screen and (min-width: $breakpoint-largest) {
     @include containerWidth();
-    //min-height: 39.5rem;
-    // grid-template-columns: 1fr 1fr;
-    //justify-items: start;
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
@@ -71,7 +58,6 @@
   }
 
   @media only screen and (min-width: $breakpoint-largest) {
-    //text-align: left;
     align-items: flex-start;
   }
 }

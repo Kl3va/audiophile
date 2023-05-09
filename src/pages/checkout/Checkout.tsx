@@ -14,9 +14,7 @@ import { summaryData } from 'components/summary/summaryData'
 //Styles
 import styles from 'pages/checkout/checkout.module.scss'
 
-type Props = {}
-
-const Checkout = (props: Props) => {
+const Checkout = () => {
   return (
     <main className={styles.main}>
       <GoBack />

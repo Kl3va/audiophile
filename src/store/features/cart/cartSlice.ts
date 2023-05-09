@@ -9,13 +9,19 @@ import { toast } from 'react-toastify'
 interface cartType {
   cartItems: SingleProduct[]
   totalAmount: number
-  totalPrice: number
+  shippingFee: number
+  vat: number
+  grandTotal: number
+  totalProducts: number
 }
 
 const initialState: cartType = {
   cartItems: [],
+  shippingFee: 50,
   totalAmount: 0,
-  totalPrice: 0,
+  vat: 0,
+  grandTotal: 0,
+  totalProducts: 0,
 }
 
 const cartSlice = createSlice({
@@ -74,6 +80,24 @@ const cartSlice = createSlice({
       state.cartItems = []
       toast.error('Your Cart Is Cleared!')
     },
+    calculateTotals: (state) => {
+      const { totalAmount, totalProducts } = state.cartItems.reduce(
+        (acc, item) => {
+          acc.totalAmount += item.price * item.productQuantity
+          acc.totalProducts += item.productQuantity
+          return acc
+        },
+        { totalAmount: 0, totalProducts: 0 }
+      )
+
+      const vat = totalAmount * (20 / 100)
+      const grandTotal = totalAmount + state.shippingFee
+      //Add to the state
+      state.grandTotal = grandTotal
+      state.vat = vat
+      state.totalAmount = totalAmount
+      state.totalProducts = totalProducts
+    },
   },
 })
 
@@ -83,6 +107,7 @@ export const {
   decreaseQuantity,
   customDecreaseQuantity,
   removeAllItems,
+  calculateTotals,
 } = cartSlice.actions
 
 export default cartSlice.reducer

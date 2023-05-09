@@ -1,8 +1,6 @@
 @use '../../globalStyles/variable.scss' as *;
 
 .summary {
-  //width: 87.2%;
-  //margin: 0 auto;
   padding: 1.5rem 1.5rem 1.9rem 1.5rem;
   background-color: $color-primary;
   border-radius: 0.5rem;
@@ -22,7 +20,6 @@
 
 .cart_wrapper {
   height: 15rem;
-  //max-width: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -43,7 +40,7 @@
 .cart_product {
   height: 4rem;
   display: flex;
-  //justify-content: space-between;
+
   gap: 1rem;
 }
 

@@ -1,6 +1,7 @@
 //React-Router for Navigating across pages
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { useAppSelector } from 'store/hooks'
+import { useAppSelector, useAppDispatch } from 'store/hooks'
+import { useEffect } from 'react'
 
 //PAGES AND COMPONENTS
 import Home from 'pages/home/Home'
@@ -15,6 +16,9 @@ import Footer from 'components/footer/Footer'
 import Background from 'components/Background'
 import Cart from 'components/cart/Cart'
 import CheckoutModal from 'components/checkout-modal/CheckoutModal'
+
+//Reducer Actions
+import { calculateTotals } from 'store/features/cart/cartSlice'
 
 //Hooks
 import ScrollToTop from 'hooks/scrollToTop'
@@ -37,6 +41,15 @@ function App() {
   const { isCartOpen, isCheckoutModalOpen } = useAppSelector(
     (state) => state.modal
   )
+
+  const { cartItems } = useAppSelector((state) => state.cart)
+
+  const dispatch = useAppDispatch()
+
+  //Calculate the total Amount, total products in the cart, vat...
+  useEffect(() => {
+    dispatch(calculateTotals())
+  }, [cartItems, dispatch])
 
   return (
     <Router>
