@@ -25,10 +25,10 @@ const cartSlice = createSlice({
     addToCart: (state, action: PayloadAction<SingleProduct>) => {
       const cartItem = action.payload
       if (state.cartItems.some((item) => item.id === cartItem.id)) {
-        toast.warning(`${action.payload.name} already exists in cart!`)
+        toast.warning(`${cartItem.name} already exists in cart!`)
       } else {
         state.cartItems.push(cartItem)
-        toast.success(`${action.payload.name} added to cart!`)
+        toast.success(`${cartItem.name} added to cart!`)
       }
     },
     increaseQuantity: (state, action: PayloadAction<number>) => {
@@ -46,9 +46,31 @@ const cartSlice = createSlice({
       const cartItem = state.cartItems.find((item) => item.id === itemId)
 
       if (!cartItem) {
-        toast.error(`Click on 'ADD TO CART'!`)
+        toast.error(`Click on ADD TO CART!`)
       } else if (cartItem.productQuantity === 1) {
         cartItem.productQuantity = 1
+      } else {
+        cartItem.productQuantity -= 1
+      }
+    },
+    customDecreaseQuantity: (state, action: PayloadAction<number>) => {
+      const itemId = action.payload
+      const cartItem = state.cartItems.find((item) => item.id === itemId)
+
+      const newItems = state.cartItems.filter(
+        (item) => item.id !== cartItem?.id
+      )
+
+      if (!cartItem) return
+
+      // } else if (cartItem.productQuantity === 1) {
+      //   cartItem.productQuantity = 1
+      // } else {
+      //   cartItem.productQuantity -= 1
+      // }
+      if (cartItem?.productQuantity === 1) {
+        state.cartItems = newItems
+        toast.warning(`${cartItem.name} removed from cart!`)
       } else {
         cartItem.productQuantity -= 1
       }
@@ -56,7 +78,11 @@ const cartSlice = createSlice({
   },
 })
 
-export const { addToCart, increaseQuantity, decreaseQuantity } =
-  cartSlice.actions
+export const {
+  addToCart,
+  increaseQuantity,
+  decreaseQuantity,
+  customDecreaseQuantity,
+} = cartSlice.actions
 
 export default cartSlice.reducer

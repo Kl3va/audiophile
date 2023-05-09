@@ -4,6 +4,7 @@ import { useAppSelector, useAppDispatch } from 'store/hooks'
 //Actions
 import {
   addToCart,
+  customDecreaseQuantity,
   decreaseQuantity,
   increaseQuantity,
 } from 'store/features/cart/cartSlice'
@@ -49,7 +50,17 @@ const CustomReduceBtn = ({
   productId,
   className,
 }: QuantityBtnProps) => {
-  return <button className={className}>{btnText}</button>
+  const dispatch = useAppDispatch()
+
+  const handleCustomDecrease = () => {
+    dispatch(customDecreaseQuantity(productId))
+  }
+
+  return (
+    <button onClick={handleCustomDecrease} className={className}>
+      {btnText}
+    </button>
+  )
 }
 
 const AddToCartBtn = ({ btnText, productId, className }: QuantityBtnProps) => {

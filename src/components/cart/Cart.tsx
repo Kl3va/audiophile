@@ -14,7 +14,7 @@ import { getShortName } from 'utils/getShortName'
 import { getCartImg } from 'utils/getCartImg'
 
 import styles from 'components/cart/cart.module.scss'
-import { QuantityBtn } from 'components/button/QuantityBtn'
+import { CustomReduceBtn, QuantityBtn } from 'components/button/QuantityBtn'
 
 //type Props = {}
 
@@ -58,10 +58,9 @@ const Cart = () => {
                 <p>{`$ ${item.price.toLocaleString()}`}</p>
               </div>
               <div className={styles.cart_btns}>
-                <QuantityBtn
+                <CustomReduceBtn
                   btnText='-'
                   productId={item.id}
-                  increment={false}
                   className={styles.increment}
                 />
                 <p className={styles.quantity}>{item.productQuantity}</p>
