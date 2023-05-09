@@ -2,7 +2,11 @@ import React from 'react'
 import { useAppSelector, useAppDispatch } from 'store/hooks'
 
 //Actions
-import { addToCart } from 'store/features/cart/cartSlice'
+import {
+  addToCart,
+  decreaseQuantity,
+  increaseQuantity,
+} from 'store/features/cart/cartSlice'
 
 //Toast package
 import { toast } from 'react-toastify'
@@ -15,13 +19,29 @@ interface QuantityBtnProps {
   className: CSSModuleClasses[string]
 }
 
+//Dispatch actions
+
 const QuantityBtn = ({
   btnText,
   productId,
   increment,
   className,
 }: QuantityBtnProps) => {
-  return <button className={className}>{btnText}</button>
+  const dispatch = useAppDispatch()
+
+  const handleProductQuanity = () => {
+    if (increment) {
+      dispatch(increaseQuantity(productId))
+    } else {
+      dispatch(decreaseQuantity(productId))
+    }
+  }
+
+  return (
+    <button onClick={handleProductQuanity} className={className}>
+      {btnText}
+    </button>
+  )
 }
 
 const CustomReduceBtn = ({
@@ -35,7 +55,6 @@ const CustomReduceBtn = ({
 const AddToCartBtn = ({ btnText, productId, className }: QuantityBtnProps) => {
   const { products } = useAppSelector((state) => state.products)
   const dispatch = useAppDispatch()
-
   const handleCartItems = () => {
     const singleProduct = products.find((product) => {
       return product.id === productId

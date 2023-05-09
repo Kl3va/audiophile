@@ -30,7 +30,9 @@ const UniqueProduct = ({
   const { cartItems } = useAppSelector((state) => state.cart)
 
   //Get The single Item if it exists in the cart.
-  const SingleItem = (cartItems || []).find((item) => {item.id === id})
+  const SingleItem = (cartItems || []).find((item) => {
+    return item.id === id
+  })
 
   return (
     <section className={styles.section_product}>
@@ -60,7 +62,9 @@ const UniqueProduct = ({
                   className={styles.btn_decrease}
                   btnText='-'
                 />
-                <p>{SingleItem ? SingleItem.productQuantity : productQuantity}</p>
+                <p>
+                  {SingleItem ? SingleItem.productQuantity : productQuantity}
+                </p>
                 <QuantityBtn
                   productId={id}
                   className={styles.btn_increase}

@@ -31,9 +31,32 @@ const cartSlice = createSlice({
         toast.success(`${action.payload.name} added to cart!`)
       }
     },
+    increaseQuantity: (state, action: PayloadAction<number>) => {
+      const itemId = action.payload
+      const cartItem = state.cartItems.find((item) => item.id === itemId)
+
+      if (!cartItem) {
+        toast.error(`Click on 'ADD TO CART'!`)
+      } else {
+        cartItem.productQuantity += 1
+      }
+    },
+    decreaseQuantity: (state, action: PayloadAction<number>) => {
+      const itemId = action.payload
+      const cartItem = state.cartItems.find((item) => item.id === itemId)
+
+      if (!cartItem) {
+        toast.error(`Click on 'ADD TO CART'!`)
+      } else if (cartItem.productQuantity === 1) {
+        cartItem.productQuantity = 1
+      } else {
+        cartItem.productQuantity -= 1
+      }
+    },
   },
 })
 
-export const { addToCart } = cartSlice.actions
+export const { addToCart, increaseQuantity, decreaseQuantity } =
+  cartSlice.actions
 
 export default cartSlice.reducer
