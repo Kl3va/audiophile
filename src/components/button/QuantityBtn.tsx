@@ -1,5 +1,12 @@
 import React from 'react'
-import { useAppSelector } from 'store/hooks'
+import { useAppSelector, useAppDispatch } from 'store/hooks'
+
+//Actions
+import { addToCart } from 'store/features/cart/cartSlice'
+
+//Toast package
+import { toast } from 'react-toastify'
+import { SingleProduct } from 'types/singleProduct'
 
 interface QuantityBtnProps {
   btnText: string
@@ -26,7 +33,24 @@ const CustomReduceBtn = ({
 }
 
 const AddToCartBtn = ({ btnText, productId, className }: QuantityBtnProps) => {
-  return <button className={className}>{btnText}</button>
+  const { products } = useAppSelector((state) => state.products)
+  const dispatch = useAppDispatch()
+
+  const handleCartItems = () => {
+    const singleProduct = products.find((product) => {
+      return product.id === productId
+    })
+    //console.log(productId)
+    if (!singleProduct) return
+
+    dispatch(addToCart(singleProduct))
+  }
+
+  return (
+    <button onClick={handleCartItems} className={className}>
+      {btnText}
+    </button>
+  )
 }
 
 export { QuantityBtn, CustomReduceBtn, AddToCartBtn }
