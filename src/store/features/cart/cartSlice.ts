@@ -63,17 +63,16 @@ const cartSlice = createSlice({
 
       if (!cartItem) return
 
-      // } else if (cartItem.productQuantity === 1) {
-      //   cartItem.productQuantity = 1
-      // } else {
-      //   cartItem.productQuantity -= 1
-      // }
       if (cartItem?.productQuantity === 1) {
         state.cartItems = newItems
         toast.warning(`${cartItem.name} removed from cart!`)
       } else {
         cartItem.productQuantity -= 1
       }
+    },
+    removeAllItems: (state) => {
+      state.cartItems = []
+      toast.error('Your Cart Is Cleared!')
     },
   },
 })
@@ -83,6 +82,7 @@ export const {
   increaseQuantity,
   decreaseQuantity,
   customDecreaseQuantity,
+  removeAllItems,
 } = cartSlice.actions
 
 export default cartSlice.reducer
