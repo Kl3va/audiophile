@@ -1,9 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { SingleProduct } from 'types/singleProduct'
 
-// import data from 'assets/starter-code/data.json'
-// import modalSlice from '../modal/modalSlice'
-
 import { toast } from 'react-toastify'
 
 interface cartType {
