@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useAppDispatch, useAppSelector } from 'store/hooks'
+import { controlCheckoutPopUp } from 'store/features/modal/modalSlice'
 
 interface PaymentButtonProps {
   btnText: string
@@ -17,15 +18,22 @@ const PaymentButton = ({
   handleSubmit,
   className,
 }: PaymentButtonProps) => {
+  const dispatch = useAppDispatch()
   const { cartItems } = useAppSelector((state) => state.cart)
+
   const isCartEmpty = cartItems.length === 0
+
+  const handlePopUp = () => {
+    handleSubmit!()
+    // dispatch(controlCheckoutPopUp(true))
+  }
 
   return (
     <button
       type='submit'
       disabled={isCartEmpty}
       className={className}
-      onClick={handleSubmit}
+      onClick={handlePopUp}
     >
       {btnText}
     </button>

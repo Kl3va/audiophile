@@ -13,9 +13,10 @@ import Product from 'pages/product/Product'
 
 import Header from 'components/header/Header'
 import Footer from 'components/footer/Footer'
-import Background from 'components/Background'
+import Background from 'components/background/Background'
 import Cart from 'components/cart/Cart'
 import CheckoutModal from 'components/checkout-modal/CheckoutModal'
+import CustomBg from 'components/background/CustomBg'
 
 //Reducer Actions
 import { calculateTotals } from 'store/features/cart/cartSlice'
@@ -57,6 +58,7 @@ function App() {
       <ToastContainer position='top-center' autoClose={3000} />
       <Header {...headerData} />
       <Background />
+      <CustomBg/>
       {isCartOpen && <Cart />}
       {isCheckoutModalOpen && <CheckoutModal />}
       <Routes>

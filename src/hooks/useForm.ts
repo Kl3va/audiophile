@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { useFormik, FormikHelpers } from 'formik'
+import { useAppDispatch } from 'store/hooks'
+import { controlCheckoutPopUp } from 'store/features/modal/modalSlice'
 import * as Yup from 'yup'
+import { toast } from 'react-toastify'
 
 interface FormValues {
   name: string
@@ -51,12 +54,30 @@ export const useForm = () => {
     ePin: '',
   }
 
-  const handleSubmit = (
+  //Dispatch and state
+  const dispatch = useAppDispatch()
+
+  const handleSubmit = async (
     values: FormValues,
     { resetForm }: FormikHelpers<FormValues>
   ) => {
-    //console.log(values)
-    resetForm()
+    //
+    //resetForm()
+    try {
+      // Validate the form
+      await validationSchema.validate(values)
+
+      // If there are no errors, show the modal and reset the form
+      //resetForm()
+      dispatch(controlCheckoutPopUp(true))
+      setTimeout(() => {
+        resetForm()
+      }, 100)
+    } catch (error) {
+      // If there are errors, do nothing and let the form display the error messages
+      // toast.error(`${error.message}`)
+      console.log(error)
+    }
   }
 
   const validationSchema = Yup.object({
@@ -68,8 +89,8 @@ export const useForm = () => {
     showForm: Yup.boolean().required(),
     city: Yup.string().required("Can't be empty!"),
     country: Yup.string().required("Can't be empty!"),
-    eNumber: Yup.number(),
-    ePin: Yup.number().max(9999, 'Pin must be 4 digits'),
+    // eNumber: Yup.number(),
+    // ePin: Yup.number().max(9999, 'Pin must be 4 digits'),
   })
 
   const formik = useFormik<FormValues>({
