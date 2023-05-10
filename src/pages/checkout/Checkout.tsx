@@ -8,8 +8,8 @@ import FormSubmit from 'components/form/FormSubmit'
 import { formData } from 'components/form/formData'
 
 //Summary component and data
-import Summary from 'components/summary/Summary'
-import { summaryData } from 'components/summary/summaryData'
+//import Summary from 'components/summary/Summary'
+//import { summaryData } from 'components/summary/summaryData'
 
 //Styles
 import styles from 'pages/checkout/checkout.module.scss'
@@ -18,9 +18,9 @@ const Checkout = () => {
   return (
     <main className={styles.main}>
       <GoBack />
-      <section className={styles.checkout}>
+      <section>
         <FormSubmit {...formData} />
-        <Summary {...summaryData} />
+        {/*<Summary {...summaryData} />*/}
       </section>
     </main>
   )

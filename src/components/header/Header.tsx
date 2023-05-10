@@ -38,10 +38,15 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
     dispatch(controlCheckoutPopUp(false))
   }
 
+  const handleAllPopUps = () => {
+    dispatch(controlCartPopUp(false))
+    dispatch(controlCheckoutPopUp(false))
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.nav_wrapper}>
-        <nav className={styles.open_nav}>
+        <nav className={styles.open_nav} onClick={handleAllPopUps}>
           <div>
             {isSidebarOpen ? (
               <img

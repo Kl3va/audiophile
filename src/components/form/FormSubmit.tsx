@@ -1,6 +1,7 @@
 import React from 'react'
 import { formDataProps } from 'types/formDataTypes'
 import { Field } from 'formik'
+import { useAppSelector } from 'store/hooks'
 
 //Form hooks
 import { useForm } from 'hooks/useForm'
@@ -8,14 +9,24 @@ import { useForm } from 'hooks/useForm'
 //Styles
 import styles from 'components/form/form-submit.module.scss'
 
-//for test
-let showInput = true
+//Utility functions
+import { getCartImg } from 'utils/getCartImg'
+import { getShortName } from 'utils/getShortName'
+
+//Components
+import { PaymentButton } from 'components/button/HandleClicks'
 
 const FormSubmit = ({
   heading,
   billingInfo,
   shippingInfo,
   paymentInfo,
+  tertiaryHeading,
+  totalText,
+  shippingText,
+  vatText,
+  grandTotalText,
+  btnPaymentText,
 }: formDataProps) => {
   //Form handlers
   const {
@@ -27,9 +38,13 @@ const FormSubmit = ({
     touched,
     setFieldValue,
   } = useForm()
+
+  const { cartItems, shippingFee, vat, grandTotal, totalAmount } =
+    useAppSelector((state) => state.cart)
+
   return (
-    <div className={styles.form_wrapper}>
-      <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.checkout}>
+      <div className={styles.form_wrapper}>
         <h1 className={styles.heading}>{heading}</h1>
         <div className={styles.input_main}>
           <h2 className={styles.secondary_heading}>{billingInfo.heading}</h2>
@@ -305,8 +320,65 @@ const FormSubmit = ({
             </div>
           </div>
         </div>
-      </form>
-    </div>
+      </div>
+
+      {/*Summary Component*/}
+
+      <div className={styles.summary}>
+        <h2 className={styles.tertiary_heading}>{heading}</h2>
+        <div className={styles.cart_wrapper}>
+          {cartItems.length === 0 && (
+            <div className={styles.no_product}>
+              There are no products in your cart!
+            </div>
+          )}
+          {cartItems.map((item, index) => {
+            return (
+              <div key={index} className={styles.cart_product}>
+                <img
+                  src={getCartImg(item.id)}
+                  alt={item.name}
+                  className={styles.cart_img}
+                />
+                <div className={styles.cart_items}>
+                  <p>{getShortName(item.name)}</p>
+                  <p>{`$ ${item.price.toLocaleString()}`}</p>
+                </div>
+                <p className={styles.quantity}>{`x${item.productQuantity}`}</p>
+              </div>
+            )
+          })}
+        </div>
+        <div className={styles.sum_container}>
+          <div>
+            <p className={styles.sum_text}>{totalText}</p>
+            <p
+              className={styles.sum_value}
+            >{`$ ${totalAmount.toLocaleString()}`}</p>
+          </div>
+          <div>
+            <p className={styles.sum_text}>{shippingText}</p>
+            <p className={styles.sum_value}>{`$ ${shippingFee}`}</p>
+          </div>
+          <div>
+            <p className={styles.sum_text}>{vatText}</p>
+            <p className={styles.sum_value}>{`$ ${vat.toLocaleString()}`}</p>
+          </div>
+          <div className={styles.grandtotal_container}>
+            <p className={styles.sum_text}>{grandTotalText}</p>
+            <p
+              className={styles.sum_totalvalue}
+            >{`$ ${grandTotal.toLocaleString()}`}</p>
+          </div>
+        </div>
+
+        <PaymentButton
+          btnText={btnPaymentText}
+          handleSubmit={handleSubmit}
+          className={styles.payment_btn}
+        />
+      </div>
+    </form>
   )
 }
 

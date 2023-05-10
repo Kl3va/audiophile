@@ -1,5 +1,11 @@
 export interface formDataProps {
   heading: string
+  tertiaryHeading: string
+  totalText: string
+  shippingText: string
+  vatText: string
+  grandTotalText: string
+  btnPaymentText: string
   billingInfo: {
     heading: string
     nameInfo: inputProp

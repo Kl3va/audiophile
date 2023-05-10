@@ -1,5 +1,20 @@
 @use '../../globalStyles/variable.scss' as *;
 
+//Testing
+.checkout {
+  margin-block-start: 1.5rem;
+  padding-top: 1.5rem;
+  @include containerWidth();
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    display: grid;
+    grid-template-columns: 64% 33%;
+    grid-template-rows: auto;
+    gap: 1.85rem;
+    padding-top: 2.1rem;
+  }
+}
+
 .form_wrapper {
   // @include containerWidth();
   //width: min(87.2%, 45.625rem);
@@ -204,4 +219,133 @@ input[type='radio'] {
   font-size: 0.75rem;
   color: $color-error;
   opacity: 1;
+}
+
+//SUMMARY
+
+.summary {
+  padding: 1.5rem 1.5rem 1.9rem 1.5rem;
+  background-color: $color-primary;
+  border-radius: 0.5rem;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    max-height: 38.25rem;
+    position: sticky;
+    top: 7rem;
+  }
+}
+
+.tertiary_heading {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  letter-spacing: 1.29px;
+}
+
+.cart_wrapper {
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scrollbar-width: thin !important;
+  scrollbar-color: $color-dark-grey $color-primary;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.no_product {
+  align-self: center;
+}
+
+.cart_product {
+  height: 4rem;
+  display: flex;
+
+  gap: 1rem;
+}
+
+.cart_img {
+  border-radius: 0.5rem;
+  width: 4rem;
+  height: 4rem;
+}
+
+.cart_items {
+  flex: 1 1 0;
+  align-self: center;
+
+  & > *:not(:last-of-type) {
+    font-weight: $font-weight-large;
+    opacity: 1;
+  }
+}
+
+.quantity {
+  padding-top: 0.5rem;
+}
+
+.sum_container {
+  margin-bottom: 2rem;
+
+  & > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
+
+  & > * {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.sum_text {
+  text-transform: uppercase;
+}
+
+.sum_value {
+  opacity: 1;
+  font-weight: $font-weight-large;
+  font-size: 1.125rem;
+}
+
+.grandtotal_container {
+  margin-top: 1rem;
+}
+
+.sum_totalvalue {
+  color: $color-dark-orange;
+  opacity: 1;
+  font-weight: $font-weight-large;
+  font-size: 1.125rem;
+}
+
+.payment_btn {
+  cursor: pointer;
+  background-color: $color-dark-orange;
+  color: $color-primary;
+  min-height: 3rem;
+  width: 100%;
+  display: flex;
+  -moz-box-pack: center;
+  justify-content: center;
+  -moz-box-align: center;
+  align-items: center;
+  font-size: 0.8125rem;
+  transition: opacity ease-in 0.2s;
+  border: medium none;
+  text-transform: uppercase;
+  font-weight: $font-weight-large;
+  font-family: inherit;
+  letter-spacing: 0.0625rem;
+
+  &:disabled {
+    opacity: 0.5;
+    color: $color-error;
+  }
+
+  &:not(:disabled):hover {
+    opacity: 0.7;
+  }
 }

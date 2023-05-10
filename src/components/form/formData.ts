@@ -2,6 +2,12 @@ import iconCashOnDelivery from 'assets/starter-code/assets/checkout/icon-cash-on
 
 export const formData = {
   heading: 'checkout',
+  tertiaryHeading: 'Summary',
+  totalText: 'Total',
+  shippingText: 'Shipping',
+  vatText: 'vat (included)',
+  grandTotalText: 'grand total',
+  btnPaymentText: 'continue & pay',
   billingInfo: {
     heading: 'Billing details',
     nameInfo: {

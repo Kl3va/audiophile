@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import { useAppSelector, useAppDispatch } from 'store/hooks'
 
+import { useForm } from 'hooks/useForm'
+
 //Utility functions
 import { getCartImg } from 'utils/getCartImg'
 import { getShortName } from 'utils/getShortName'
@@ -8,7 +10,9 @@ import { getShortName } from 'utils/getShortName'
 //Components
 import { PaymentButton } from 'components/button/HandleClicks'
 
-import styles from 'components/summary/summary.module.scss'
+//import styles from 'components/summary/summary.module.scss'
+
+import styles from 'components/form/form-submit.module.scss'
 
 interface SummaryProps {
   heading: string
@@ -30,9 +34,12 @@ const Summary = ({
   const { cartItems, shippingFee, vat, grandTotal, totalAmount } =
     useAppSelector((state) => state.cart)
 
+  const { handleSubmit, values } = useForm()
+  //console.log(values)
+
   return (
     <div className={styles.summary}>
-      <h2 className={styles.heading}>{heading}</h2>
+      <h2 className={styles.tertiary_heading}>{heading}</h2>
       <div className={styles.cart_wrapper}>
         {cartItems.length === 0 && (
           <div className={styles.no_product}>
@@ -79,7 +86,11 @@ const Summary = ({
         </div>
       </div>
 
-      <PaymentButton btnText={btnPaymentText} className={styles.payment_btn} />
+      <PaymentButton
+        btnText={btnPaymentText}
+        onClick={handleSubmit}
+        className={styles.payment_btn}
+      />
     </div>
   )
 }

@@ -51,14 +51,6 @@ export const useForm = () => {
     ePin: '',
   }
 
-  // const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-  //   const { name, value } = e.target
-  //   setValues((prevValues) => ({
-  //     ...prevValues,
-  //     [name]: value,
-  //   }))
-  // }
-
   const handleSubmit = (
     values: FormValues,
     { resetForm }: FormikHelpers<FormValues>
@@ -73,12 +65,11 @@ export const useForm = () => {
     phone: Yup.number().required('Wrong format'),
     address: Yup.string().required("Can't be empty!"),
     zip: Yup.number().required('Wrong zip format!'),
+    showForm: Yup.boolean().required(),
     city: Yup.string().required("Can't be empty!"),
     country: Yup.string().required("Can't be empty!"),
-    eNumber: Yup.number().required('Wrong format'),
-    ePin: Yup.number()
-      .max(9999, 'Pin must be 4 digits')
-      .required('Wrong format!'),
+    eNumber: Yup.number(),
+    ePin: Yup.number().max(9999, 'Pin must be 4 digits'),
   })
 
   const formik = useFormik<FormValues>({
