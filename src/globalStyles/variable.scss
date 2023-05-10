@@ -33,6 +33,21 @@ $breakpoint-massive: 81.25em; //1300px
   margin: 0 auto;
 }
 
+@mixin bgStyle($bgIndex) {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($color-black, 0.6);
+  z-index: $bgIndex;
+  display: none;
+  transition: all ease-in 0.2s;
+
+  @media only screen and (min-width: $breakpoint-largest) {
+    display: none;
+  }
+}
+
 @mixin btnStyle($bgColor, $textColor) {
   width: 10rem;
   height: 3rem;

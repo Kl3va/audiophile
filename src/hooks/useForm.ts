@@ -18,29 +18,7 @@ interface FormValues {
   ePin?: string
 }
 
-// interface UseFormReturnType {
-//   values: FormValues
-//   handleChange: (event: React.ChangeEvent<HTMLInputElement>) => void
-//   handleBlur: (event: React.FocusEvent<HTMLInputElement>) => void
-//   handleSubmit: (event: React.FormEvent<HTMLFormElement>) => void
-//   errors: { [key: string]: string }
-//   touched: { [key: string]: boolean }
-// }
-
 export const useForm = () => {
-  // const [values, setValues] = useState<FormValues>({
-  //   name: '',
-  //   email: '',
-  //   phone: '',
-  //   address: '',
-  //   zip: '',
-  //   city: '',
-  //   country: '',
-  //   showForm: true,
-  //   eNumber: '',
-  //   ePin: '',
-  // })
-
   const initialValues: FormValues = {
     name: '',
     email: '',
@@ -61,8 +39,6 @@ export const useForm = () => {
     values: FormValues,
     { resetForm }: FormikHelpers<FormValues>
   ) => {
-    //
-    //resetForm()
     try {
       // Validate the form
       await validationSchema.validate(values)
@@ -75,8 +51,8 @@ export const useForm = () => {
       }, 100)
     } catch (error) {
       // If there are errors, do nothing and let the form display the error messages
-      // toast.error(`${error.message}`)
-      console.log(error)
+      //console.log(error)
+      //toast.error(`${error}`)
     }
   }
 
@@ -98,8 +74,6 @@ export const useForm = () => {
     validationSchema,
     onSubmit: handleSubmit,
   })
-
-  //console.log(formik.errors, initialValues)
 
   return {
     values: formik.values,

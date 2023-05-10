@@ -6,6 +6,9 @@ import {
   controlModal,
 } from 'store/features/modal/modalSlice'
 
+//Style
+import styles from 'components/background/background.module.scss'
+
 const Background = () => {
   const { isSidebarOpen, isCartOpen, isCheckoutModalOpen } = useAppSelector(
     (state) => state.modal
@@ -23,9 +26,9 @@ const Background = () => {
     <aside
       onClick={handlePopUps}
       className={`${
-        isSidebarOpen || isCartOpen || isCheckoutModalOpen
-          ? 'navigation-background show-background'
-          : 'navigation-background'
+        isSidebarOpen || isCartOpen
+          ? `${styles.navigation_background} show-background`
+          : `${styles.navigation_background}`
       }`}
     ></aside>
   )

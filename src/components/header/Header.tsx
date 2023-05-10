@@ -82,15 +82,6 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
           </Link>
         </div>
         <nav className={styles.links_wrapper}>
-          {/* <ul>
-            {navLinks.map(({ text, navLink }, index) => {
-              return (
-                <li key={index}>
-                  <a href={navLink}>{text}</a>
-                </li>
-              )
-            })}
-          </ul>*/}
           <NavLinks
             navbarLinksData={navbarLinksData}
             flex={styles.header_links}
@@ -99,7 +90,11 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
         <div className={styles.cartIcon_wrapper}>
           <div className={styles.cart} onClick={handleCartPopUp}>
             <div>
-              <img src={cartIcon} alt='add to cart' />
+              <img
+                src={cartIcon}
+                alt='add to cart'
+                className={styles.cartt_icon}
+              />
             </div>
             {totalProducts >= 1 && <span>{totalProducts}</span>}
           </div>

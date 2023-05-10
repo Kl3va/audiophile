@@ -1,5 +1,13 @@
 @use '../globalStyles/variable.scss' as *;
 
+@font-face {
+  font-family: 'Manrope';
+  src: url('manrope.woff2') format('woff2'), url('manrope.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 //Typography
 
 h1,

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useAppSelector } from 'store/hooks'
+import styles from 'components/background/background.module.scss'
 
 const CustomBg = () => {
   const { isCheckoutModalOpen } = useAppSelector((state) => state.modal)
@@ -8,8 +9,8 @@ const CustomBg = () => {
     <aside
       className={`${
         isCheckoutModalOpen
-          ? 'custom-background show-background'
-          : 'custom-background'
+          ? `${styles.custom_background} show-background`
+          : `${styles.custom_background}`
       }`}
     ></aside>
   )
