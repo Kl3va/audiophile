@@ -12,8 +12,13 @@ interface cartType {
   totalProducts: number
 }
 
+const getCartItems = (): SingleProduct[] => {
+  const cart = localStorage.getItem('cart')
+  return cart ? JSON.parse(cart) : []
+}
+
 const initialState: cartType = {
-  cartItems: [],
+  cartItems: getCartItems(),
   shippingFee: 50,
   totalAmount: 0,
   vat: 0,
@@ -75,6 +80,7 @@ const cartSlice = createSlice({
     },
     removeAllItems: (state) => {
       state.cartItems = []
+      localStorage.removeItem('cart')
       toast.error('Your Cart Is Cleared!')
     },
     calculateTotals: (state) => {

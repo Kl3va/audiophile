@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useAppDispatch, useAppSelector } from 'store/hooks'
 import { controlCheckoutPopUp } from 'store/features/modal/modalSlice'
+import { removeAllItems } from 'store/features/cart/cartSlice'
+import { useNavigate } from 'react-router-dom'
 
 interface PaymentButtonProps {
   btnText: string
@@ -18,7 +20,7 @@ const PaymentButton = ({
   handleSubmit,
   className,
 }: PaymentButtonProps) => {
-  const dispatch = useAppDispatch()
+  //const dispatch = useAppDispatch()
   const { cartItems } = useAppSelector((state) => state.cart)
 
   const isCartEmpty = cartItems.length === 0
@@ -60,10 +62,21 @@ const BackToHomeButton = ({
   btnText,
   onClick,
   className,
-}: PaymentButtonProps) => (
-  <button className={className} onClick={onClick}>
-    {btnText}
-  </button>
-)
+}: PaymentButtonProps) => {
+  const dispatch = useAppDispatch()
+  const navigate = useNavigate()
+
+  const goToHome = () => {
+    dispatch(controlCheckoutPopUp(false))
+    dispatch(removeAllItems())
+    navigate('/')
+  }
+
+  return (
+    <button className={className} onClick={goToHome}>
+      {btnText}
+    </button>
+  )
+}
 
 export { PaymentButton, CheckoutButton, BackToHomeButton }

@@ -50,6 +50,7 @@ function App() {
   //Calculate the total Amount, total products in the cart, vat...
   useEffect(() => {
     dispatch(calculateTotals())
+    localStorage.setItem('cart', JSON.stringify(cartItems))
   }, [cartItems, dispatch])
 
   return (
@@ -58,7 +59,7 @@ function App() {
       <ToastContainer position='top-center' autoClose={3000} />
       <Header {...headerData} />
       <Background />
-      <CustomBg/>
+      <CustomBg />
       {isCartOpen && <Cart />}
       {isCheckoutModalOpen && <CheckoutModal />}
       <Routes>
