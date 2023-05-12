@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useAppDispatch, useAppSelector } from 'store/hooks'
 import { controlCheckoutPopUp } from 'store/features/modal/modalSlice'
 import { removeAllItems } from 'store/features/cart/cartSlice'
@@ -20,14 +20,14 @@ const PaymentButton = ({
   handleSubmit,
   className,
 }: PaymentButtonProps) => {
-  //const dispatch = useAppDispatch()
+  
   const { cartItems } = useAppSelector((state) => state.cart)
 
   const isCartEmpty = cartItems.length === 0
 
   const handlePopUp = () => {
     handleSubmit!()
-    // dispatch(controlCheckoutPopUp(true))
+    
   }
 
   return (
@@ -60,7 +60,6 @@ const CheckoutButton = ({
 
 const BackToHomeButton = ({
   btnText,
-  onClick,
   className,
 }: PaymentButtonProps) => {
   const dispatch = useAppDispatch()

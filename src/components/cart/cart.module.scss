@@ -15,8 +15,6 @@
   @media only screen and (min-width: $breakpoint-larger) {
     left: 82%;
     transform: translateX(-82%);
-
-    //left: 0;
   }
 }
 
@@ -47,7 +45,6 @@
 
 .cart_product__wrapper {
   height: 15rem;
-  //max-width: 100%;
   display: flex;
   flex-direction: column;
   overflow-y: scroll;
@@ -71,7 +68,6 @@
 .cart_product {
   height: 4rem;
   display: flex;
-  //justify-content: space-between;
   gap: 1rem;
 }
 

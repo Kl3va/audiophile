@@ -10,7 +10,7 @@ import {
 import styles from 'components/background/background.module.scss'
 
 const Background = () => {
-  const { isSidebarOpen, isCartOpen, isCheckoutModalOpen } = useAppSelector(
+  const { isSidebarOpen, isCartOpen } = useAppSelector(
     (state) => state.modal
   )
 

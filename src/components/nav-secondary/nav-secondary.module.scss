@@ -44,7 +44,6 @@
 .img {
   max-width: 100%;
   object-fit: contain;
-  //aspect-ratio: 1/1;
 }
 
 .heading {
@@ -54,8 +53,6 @@
 }
 
 .imgWrapper {
-  //transform: translateY(-3rem);
-
   max-width: 8rem;
   margin-top: -3rem;
   transition: all ease-in 0.2s;

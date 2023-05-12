@@ -325,7 +325,7 @@ const FormSubmit = ({
       {/*Summary Component*/}
 
       <div className={styles.summary}>
-        <h2 className={styles.tertiary_heading}>{heading}</h2>
+        <h2 className={styles.tertiary_heading}>{tertiaryHeading}</h2>
         <div className={styles.cart_wrapper}>
           {cartItems.length === 0 && (
             <div className={styles.no_product}>

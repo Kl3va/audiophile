@@ -3,7 +3,6 @@ import React from 'react'
 import SecondaryHero from 'components/secondary-hero/SecondaryHero'
 import NavSecondary from 'components/nav-secondary/NavSecondary'
 import AudioGear from 'components/audio-gear/AudioGear'
-import Button from 'components/button/Button'
 
 //STYLES
 import styles from 'pages/headphones/headphones.module.scss'

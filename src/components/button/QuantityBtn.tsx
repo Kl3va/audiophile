@@ -9,9 +9,7 @@ import {
   increaseQuantity,
 } from 'store/features/cart/cartSlice'
 
-//Toast package
-import { toast } from 'react-toastify'
-import { SingleProduct } from 'types/singleProduct'
+
 
 interface QuantityBtnProps {
   btnText: string

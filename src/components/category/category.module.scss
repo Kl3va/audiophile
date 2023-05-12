@@ -5,7 +5,6 @@
 
   @media only screen and (min-width: $breakpoint-largest) {
     display: flex;
-    //justify-content: space-between;
     gap: 7.8rem;
   }
 
@@ -13,7 +12,6 @@
     @media only screen and (min-width: $breakpoint-largest) {
       display: flex;
       flex-direction: row-reverse;
-      //justify-content: space-between;
       gap: 7.8rem;
     }
   }
