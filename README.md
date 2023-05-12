@@ -62,5 +62,5 @@ Performance Optimization.
 
 ## Author
 
-- Kl3va - [Kl3va](https://github.com/Kl3va)
+- Development - [Kl3va](https://github.com/Kl3va)
 - Design - [Frontend Mentor](https://www.frontendmentor.io)
