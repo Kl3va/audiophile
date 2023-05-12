@@ -116,9 +116,8 @@
   transform: translate(100%);
 
   @media only screen and (min-width: $breakpoint-larger) {
-    height: 10rem;
-    padding: 0.5rem 0;
-    height: 21.25rem;
+    
+    height: 25.25rem;
 
     & > * {
       margin-block: 6rem 0;
