@@ -4,7 +4,7 @@
   width: min(87.2%, 33.75rem);
   padding: 2rem;
   position: fixed;
-  top: 54%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: $color-primary;
@@ -13,7 +13,7 @@
 
   @media only screen and (min-width: $breakpoint-larger) {
     padding: 3rem;
-    transform: translate(-50%, -47%);
+    transform: translate(-50%, -50%);
   }
 }
 

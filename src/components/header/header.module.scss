@@ -105,16 +105,15 @@
   position: fixed;
   width: 100%;
   max-height: 100vh;
-  //height: 758.4px;
   background-color: $color-primary;
   border-radius: 0 0 0.5rem 0.5rem;
   right: 0;
   overflow-y: scroll;
-  top: 6rem;
+  top: 0;
+  padding-top: 6rem;
   z-index: 1000;
   transition: all ease-in 0.2s;
   transform: translate(100%);
-  padding-bottom: 1rem;
 
   @media only screen and (min-width: $breakpoint-larger) {
     height: 10rem;
@@ -124,13 +123,6 @@
     & > * {
       margin-block: 6rem 0;
     }
-  }
-
-  .wrap {
-    background: rgb(255, 255, 255);
-    padding: 8rem 1.5rem 1.5rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
   }
 }
 

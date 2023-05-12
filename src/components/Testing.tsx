@@ -21,10 +21,7 @@ const Testing = (props: Props) => {
       }`}
       onClick={() => dispatch(controlModal(false))}
     >
-     <div className={styles.wrap}>
-
       <NavSecondary navSecondaryData={navSecondaryData} />
-     </div>
     </div>
   )
 }
