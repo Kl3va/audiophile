@@ -2,7 +2,7 @@
 
 .checkout_modal {
   width: min(87.2%, 33.75rem);
-  padding: 2rem;
+  padding: 1.5rem;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -18,7 +18,7 @@
 }
 
 .img_wrapper {
-  margin-bottom: 1.43rem;
+  margin-bottom: 1rem;
 
   @media only screen and (min-width: $breakpoint-larger) {
     margin-bottom: 2.06rem;
@@ -29,7 +29,7 @@
   font-size: 1.43rem;
   line-height: 1.75rem;
   letter-spacing: 0.86px;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 
   @media only screen and (min-width: $breakpoint-larger) {
     margin-bottom: 1.5rem;
@@ -37,7 +37,7 @@
 }
 
 .checkout_text {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 
   @media only screen and (min-width: $breakpoint-larger) {
     margin-bottom: 2.0625remrem;
@@ -69,7 +69,6 @@
 .cart_product {
   height: 3rem;
   display: flex;
-  //justify-content: space-between;
   gap: 1.68rem;
   align-items: center;
   padding-bottom: 0.75rem;

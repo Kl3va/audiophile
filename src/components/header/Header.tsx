@@ -14,9 +14,6 @@ import {
 import NavLinks from 'components/nav-links/NavLinks'
 import { navbarLinksData } from 'components/nav-links/navbarLinksData'
 
-import NavSecondary from 'components/nav-secondary/NavSecondary'
-import { navSecondaryData } from 'components/nav-secondary/navSecondaryData'
-
 interface headerProp {
   logo: {
     img: string

@@ -45,9 +45,11 @@ const CheckoutModal = () => {
             </div>
             <p className={styles.quantity}>{`x${item.productQuantity}`}</p>
           </div>
-          <div className={styles.other_items}>
-            <p>{`and ${cartItems.length - 1} other item(s)`}</p>
-          </div>
+          {cartItems.length > 1 && (
+            <div className={styles.other_items}>
+              <p>{`and ${cartItems.length - 1} other item(s)`}</p>
+            </div>
+          )}
         </div>
         <div className={styles.prices_wrapper}>
           <p className={styles.grand_total}>Grand Total</p>

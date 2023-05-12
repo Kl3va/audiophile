@@ -6,9 +6,7 @@ import { controlModal } from 'store/features/modal/modalSlice'
 
 import styles from 'components/header/header.module.scss'
 
-type Props = {}
-
-const Testing = (props: Props) => {
+const Testing = () => {
   const dispatch = useAppDispatch()
   const { isSidebarOpen } = useAppSelector((state) => state.modal)
 
