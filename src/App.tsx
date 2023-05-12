@@ -38,6 +38,9 @@ import { headphonesData } from 'pages/headphones/headphonesData'
 import { speakersData } from 'pages/speakers/speakersData'
 import { earphonesData } from 'pages/earphones/earphonesData'
 
+//Testing
+import Testing from 'components/Testing'
+
 function App() {
   const { isCartOpen, isCheckoutModalOpen } = useAppSelector(
     (state) => state.modal
@@ -58,6 +61,7 @@ function App() {
       <ScrollToTop />
       <ToastContainer position='top-center' autoClose={3000} />
       <Header {...headerData} />
+      <Testing />
       <Background />
       <CustomBg />
       {isCartOpen && <Cart />}

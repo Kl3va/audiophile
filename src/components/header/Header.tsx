@@ -65,7 +65,7 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
             )}
           </div>
 
-          <div
+          {/* <div
             className={`${
               isSidebarOpen
                 ? `${styles.sidenav_wrapper} ${styles.show_sidebar}`
@@ -74,7 +74,7 @@ const Header = ({ logo, cartIcon, menu, close }: headerProp) => {
             onClick={() => dispatch(controlModal(false))}
           >
             <NavSecondary navSecondaryData={navSecondaryData} />
-          </div>
+          </div>*/}
         </nav>
         <div className={styles.logo_wrapper}>
           <Link to={logo.link}>
