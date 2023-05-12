@@ -104,6 +104,7 @@
 .sidenav_wrapper {
   position: fixed;
   width: 100%;
+  min-height: 100%;
   background-color: $color-primary;
   border-radius: 0 0 0.5rem 0.5rem;
   right: 0;
